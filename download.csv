@@ -1,0 +1,1296 @@
+,sdate,edate,municipality_name,county,displayName,type,mode,category,concern
+0,2012-01-01,2017-11-30,Krokoms kommun,Jämtlands län,100 % Krokom,huvudredaktion,redaktion,Gratistidning,Mittmedia
+1,2012-01-01,2017-11-30,Strömsunds kommun,Jämtlands län,100 % Strömsund,huvudredaktion,redaktion,Gratistidning,Mittmedia
+2,0,9,Strömsunds kommun,Jämtlands län,Affärsnytt Norr,huvudredaktion,redaktion,Gratistidning,
+3,2019-06-05,9,Strömsunds kommun,Jämtlands län,Jämtlands Tidning,lokalredaktion,redaktion,Dagspress,
+4,0,9,Strömsunds kommun,Jämtlands län,Strömsunds gratistidning,huvudredaktion,redaktion,Gratistidning,Pobeda
+5,2012-01-01,2017-11-30,Östersunds kommun,Jämtlands län,100 % Östersund,huvudredaktion,redaktion,Gratistidning,Mittmedia
+6,2014-05-01,9,Östersunds kommun,Jämtlands län,Jämtlands gratistidning,huvudredaktion,redaktion,Gratistidning,Pobeda
+7,2015-05-01,9,Östersunds kommun,Jämtlands län,Jämtlands Tidning,huvudredaktion,redaktion,Dagspress,
+8,1924-07-18,2019-03-31,Östersunds kommun,Jämtlands län,Länstidningen Östersund,huvudredaktion,redaktion,Dagspress,Mittmedia
+9,2019-04-01,2020-04-01,Östersunds kommun,Jämtlands län,Länstidningen Östersund,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+10,2020-04-02,9,Östersunds kommun,Jämtlands län,Länstidningen Östersund,huvudredaktion,redaktion,Dagspress,Bonnier
+11,0,9,Östersunds kommun,Jämtlands län,Sveriges Radio P4 Jämtland,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+12,2015-04-13,2015-04-12,Östersunds kommun,Jämtlands län,SVT Nyheter Västernorrland,lokalredaktion,redaktion,Etermedier,Sveriges Television
+13,0,2015-04-12,Östersunds kommun,Jämtlands län,Mittnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+14,2015-04-13,9,Östersunds kommun,Jämtlands län,SVT Nyheter Jämtland,huvudredaktion,redaktion,Etermedier,Sveriges Television
+15,2018-03-21,2019-03-31,Östersunds kommun,Jämtlands län,ÖP Magasin,huvudredaktion,redaktion,Gratistidning,Mittmedia
+16,2019-04-01,2020-04-01,Östersunds kommun,Jämtlands län,ÖP Magasin,huvudredaktion,redaktion,Gratistidning,Bonnier|Mittmedia
+17,2020-04-02,9,Östersunds kommun,Jämtlands län,ÖP Magasin,huvudredaktion,redaktion,Gratistidning,Bonnier
+18,1877,2019-03-31,Östersunds kommun,Jämtlands län,Östersunds-Posten,huvudredaktion,redaktion,Dagspress,Mittmedia
+19,2019-04-01,2020-04-01,Östersunds kommun,Jämtlands län,Östersunds-Posten,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+20,2020-04-02,9,Östersunds kommun,Jämtlands län,Östersunds-Posten,huvudredaktion,redaktion,Dagspress,Bonnier
+21,2016-02-01,2018-10-31,Karlskrona kommun,Blekinge län,24 Blekinge,huvudredaktion,redaktion,Sajt,24 Journalistik
+22,2018-11-01,2019-07-03,Karlskrona kommun,Blekinge län,24 Blekinge,huvudredaktion,riktad titel,Sajt,24 Journalistik
+23,1869,9,Karlskrona kommun,Blekinge län,Blekinge Läns Tidning med Sölvesborgs-Tidningen och Karlshamns Allehanda,huvudredaktion,redaktion,Dagspress,Gota Media
+24,0,2018-12-07,Karlskrona kommun,Blekinge län,Karlskronakanalen.se,huvudredaktion,redaktion,Sajt,
+25,1993-01-01,2017-02-01,Karlskrona kommun,Blekinge län,Commersen,huvudredaktion,redaktion,Gratistidning,
+26,0,9,Karlskrona kommun,Blekinge län,Sveriges Radio P4 Blekinge,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+27,2015-04-12,9,Karlskrona kommun,Blekinge län,SVT Nyheter Blekinge,huvudredaktion,redaktion,Etermedier,Sveriges Television
+28,2015-04-13,2015-04-11,Karlskrona kommun,Blekinge län,SVT Nyheter Skåne,lokalredaktion,redaktion,Etermedier,Sveriges Television
+29,0,2015-04-11,Karlskrona kommun,Blekinge län,Sydnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+30,2011-01-01,9,Karlskrona kommun,Blekinge län,Sydöstran,huvudredaktion,redaktion,Dagspress,Gota Media
+31,1903,2010-12-31,Karlskrona kommun,Blekinge län,Sydöstran,huvudredaktion,redaktion,Dagspress,Östra Småland
+32,2009-06-01,2016-11-08,Karlskrona kommun,Blekinge län,Vårt Karlskrona,huvudredaktion,redaktion,Gratistidning,
+33,2008-10-14,2017-12-31,Linköpings kommun,Östergötlands län,24 Corren,huvudredaktion,redaktion,Etermedier,NTM
+34,0,2018-06-30,Linköpings kommun,Östergötlands län,Extra Östergötland,lokalredaktion,redaktion,Gratistidning,NTM
+35,2017-04-20,2019-01-18,Linköpings kommun,Östergötlands län,Linköping News,huvudredaktion,redaktion,Sajt,Jmini
+36,2018-01-15,9,Linköpings kommun,Östergötlands län,Linköpings-Posten,huvudredaktion,redaktion,Gratistidning,NTM
+37,1994,2018-01-14,Linköpings kommun,Östergötlands län,Linköpings-Posten,huvudredaktion,redaktion,Gratistidning,Swepress
+38,2018-03-01,2018-07-01,Linköpings kommun,Östergötlands län,Mera Linköping,huvudredaktion,redaktion,Gratistidning,NTM
+39,2013,2018-02-28,Linköpings kommun,Östergötlands län,Mera Linköping,huvudredaktion,redaktion,Gratistidning,Swepress
+40,0,9,Linköpings kommun,Östergötlands län,Sveriges Radio P4 Östergötland,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+41,2015-04-13,9,Linköpings kommun,Östergötlands län,SVT Nyheter Öst,lokalredaktion,redaktion,Etermedier,Sveriges Television
+42,0,2015-04-12,Linköpings kommun,Östergötlands län,Östnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+43,2018-01-15,2018-05-31,Linköpings kommun,Östergötlands län,Vimmerby Tidning med Linköpings Tidning och Kinda-Posten,lokalredaktion,redaktion,Dagspress,NTM
+44,2018-06-01,2018-05-31,Linköpings kommun,Östergötlands län,Vimmerby Tidning med Kinda-Posten,lokalredaktion,redaktion,Dagspress,NTM
+45,0,2018-01-14,Linköpings kommun,Östergötlands län,"Vimmerby Tidning med Västerviks-Posten, Linköpings Tidning och Kinda-Posten",lokalredaktion,redaktion,Dagspress,Swepress
+46,2001,9,Linköpings kommun,Östergötlands län,Åkerbobladet,huvudredaktion,redaktion,Gratistidning,
+47,1838-09-24,9,Linköpings kommun,Östergötlands län,Östgöta Correspondenten,huvudredaktion,redaktion,Dagspress,NTM
+48,2017-04-01,2019-07-03,Emmaboda kommun,Kalmar län,24 Emmaboda,huvudredaktion,redaktion,Sajt,24 Journalistik
+49,0,9,Emmaboda kommun,Kalmar län,Barometern-OT,lokalredaktion,redaktion,Dagspress,Gota Media
+50,2015-07-01,9,Emmaboda kommun,Kalmar län,Emmaboda Tidning,huvudredaktion,redaktion,Gratistidning,Gota Media
+51,1967,2015-06-30,Emmaboda kommun,Kalmar län,Emmaboda Tidning,huvudredaktion,redaktion,Gratistidning,
+52,2010-12-23,2012-12-31,Emmaboda kommun,Kalmar län,Östra Småland-Nyheterna,lokalredaktion,redaktion,Dagspress,Gota Media
+53,0,2010-12-22,Emmaboda kommun,Kalmar län,Östra Småland-Nyheterna,lokalredaktion,redaktion,Dagspress,Östra Småland
+54,2018-06-11,2019-07-03,Falkenbergs kommun,Hallands län,24 Falkenberg,lokalredaktion,redaktion,Sajt,24 Journalistik
+55,0,2018-12-20,Falkenbergs kommun,Hallands län,Falkenbergs Posten,huvudredaktion,redaktion,Gratistidning,
+56,0,9,Falkenbergs kommun,Hallands län,Hallands Nyheter,lokalredaktion,redaktion,Dagspress,Stampen
+57,2017-04-01,2019-07-03,Halmstads kommun,Hallands län,24 Halmstad,huvudredaktion,redaktion,Sajt,24 Journalistik
+58,1850-07-30,9,Halmstads kommun,Hallands län,Hallandsposten,huvudredaktion,redaktion,Dagspress,Stampen
+59,2011-08-17,2019-12-11,Halmstads kommun,Hallands län,Halmstad 7 Dagar,huvudredaktion,redaktion,Gratistidning,Stampen
+60,2008-02-01,2017-01-13,Halmstads kommun,Hallands län,Lokaltidningen Halmstad,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+61,0,9,Halmstads kommun,Hallands län,Sveriges Radio P4 Halland,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+62,2015-04-13,9,Halmstads kommun,Hallands län,SVT Nyheter Halland,huvudredaktion,redaktion,Etermedier,Sveriges Television
+63,0,2015-04-12,Halmstads kommun,Hallands län,Västnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+64,2015-04-13,2015-04-12,Halmstads kommun,Hallands län,SVT Nyheter Väst,lokalredaktion,redaktion,Etermedier,Sveriges Television
+65,2017-08-01,2018-04-01,Helsingborgs kommun,Skåne län,24 Helsingborg,huvudredaktion,redaktion,Sajt,24 Journalistik
+66,2018-04-02,2019-07-03,Helsingborgs kommun,Skåne län,24 Helsingborg,huvudredaktion,riktad titel,Sajt,24 Journalistik
+67,0,2019-12-21,Helsingborgs kommun,Skåne län,Hallå Helsingborg,huvudredaktion,redaktion,Gratistidning,Bonnier
+68,2013-04-03,9,Helsingborgs kommun,Skåne län,HbgNyheter,huvudredaktion,redaktion,Sajt,
+69,2014-07-01,9,Helsingborgs kommun,Skåne län,Helsingborgs Dagblad,huvudredaktion,redaktion,Dagspress,Bonnier
+70,1867,2014-06-30,Helsingborgs kommun,Skåne län,Helsingborgs Dagblad,huvudredaktion,redaktion,Dagspress,
+71,2007-01-23,2019-10-17,Helsingborgs kommun,Skåne län,Lokaltidningen Helsingborg,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+72,2019-10-18,9,Helsingborgs kommun,Skåne län,Lokaltidningen Helsingborg,huvudredaktion,redaktion,Gratistidning,Bonnier
+73,0,9,Helsingborgs kommun,Skåne län,Sveriges Radio P4 Malmöhus,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+74,2015-04-12,9,Helsingborgs kommun,Skåne län,SVT Nyheter Helsingborg,huvudredaktion,redaktion,Etermedier,Sveriges Television
+75,2014-10-06,2019-07-03,Kalmar kommun,Kalmar län,24 Kalmar,huvudredaktion,redaktion,Sajt,24 Journalistik
+76,1841,9,Kalmar kommun,Kalmar län,Barometern-OT,huvudredaktion,redaktion,Dagspress,Gota Media
+77,2020-10-30,9,Kalmar kommun,Kalmar län,Dagens Kalmar,huvudredaktion,riktad titel,Sajt,Dagens Vimmerby
+78,2011-01-01,9,Kalmar kommun,Kalmar län,Kalmar Läns Tidning med Nybro Tidning,huvudredaktion,redaktion,Dagspress,Gota Media
+79,1827,2010-12-31,Kalmar kommun,Kalmar län,Kalmar Läns Tidning med Nybro Tidning,huvudredaktion,redaktion,Dagspress,
+80,2015-07-01,9,Kalmar kommun,Kalmar län,KalmarPosten,huvudredaktion,redaktion,Gratistidning,Gota Media
+81,1988,2015-06-30,Kalmar kommun,Kalmar län,KalmarPosten,huvudredaktion,redaktion,Gratistidning,
+82,0,9,Kalmar kommun,Kalmar län,Sveriges Radio P4 Kalmar,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+83,2015-04-13,9,Kalmar kommun,Kalmar län,SVT Nyheter Småland,lokalredaktion,redaktion,Etermedier,Sveriges Television
+84,0,2015-04-12,Kalmar kommun,Kalmar län,Smålandsnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+85,2010-12-23,2019-11-26,Kalmar kommun,Kalmar län,Östra Småland-Nyheterna,huvudredaktion,redaktion,Dagspress,Gota Media
+86,1928,2010-12-22,Kalmar kommun,Kalmar län,Östra Småland-Nyheterna,huvudredaktion,redaktion,Dagspress,Östra Småland
+87,2020-11-03,9,Kalmar kommun,Kalmar län,Hela Östra Småland,huvudredaktion,redaktion,Sajt,
+88,2017-04-01,2018-10-31,Kristianstads kommun,Skåne län,24 Kristianstad,huvudredaktion,redaktion,Sajt,24 Journalistik
+89,2018-11-01,2019-07-03,Kristianstads kommun,Skåne län,24 Kristianstad,huvudredaktion,riktad titel,Sajt,24 Journalistik
+90,1994,9,Kristianstads kommun,Skåne län,Kristianstads-Journalen,huvudredaktion,redaktion,Gratistidning,
+91,1856-09-20,2011-09-30,Kristianstads kommun,Skåne län,Kristianstadsbladet,huvudredaktion,redaktion,Dagspress,Bonnier
+92,2011-10-01,9,Kristianstads kommun,Skåne län,Kristianstadsbladet,huvudredaktion,redaktion,Dagspress,Gota Media
+93,2008-02-01,2019-10-17,Kristianstads kommun,Skåne län,"Lokaltidningen Kristianstad, Bromölla och Östra Göinge",huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+94,2019-10-18,9,Kristianstads kommun,Skåne län,"Lokaltidningen Kristianstad, Bromölla och Östra Göinge",huvudredaktion,redaktion,Gratistidning,Bonnier
+95,0,9,Kristianstads kommun,Skåne län,Sveriges Radio P4 Kristianstad,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+96,2019-03-11,9,Kristianstads kommun,Skåne län,SVT Nyheter Skåne,lokalredaktion,redaktion,Etermedier,Sveriges Television
+97,2019-03-11,2015-04-12,Kristianstads kommun,Skåne län,Sydnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+98,2010-06-24,9,Kristianstads kommun,Skåne län,Vi syns i Åhus,huvudredaktion,redaktion,Gratistidning,
+99,2016-03-01,2018-04-01,Malmö kommun,Skåne län,24 Malmö,huvudredaktion,redaktion,Sajt,24 Journalistik
+100,2018-04-02,2019-07-03,Malmö kommun,Skåne län,24 Malmö,huvudredaktion,riktad titel,Sajt,24 Journalistik
+101,2019-09-02,9,Malmö kommun,Skåne län,Aftonbladet,lokalredaktion,redaktion,Dagspress,Schibsted
+102,2009-02-20,2017-12-31,Malmö kommun,Skåne län,ETC Malmö,huvudredaktion,redaktion,Dagspress,ETC
+103,2018-01-01,2017-12-31,Malmö kommun,Skåne län,ETC Malmö,huvudredaktion,riktad titel,Dagspress,ETC
+104,0,2019-12-25,Malmö kommun,Skåne län,Hallå Malmö,huvudredaktion,redaktion,Gratistidning,Bonnier
+105,1948,9,Malmö kommun,Skåne län,Kvällsposten,huvudredaktion,redaktion,Dagspress,Bonnier
+106,0,9,Malmö kommun,Skåne län,Limhamns-Tidningen,huvudredaktion,redaktion,Gratistidning,
+107,2015-03-18,2019-10-17,Malmö kommun,Skåne län,Lokaltidningen Malmö och Limhamn-Bunkeflo,lokalredaktion,riktad titel,Gratistidning,Lokaltidningen
+108,2019-10-18,9,Malmö kommun,Skåne län,Lokaltidningen Malmö och Limhamn-Bunkeflo,lokalredaktion,riktad titel,Gratistidning,Bonnier
+109,2013-07-01,2015-03-17,Malmö kommun,Skåne län,Lokaltidningen Malmö och Limhamn-Bunkeflo,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+110,2019-10-18,2015-03-17,Malmö kommun,Skåne län,Lokaltidningen Malmö och Limhamn-Bunkeflo,huvudredaktion,redaktion,Gratistidning,Bonnier
+111,1962,9,Malmö kommun,Skåne län,Malmötidningen,huvudredaktion,riktad titel,Gratistidning,
+112,1999,2019-08-11,Malmö kommun,Skåne län,Metro Skåne,huvudredaktion,redaktion,Gratistidning,Metro
+113,2013,9,Malmö kommun,Skåne län,Mycket mer Sydväst,huvudredaktion,redaktion,Gratistidning,Skånska Dagbladet
+114,0,9,Malmö kommun,Skåne län,News Øresund,huvudredaktion,redaktion,Sajt,
+115,0,9,Malmö kommun,Skåne län,Sveriges Radio P4 Malmöhus,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+116,1888,9,Malmö kommun,Skåne län,Skånska Dagbladet,huvudredaktion,redaktion,Dagspress,Skånska Dagbladet
+117,2015-04-13,9,Malmö kommun,Skåne län,SVT Nyheter Skåne,huvudredaktion,redaktion,Etermedier,Sveriges Television
+118,1970-11-02,2015-04-12,Malmö kommun,Skåne län,Sydnytt,huvudredaktion,redaktion,Etermedier,Sveriges Television
+119,1848,9,Malmö kommun,Skåne län,Sydsvenskan,huvudredaktion,redaktion,Dagspress,Bonnier
+120,2008-10-01,2017-12-31,Norrköpings kommun,Östergötlands län,24 NT,huvudredaktion,redaktion,Etermedier,NTM
+121,2016-04-29,2017-12-31,Norrköpings kommun,Östergötlands län,ETC Norrköping,huvudredaktion,redaktion,Dagspress,ETC
+122,2004,2018-06-30,Norrköpings kommun,Östergötlands län,Extra Östergötland,huvudredaktion,redaktion,Gratistidning,NTM
+123,1905,9,Norrköpings kommun,Östergötlands län,Folkbladet,huvudredaktion,redaktion,Dagspress,NTM
+124,2018-03-01,2018-07-01,Norrköpings kommun,Östergötlands län,Mera Norrköping,huvudredaktion,redaktion,Gratistidning,NTM
+125,2012,2018-02-28,Norrköpings kommun,Östergötlands län,Mera Norrköping,huvudredaktion,redaktion,Gratistidning,Swepress
+126,2017-04-20,2019-01-18,Norrköpings kommun,Östergötlands län,Norrköping News,huvudredaktion,redaktion,Sajt,Jmini
+127,1758-10-14,9,Norrköpings kommun,Östergötlands län,Norrköpings Tidningar,huvudredaktion,redaktion,Dagspress,NTM
+128,2018-01-15,9,Norrköpings kommun,Östergötlands län,Norrköpings-Magazinet,huvudredaktion,redaktion,Gratistidning,NTM
+129,0,2018-01-14,Norrköpings kommun,Östergötlands län,Norrköpings-Magazinet,huvudredaktion,redaktion,Gratistidning,Swepress
+130,0,9,Norrköpings kommun,Östergötlands län,Sveriges Radio P4 Östergötland,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+131,2015-04-13,9,Norrköpings kommun,Östergötlands län,SVT Nyheter Öst,huvudredaktion,redaktion,Etermedier,Sveriges Television
+132,1980,2015-04-12,Norrköpings kommun,Östergötlands län,Östnytt,huvudredaktion,redaktion,Etermedier,Sveriges Television
+133,2018-01-15,2018-05-31,Norrköpings kommun,Östergötlands län,Vimmerby Tidning med Linköpings Tidning och Kinda-Posten,lokalredaktion,redaktion,Dagspress,NTM
+134,2018-06-01,2018-05-31,Norrköpings kommun,Östergötlands län,Vimmerby Tidning med Kinda-Posten,lokalredaktion,redaktion,Dagspress,NTM
+135,0,2018-01-14,Norrköpings kommun,Östergötlands län,"Vimmerby Tidning med Västerviks-Posten, Linköpings Tidning och Kinda-Posten",lokalredaktion,redaktion,Dagspress,Swepress
+136,0,9,Norrköpings kommun,Östergötlands län,Wighsnews,huvudredaktion,redaktion,Sajt,
+137,2015-04-01,2019-07-03,Nybro kommun,Kalmar län,24 Nybro,huvudredaktion,redaktion,Sajt,24 Journalistik
+138,0,9,Nybro kommun,Kalmar län,Barometern-OT,lokalredaktion,redaktion,Dagspress,Gota Media
+139,2011-01-01,9,Nybro kommun,Kalmar län,Kalmar Läns Tidning med Nybro Tidning,lokalredaktion,redaktion,Dagspress,Gota Media
+140,1827,2010-12-31,Nybro kommun,Kalmar län,Kalmar Läns Tidning med Nybro Tidning,lokalredaktion,redaktion,Dagspress,
+141,1981,9,Nybro kommun,Kalmar län,Nybro-extra,huvudredaktion,redaktion,Gratistidning,
+142,2010-12-23,2012-12-31,Nybro kommun,Kalmar län,Östra Småland-Nyheterna,lokalredaktion,redaktion,Dagspress,Gota Media
+143,0,2010-12-22,Nybro kommun,Kalmar län,Östra Småland-Nyheterna,lokalredaktion,redaktion,Dagspress,Östra Småland
+144,2017-06-01,2018-04-01,Trelleborgs kommun,Skåne län,24 Trelleborg,huvudredaktion,redaktion,Sajt,24 Journalistik
+145,2018-04-02,2019-07-03,Trelleborgs kommun,Skåne län,24 Trelleborg,huvudredaktion,riktad titel,Sajt,24 Journalistik
+146,2019-10-18,9,Trelleborgs kommun,Skåne län,Lokaltidningen Trelleborg,huvudredaktion,riktad titel,Gratistidning,Bonnier
+147,2008-02-01,2019-10-17,Trelleborgs kommun,Skåne län,Lokaltidningen Trelleborg,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+148,1876,2011-09-30,Trelleborgs kommun,Skåne län,Trelleborgs Allehanda,huvudredaktion,redaktion,Dagspress,Bonnier
+149,2011-10-01,9,Trelleborgs kommun,Skåne län,Trelleborgs Allehanda,huvudredaktion,redaktion,Dagspress,Gota Media
+150,2017-06-01,2018-04-01,Uppsala kommun,Uppsala län,24 Uppsala,huvudredaktion,redaktion,Sajt,24 Journalistik
+151,2018-04-02,2019-07-03,Uppsala kommun,Uppsala län,24 Uppsala,huvudredaktion,riktad titel,Sajt,24 Journalistik
+152,2020-01-01,9,Uppsala kommun,Uppsala län,Aftonbladet,lokalredaktion,redaktion,Dagspress,Schibsted
+153,2016-03-04,2017-12-31,Uppsala kommun,Uppsala län,ETC Uppsala,huvudredaktion,redaktion,Dagspress,ETC
+154,0,9,Uppsala kommun,Uppsala län,Sveriges Radio P4 Uppland,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+155,0,2015-04-12,Uppsala kommun,Uppsala län,ABC,lokalredaktion,redaktion,Etermedier,Sveriges Television
+156,2015-04-13,2015-04-12,Uppsala kommun,Uppsala län,SVT Nyheter Stockholm,lokalredaktion,redaktion,Etermedier,Sveriges Television
+157,2015-04-13,9,Uppsala kommun,Uppsala län,SVT Nyheter Uppsala,huvudredaktion,redaktion,Etermedier,Sveriges Television
+158,1977,2019-10-25,Uppsala kommun,Uppsala län,Upplands Nyheter,huvudredaktion,redaktion,Dagspress,Sveagruppen
+159,0,2017-01-01,Uppsala kommun,Uppsala län,Uppsala-tv,huvudredaktion,redaktion,Etermedier,
+160,2012-10,9,Uppsala kommun,Uppsala län,Uppsalanyheter.se,huvudredaktion,redaktion,Sajt,
+161,2005-01-16,2013-08-31,Uppsala kommun,Uppsala län,Uppsalatidningen,huvudredaktion,redaktion,Gratistidning,Direktpress
+162,2013-09-01,9,Uppsala kommun,Uppsala län,Uppsalatidningen,huvudredaktion,redaktion,Gratistidning,NTM
+163,1890-12-03,9,Uppsala kommun,Uppsala län,Upsala Nya Tidning,huvudredaktion,redaktion,Dagspress,NTM
+164,2017-12-11,2019-07-03,Varbergs kommun,Hallands län,24 Varberg,huvudredaktion,redaktion,Sajt,24 Journalistik
+165,1905-10-02,9,Varbergs kommun,Hallands län,Hallands Nyheter,huvudredaktion,redaktion,Dagspress,Stampen
+166,0,9,Varbergs kommun,Hallands län,Sveriges Radio P4 Halland,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+167,2015-04-13,9,Varbergs kommun,Hallands län,SVT Nyheter Halland,lokalredaktion,redaktion,Etermedier,Sveriges Television
+168,0,2015-04-12,Varbergs kommun,Hallands län,Västnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+169,2015-04-13,2015-04-12,Varbergs kommun,Hallands län,SVT Nyheter Väst,lokalredaktion,redaktion,Etermedier,Sveriges Television
+170,0,9,Varbergs kommun,Hallands län,Varbergs Posten,huvudredaktion,redaktion,Gratistidning,
+171,2018-11-05,2019-07-03,Västerås kommun,Västmanlands län,24 Västerås,huvudredaktion,redaktion,Sajt,24 Journalistik
+172,2017-03-01,2017-12-31,Västerås kommun,Västmanlands län,ETC Västerås,huvudredaktion,redaktion,Dagspress,ETC
+173,0,9,Västerås kommun,Västmanlands län,Sveriges Radio P4 Västmanland,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+174,2015-04-13,2015-04-12,Västerås kommun,Västmanlands län,SVT Nyheter Örebro,lokalredaktion,redaktion,Etermedier,Sveriges Television
+175,1986,2015-04-12,Västerås kommun,Västmanlands län,Tvärsnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+176,2015-04-13,2015-04-12,Västerås kommun,Västmanlands län,Tvärsnytt,huvudredaktion,redaktion,Etermedier,Sveriges Television
+177,2015-04-13,9,Västerås kommun,Västmanlands län,SVT Nyheter Västmanland,huvudredaktion,redaktion,Etermedier,Sveriges Television
+178,2016-01-01,2019-03-31,Västerås kommun,Västmanlands län,Vestmanlands Läns Tidning,huvudredaktion,redaktion,Dagspress,Mittmedia
+179,2019-04-01,2020-04-01,Västerås kommun,Västmanlands län,Vestmanlands Läns Tidning,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+180,2020-04-02,9,Västerås kommun,Västmanlands län,Vestmanlands Läns Tidning,huvudredaktion,redaktion,Dagspress,Bonnier
+181,1831,2015-12-31,Västerås kommun,Västmanlands län,Vestmanlands Läns Tidning,huvudredaktion,redaktion,Dagspress,Promedia
+182,1992,9,Västerås kommun,Västmanlands län,Västerås Tidning,huvudredaktion,redaktion,Gratistidning,Direktpress
+183,1917,2019-10-18,Västerås kommun,Västmanlands län,Västmanlands Nyheter,huvudredaktion,redaktion,Dagspress,Sveagruppen
+184,2017-06-01,2018-04-01,Ystads kommun,Skåne län,24 Ystad,huvudredaktion,redaktion,Sajt,24 Journalistik
+185,2018-04-02,2019-07-03,Ystads kommun,Skåne län,24 Ystad,huvudredaktion,riktad titel,Sajt,24 Journalistik
+186,2019-10-18,9,Ystads kommun,Skåne län,Lokaltidningen Ystad,huvudredaktion,redaktion,Gratistidning,Bonnier
+187,2008-02-01,2019-10-17,Ystads kommun,Skåne län,Lokaltidningen Ystad,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+188,1873-07-02,2011-09-30,Ystads kommun,Skåne län,Ystads Allehanda,huvudredaktion,redaktion,Dagspress,Bonnier
+189,2011-10-01,9,Ystads kommun,Skåne län,Ystads Allehanda,huvudredaktion,redaktion,Dagspress,Gota Media
+190,2009,2020-06-30,Åre kommun,Jämtlands län,321:an,huvudredaktion,redaktion,Sajt,
+191,2013-11-26,2015-12-31,Åre kommun,Jämtlands län,Kallendarium,huvudredaktion,redaktion,Gratistidning,
+192,1996,2019-03-31,Åre kommun,Jämtlands län,Åre idag,huvudredaktion,redaktion,Gratistidning,Mittmedia
+193,2019-04-01,2019-09-24,Åre kommun,Jämtlands län,Åre idag,huvudredaktion,redaktion,Gratistidning,Bonnier|Mittmedia
+194,0,2019-03-31,Åre kommun,Jämtlands län,Östersunds-Posten,lokalredaktion,redaktion,Dagspress,Mittmedia
+195,2019-04-01,2020-04-01,Åre kommun,Jämtlands län,Östersunds-Posten,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+196,2020-04-02,9,Åre kommun,Jämtlands län,Östersunds-Posten,lokalredaktion,redaktion,Dagspress,Bonnier
+197,1830-12-06,9,Stockholms kommun,Stockholms län,Aftonbladet,huvudredaktion,redaktion,Dagspress,Schibsted
+198,2009,2017-07-19,Stockholms kommun,Stockholms län,Bagisbloggen.se,huvudredaktion,redaktion,Sajt,
+199,2014-09-02,9,Stockholms kommun,Stockholms län,Bättre Stadsdel,huvudredaktion,redaktion,Sajt,
+200,2005-01-01,9,Stockholms kommun,Stockholms län,Dagens ETC,huvudredaktion,redaktion,Dagspress,ETC
+201,1864,9,Stockholms kommun,Stockholms län,Dagens Nyheter,huvudredaktion,redaktion,Dagspress,Bonnier
+202,2015-07-31,2016-08-18,Stockholms kommun,Stockholms län,Djurgårdsliv,huvudredaktion,redaktion,Sajt,
+203,2005,2017-12-31,Stockholms kommun,Stockholms län,ETC Stockholm,huvudredaktion,redaktion,Dagspress,ETC
+204,1944-11-16,9,Stockholms kommun,Stockholms län,Expressen,huvudredaktion,redaktion,Dagspress,Bonnier
+205,1995-02-13,2019-08-09,Stockholms kommun,Stockholms län,Metro Stockholm,huvudredaktion,redaktion,Gratistidning,Metro
+206,2014-06-25,2020-06-17,Stockholms kommun,Stockholms län,Mitt i-tidningarna,huvudredaktion,redaktion,Gratistidning,Mitt i
+207,2008-12-01,2014-06-24,Stockholms kommun,Stockholms län,Mitt i-tidningarna,huvudredaktion,redaktion,Gratistidning,Stampen
+208,2020-06-18,2020-10-01,Stockholms kommun,Stockholms län,Mitt i-tidningarna,huvudredaktion,redaktion,Gratistidning,Direktpress
+209,2011,2015-01-16,Stockholms kommun,Stockholms län,Norra sidan,huvudredaktion,redaktion,Gratistidning,Direktpress
+210,2017-11-01,9,Stockholms kommun,Stockholms län,Nyhetsbyrån Järva,huvudredaktion,redaktion,Sajt,
+211,0,9,Stockholms kommun,Stockholms län,Sveriges Radio P4 Stockholm,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+212,2015-08-01,2020-03-10,Stockholms kommun,Stockholms län,Sveriges Radio P4 Stockholm,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+213,2020-03-11,9,Stockholms kommun,Stockholms län,Sveriges Radio P4 Stockholm,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+214,2005,2015-08-31,Stockholms kommun,Stockholms län,Sjöstadsliv.se,huvudredaktion,redaktion,Sajt,
+215,2015-09-01,2017-06-30,Stockholms kommun,Stockholms län,Hammarbysjostad.info,huvudredaktion,redaktion,Sajt,
+216,2007-01-01,2015-05-03,Stockholms kommun,Stockholms län,Sveriges Radio Metropol,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+217,2015-05-04,2018-11-20,Stockholms kommun,Stockholms län,Sveriges Radio P5 Sthlm,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+218,2020-10-02,9,Stockholms kommun,Stockholms län,Mitt i Östermalm/Södermalm/Vasastan/Kungsholmen/Söderort,huvudredaktion,redaktion,Gratistidning,Direktpress
+219,2019-05-02,2020-10-01,Stockholms kommun,Stockholms län,"Stockholm Direkt Östermalm, Södermalm, Söderort, Kungsholmen, Vasastan, Kista-Rinkeby-Tensta",huvudredaktion,redaktion,Gratistidning,Direktpress
+220,2004-01-01,2019-05-01,Stockholms kommun,Stockholms län,"Östermalmsnytt, Södermalmsnytt, Vårt Kungsholmen, Vi i Vasastan, Vi i Kista-Rinkeby-Tensta; och tidningarna Årsta/Enskede, Farsta/Sköndal, Hammarby/Skarpnäck och Hammarby/Skarpnäck",huvudredaktion,redaktion,Gratistidning,Direktpress
+221,2020-10-02,9,Stockholms kommun,Stockholms län,Mitt i Östermalm/Södermalm/Vasastan/Kungsholmen/Söderort,lokalredaktion,redaktion,Gratistidning,Direktpress
+222,2020-10-02,2020-10-01,Stockholms kommun,Stockholms län,"Stockholm Direkt Östermalm, Södermalm, Söderort, Kungsholmen, Vasastan, Kista-Rinkeby-Tensta",lokalredaktion,redaktion,Gratistidning,Direktpress
+223,2020-10-02,2019-05-01,Stockholms kommun,Stockholms län,"Östermalmsnytt, Södermalmsnytt, Vårt Kungsholmen, Vi i Vasastan, Vi i Kista-Rinkeby-Tensta; och tidningarna Årsta/Enskede, Farsta/Sköndal, Hammarby/Skarpnäck och Hammarby/Skarpnäck",lokalredaktion,redaktion,Gratistidning,Direktpress
+224,2019-05-02,2020-10-01,Stockholms kommun,Stockholms län,"Stockholm Direkt Bromma, Hässelby, Vällingby och Spånga",huvudredaktion,redaktion,Gratistidning,Direktpress
+225,2020-10-02,9,Stockholms kommun,Stockholms län,Mitt i Tensta/Rinkeby/Spånga/Vällingby/Hässelby,huvudredaktion,redaktion,Gratistidning,Direktpress
+226,2015-01-17,2019-05-01,Stockholms kommun,Stockholms län,"Bromma Tidning, Hässelby Tidning, Vällingby Tidning och Spånga Tidning",huvudredaktion,redaktion,Gratistidning,Direktpress
+227,2001,2018-04-01,Stockholms kommun,Stockholms län,Stockholms Fria Tidning,huvudredaktion,redaktion,Dagspress,ETC
+228,1998-01-01,9,Stockholms kommun,Stockholms län,Svenska Dagbladet,huvudredaktion,redaktion,Dagspress,Schibsted
+229,0,2015-04-12,Stockholms kommun,Stockholms län,ABC,lokalredaktion,redaktion,Etermedier,Sveriges Television
+230,2015-04-13,9,Stockholms kommun,Stockholms län,SVT Nyheter Stockholm,lokalredaktion,redaktion,Etermedier,Sveriges Television
+231,1987-08-31,2015-04-12,Stockholms kommun,Stockholms län,ABC,huvudredaktion,redaktion,Etermedier,Sveriges Television
+232,2015-04-13,9,Stockholms kommun,Stockholms län,SVT Nyheter Stockholm,huvudredaktion,redaktion,Etermedier,Sveriges Television
+233,2015-03-01,2019-12-31,Stockholms kommun,Stockholms län,Syre Stockholm,huvudredaktion,redaktion,Dagspress,Mediehuset Grönt
+234,2006,2017-08-19,Stockholms kommun,Stockholms län,Södra Sidan Skärholmen/Norsborg,huvudredaktion,redaktion,Gratistidning,Direktpress
+235,2017-08-20,2020-01-01,Stockholms kommun,Stockholms län,Skärholmen Direkt,huvudredaktion,redaktion,Gratistidning,Direktpress
+236,1998-03,9,Stockholms kommun,Stockholms län,Skärgården,huvudredaktion,redaktion,Dagspress,
+237,1967-01-01,2003-12-31,Stockholms kommun,Stockholms län,Östermalmsnytt,huvudredaktion,redaktion,Gratistidning,Direktpress
+238,0,9,Nässjö kommun,Jönköpings län,Aktuella nyheter i veckan,huvudredaktion,redaktion,Sajt,
+239,0,9,Nässjö kommun,Jönköpings län,Nässjö-appen,huvudredaktion,riktad titel,Sajt,
+240,0,2020-02-29,Nässjö kommun,Jönköpings län,"Smålands-Tidningen med Smålands Dagblad, Vetlanda-Posten och Tranås tidning",lokalredaktion,redaktion,Dagspress,Hallpressen
+241,2020-03-01,9,Nässjö kommun,Jönköpings län,"Smålands-Tidningen med Smålands Dagblad, Vetlanda-Posten och Tranås tidning",lokalredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+242,1996,9,Ale kommun,Västra Götalands län,Alekuriren,huvudredaktion,redaktion,Gratistidning,
+243,0,2019-10-14,Vårgårda kommun,Västra Götalands län,Alingsås Tidning,lokalredaktion,redaktion,Dagspress,WM Media
+244,2019-10-15,9,Vårgårda kommun,Västra Götalands län,Alingsås Tidning,lokalredaktion,redaktion,Dagspress,Stampen
+245,1865-01-07,2019-10-14,Alingsås kommun,Västra Götalands län,Alingsås Tidning,huvudredaktion,redaktion,Dagspress,WM Media
+246,2019-10-15,9,Alingsås kommun,Västra Götalands län,Alingsås Tidning,huvudredaktion,redaktion,Dagspress,Stampen
+247,1969-01-01,2014-11-30,Alingsås kommun,Västra Götalands län,Alingsåskuriren,huvudredaktion,redaktion,Gratistidning,Draken
+248,2014-12-01,9,Alingsås kommun,Västra Götalands län,Alingsåskuriren,huvudredaktion,redaktion,Gratistidning,Gota Media
+249,0,2020-04-20,Östra Göinge kommun,Skåne län,Allt om Göinge,huvudredaktion,riktad titel,Gratistidning,
+250,0,2011-09-30,Östra Göinge kommun,Skåne län,Kristianstadsbladet,lokalredaktion,redaktion,Dagspress,Bonnier
+251,2011-10-01,9,Östra Göinge kommun,Skåne län,Kristianstadsbladet,lokalredaktion,redaktion,Dagspress,Gota Media
+252,0,2017-10-01,Östra Göinge kommun,Skåne län,Norra Skåne,lokalredaktion,redaktion,Dagspress,Skånska Dagbladet
+253,0,2020-04-20,Osby kommun,Skåne län,Allt om Osby,huvudredaktion,redaktion,Gratistidning,
+254,2020-04-21,9,Osby kommun,Skåne län,"Allt om Osby, Göinge, Älmhult & Mitt Hässleholm",huvudredaktion,redaktion,Gratistidning,
+255,0,9,Osby kommun,Skåne län,Norra Skåne,lokalredaktion,redaktion,Dagspress,Skånska Dagbladet
+256,2016-04-26,2020-04-20,Älmhults kommun,Kronobergs län,Allt om Älmhult,huvudredaktion,riktad titel,Gratistidning,
+257,1993-01-01,2015-11-01,Älmhults kommun,Kronobergs län,Lokaltidningen Älmhult/Markaryd,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+258,2015-11-02,2017-02-01,Älmhults kommun,Kronobergs län,Lokaltidningen Älmhult/Markaryd,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+259,2011-01-01,9,Älmhults kommun,Kronobergs län,Smålandsposten,lokalredaktion,redaktion,Dagspress,Gota Media
+260,0,2020-02-29,Älmhults kommun,Kronobergs län,Smålänningen,lokalredaktion,redaktion,Dagspress,Hallpressen
+261,2020-03-01,9,Älmhults kommun,Kronobergs län,Smålänningen,lokalredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+262,2019-08-24,2020-04-20,Hässleholms kommun,Skåne län,Mitt Hässleholm,huvudredaktion,riktad titel,Gratistidning,
+263,2015-05-12,9,Hässleholms kommun,Skåne län,Frilagt,huvudredaktion,redaktion,Sajt,
+264,0,2011-09-30,Hässleholms kommun,Skåne län,Kristianstadsbladet,lokalredaktion,redaktion,Dagspress,Bonnier
+265,2011-10-01,9,Hässleholms kommun,Skåne län,Kristianstadsbladet,lokalredaktion,redaktion,Dagspress,Gota Media
+266,2015-06-01,2019-10-17,Hässleholms kommun,Skåne län,Lokaltidningen Hässleholm,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+267,2019-10-18,9,Hässleholms kommun,Skåne län,Lokaltidningen Hässleholm,huvudredaktion,riktad titel,Gratistidning,Bonnier
+268,2008-02-01,2015-05-31,Hässleholms kommun,Skåne län,Lokaltidningen Hässleholm,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+269,2019-10-18,2015-05-31,Hässleholms kommun,Skåne län,Lokaltidningen Hässleholm,huvudredaktion,redaktion,Gratistidning,Bonnier
+270,1899,9,Hässleholms kommun,Skåne län,Norra Skåne,huvudredaktion,redaktion,Dagspress,Skånska Dagbladet
+271,1967,2019-04-04,Strömstads kommun,Västra Götalands län,Annonsbladet Björklövet,huvudredaktion,redaktion,Gratistidning,
+272,0,9,Strömstads kommun,Västra Götalands län,Radio Prime,huvudredaktion,redaktion,Etermedier,
+273,1866-10-17,9,Strömstads kommun,Västra Götalands län,Strömstads Tidning Norra Bohuslän,huvudredaktion,redaktion,Dagspress,Stampen
+274,0,9,Hedemora kommun,Dalarnas län,Annonsbladet Dalarna,lokalredaktion,redaktion,Gratistidning,
+275,0,9,Hedemora kommun,Dalarnas län,Dalavision,huvudredaktion,redaktion,Etermedier,
+276,2008-03-01,2017-01-01,Hedemora kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Mittmedia
+277,2019-04-01,2017-01-01,Hedemora kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+278,2020-04-02,2017-01-01,Hedemora kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier
+279,0,2008-02-29,Hedemora kommun,Dalarnas län,Dalarnas Tidningar,lokalredaktion,redaktion,Dagspress,
+280,2020-03-10,2019-03-31,Hedemora kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Mittmedia
+281,2020-03-10,2020-04-01,Hedemora kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+282,2020-04-02,2020-06-30,Hedemora kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier
+283,2020-03-10,2008-02-29,Hedemora kommun,Dalarnas län,Dalarnas Tidningar,lokalredaktion,redaktion,Dagspress,
+284,2020-07-01,9,Hedemora kommun,Dalarnas län,Södra Dalarnes Tidning,huvudredaktion,redaktion,Dagspress,Bonnier
+285,0,9,Ludvika kommun,Dalarnas län,Annonsbladet Dalarna,lokalredaktion,redaktion,Gratistidning,
+286,2008-03-01,2019-03-31,Ludvika kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Mittmedia
+287,2019-04-01,2020-04-01,Ludvika kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+288,2020-04-02,2020-06-30,Ludvika kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier
+289,0,2008-02-29,Ludvika kommun,Dalarnas län,Dalarnas Tidningar,lokalredaktion,redaktion,Dagspress,
+290,2020-07-01,9,Ludvika kommun,Dalarnas län,Nya Ludvika Tidning,huvudredaktion,redaktion,Dagspress,Bonnier
+291,0,2017-05-18,Ludvika kommun,Dalarnas län,Wessingen.se,huvudredaktion,redaktion,Sajt,
+292,0,9,Borlänge kommun,Dalarnas län,Annonsbladet Dalarna,huvudredaktion,redaktion,Gratistidning,
+293,1946,9,Borlänge kommun,Dalarnas län,Dalabygden,huvudredaktion,redaktion,Dagspress,Sveagruppen
+294,2008-03-01,2019-03-31,Borlänge kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Mittmedia
+295,2019-04-01,2020-04-01,Borlänge kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+296,2020-04-02,2020-06-30,Borlänge kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier
+297,0,2008-02-29,Borlänge kommun,Dalarnas län,Dalarnas Tidningar,lokalredaktion,redaktion,Dagspress,
+298,2020-07-01,9,Borlänge kommun,Dalarnas län,Borlänge Tidning,huvudredaktion,redaktion,Dagspress,Bonnier
+299,1975,9,Bollebygds kommun,Västra Götalands län,Annonsmarkna'n,huvudredaktion,redaktion,Gratistidning,Markbladet
+300,2006-01-01,9,Bollebygds kommun,Västra Götalands län,Bollebygdsnyheter,huvudredaktion,redaktion,Sajt,
+301,0,2019-03-31,Sandvikens kommun,Gävleborgs län,Arbetarbladet,lokalredaktion,redaktion,Dagspress,Mittmedia
+302,2019-04-01,2020-04-01,Sandvikens kommun,Gävleborgs län,Arbetarbladet,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+303,2020-04-02,9,Sandvikens kommun,Gävleborgs län,Arbetarbladet,lokalredaktion,redaktion,Dagspress,Bonnier
+304,1980,9,Sandvikens kommun,Gävleborgs län,Din lokaltidning,huvudredaktion,redaktion,Gratistidning,
+305,0,2019-03-31,Sandvikens kommun,Gävleborgs län,Gefle Dagblad,lokalredaktion,redaktion,Dagspress,Mittmedia
+306,2019-04-01,2020-04-01,Sandvikens kommun,Gävleborgs län,Gefle Dagblad,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+307,2020-04-02,9,Sandvikens kommun,Gävleborgs län,Gefle Dagblad,lokalredaktion,redaktion,Dagspress,Bonnier
+308,0,2017-01-01,Tierps kommun,Uppsala län,Arbetarbladet,lokalredaktion,redaktion,Dagspress,Mittmedia
+309,2019-04-01,2017-01-01,Tierps kommun,Uppsala län,Arbetarbladet,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+310,2020-04-02,2017-01-01,Tierps kommun,Uppsala län,Arbetarbladet,lokalredaktion,redaktion,Dagspress,Bonnier
+311,1960,9,Tierps kommun,Uppsala län,Lokaltidningen Norra Uppland,huvudredaktion,redaktion,Gratistidning,NTM
+312,0,9,Tierps kommun,Uppsala län,Upsala Nya Tidning,lokalredaktion,redaktion,Dagspress,NTM
+313,2020-02-01,2020-10-21,Tierps kommun,Uppsala län,The Local News,huvudredaktion,redaktion,Sajt,
+314,1902-01-01,2019-03-31,Gävle kommun,Gävleborgs län,Arbetarbladet,huvudredaktion,redaktion,Dagspress,Mittmedia
+315,2019-04-01,2020-04-01,Gävle kommun,Gävleborgs län,Arbetarbladet,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+316,2020-04-02,9,Gävle kommun,Gävleborgs län,Arbetarbladet,huvudredaktion,redaktion,Dagspress,Bonnier
+317,1895,2019-03-31,Gävle kommun,Gävleborgs län,Gefle Dagblad,huvudredaktion,redaktion,Dagspress,Mittmedia
+318,2019-04-01,2020-04-01,Gävle kommun,Gävleborgs län,Gefle Dagblad,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+319,2020-04-02,9,Gävle kommun,Gävleborgs län,Gefle Dagblad,huvudredaktion,redaktion,Dagspress,Bonnier
+320,0,9,Gävle kommun,Gävleborgs län,Gestrike Magasinet,huvudredaktion,redaktion,Gratistidning,
+321,1967,2019-10-25,Gävle kommun,Gävleborgs län,Gästriklands Tidning,huvudredaktion,redaktion,Dagspress,Sveagruppen
+322,2012-01-01,2019-03-31,Gävle kommun,Gävleborgs län,Mitt Gävle,huvudredaktion,redaktion,Gratistidning,Mittmedia
+323,2019-04-01,2020-04-01,Gävle kommun,Gävleborgs län,Mitt Gävle,huvudredaktion,redaktion,Gratistidning,Bonnier|Mittmedia
+324,2020-04-02,2020-12-13,Gävle kommun,Gävleborgs län,Mitt Gävle,huvudredaktion,redaktion,Gratistidning,Bonnier
+325,0,9,Gävle kommun,Gävleborgs län,Sveriges Radio P4 Gävleborg,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+326,2015-04-13,9,Gävle kommun,Gävleborgs län,SVT Nyheter Gävleborg,huvudredaktion,redaktion,Etermedier,Sveriges Television
+327,0,2015-04-12,Gävle kommun,Gävleborgs län,Gävledala,huvudredaktion,redaktion,Etermedier,Sveriges Television
+328,1993-01-01,9,Arjeplogs kommun,Norrbottens län,Arjeplogar'n,huvudredaktion,redaktion,Gratistidning,
+329,2010,9,Arjeplogs kommun,Norrbottens län,arjeplognytt.se,huvudredaktion,redaktion,Sajt,
+330,0,2019-12-31,Arjeplogs kommun,Norrbottens län,Norran,lokalredaktion,redaktion,Dagspress,
+331,2020-01-01,9,Arjeplogs kommun,Norrbottens län,Norran,lokalredaktion,redaktion,Dagspress,NTM
+332,0,2019-12-31,Arjeplogs kommun,Norrbottens län,Piteå-Tidningen,lokalredaktion,redaktion,Dagspress,
+333,2020-01-01,9,Arjeplogs kommun,Norrbottens län,Piteå-Tidningen,lokalredaktion,redaktion,Dagspress,NTM
+334,1985-01-01,9,Arvika kommun,Värmlands län,Arvika Nyheter,huvudredaktion,redaktion,Dagspress,NWT
+335,2017-03-01,9,Arvika kommun,Värmlands län,Värmlands Folkblad,lokalredaktion,redaktion,Dagspress,NWT
+336,0,2017-02-28,Arvika kommun,Värmlands län,Värmlands Folkblad,lokalredaktion,redaktion,Dagspress,
+337,2015-04-01,2019-03-31,Avesta kommun,Dalarnas län,Avesta Tidning,huvudredaktion,redaktion,Dagspress,Mittmedia
+338,2019-04-01,2020-04-01,Avesta kommun,Dalarnas län,Avesta Tidning,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+339,2020-04-02,9,Avesta kommun,Dalarnas län,Avesta Tidning,huvudredaktion,redaktion,Dagspress,Bonnier
+340,1882,2015-03-31,Avesta kommun,Dalarnas län,Avesta Tidning,huvudredaktion,redaktion,Dagspress,Promedia
+341,0,2015-03-31,Avesta kommun,Dalarnas län,Dala-Demokraten,lokalredaktion,redaktion,Dagspress,Mittmedia
+342,2019-04-01,2015-03-31,Avesta kommun,Dalarnas län,Dala-Demokraten,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+343,2020-04-02,2015-03-31,Avesta kommun,Dalarnas län,Dala-Demokraten,lokalredaktion,redaktion,Dagspress,Bonnier
+344,0,9,Borgholms kommun,Kalmar län,Barometern-OT,lokalredaktion,redaktion,Dagspress,Gota Media
+345,2011-01-01,9,Borgholms kommun,Kalmar län,Ölandsbladet,huvudredaktion,redaktion,Dagspress,Gota Media
+346,1867,2010-12-31,Borgholms kommun,Kalmar län,Ölandsbladet,huvudredaktion,redaktion,Dagspress,
+347,2010-12-23,2012-12-31,Borgholms kommun,Kalmar län,Östra Småland-Nyheterna,lokalredaktion,redaktion,Dagspress,Gota Media
+348,0,2010-12-22,Borgholms kommun,Kalmar län,Östra Småland-Nyheterna,lokalredaktion,redaktion,Dagspress,Östra Småland
+349,0,9,Mörbylånga kommun,Kalmar län,Barometern-OT,lokalredaktion,redaktion,Dagspress,Gota Media
+350,2011-01-01,9,Mörbylånga kommun,Kalmar län,Ölandsbladet,lokalredaktion,redaktion,Dagspress,Gota Media
+351,0,2010-12-31,Mörbylånga kommun,Kalmar län,Ölandsbladet,lokalredaktion,redaktion,Dagspress,
+352,2010-12-23,2012-12-31,Mörbylånga kommun,Kalmar län,Östra Småland-Nyheterna,lokalredaktion,redaktion,Dagspress,Gota Media
+353,0,2010-12-22,Mörbylånga kommun,Kalmar län,Östra Småland-Nyheterna,lokalredaktion,redaktion,Dagspress,Östra Småland
+354,0,9,Torsås kommun,Kalmar län,Barometern-OT,lokalredaktion,redaktion,Dagspress,Gota Media
+355,0,9,Oskarshamns kommun,Kalmar län,Barometern-OT,lokalredaktion,redaktion,Dagspress,Gota Media
+356,1990,9,Oskarshamns kommun,Kalmar län,Oskarshamns Annonsblad,huvudredaktion,redaktion,Gratistidning,
+357,0,9,Oskarshamns kommun,Kalmar län,Stadsmagasinet,huvudredaktion,redaktion,Gratistidning,
+358,2010-12-23,2019-11-26,Oskarshamns kommun,Kalmar län,Östra Småland-Nyheterna,lokalredaktion,redaktion,Dagspress,Gota Media
+359,0,2010-12-22,Oskarshamns kommun,Kalmar län,Östra Småland-Nyheterna,lokalredaktion,redaktion,Dagspress,Östra Småland
+360,2020-02-01,9,Oskarshamns kommun,Kalmar län,Oskarshamnsnytt,huvudredaktion,redaktion,Sajt,
+361,0,9,Mönsterås kommun,Kalmar län,Barometern-OT,lokalredaktion,redaktion,Dagspress,Gota Media
+362,2010-12-23,2012-12-31,Mönsterås kommun,Kalmar län,Östra Småland-Nyheterna,lokalredaktion,redaktion,Dagspress,Gota Media
+363,0,2010-12-22,Mönsterås kommun,Kalmar län,Östra Småland-Nyheterna,lokalredaktion,redaktion,Dagspress,Östra Småland
+364,0,9,Högsby kommun,Kalmar län,Barometern-OT,lokalredaktion,redaktion,Dagspress,Gota Media
+365,2002-12,9,Högsby kommun,Kalmar län,Tidningen Innehåll,huvudredaktion,riktad titel,Gratistidning,
+366,0,9,Hultsfreds kommun,Kalmar län,Barometern-OT,lokalredaktion,redaktion,Dagspress,Gota Media
+367,2017-10-12,9,Hultsfreds kommun,Kalmar län,Dagens Hultsfred,huvudredaktion,riktad titel,Sajt,Dagens Vimmerby
+368,2005,9,Hultsfreds kommun,Kalmar län,Nya Tidningen,huvudredaktion,redaktion,Gratistidning,
+369,2018-01-15,2018-05-31,Hultsfreds kommun,Kalmar län,Vimmerby Tidning med Linköpings Tidning och Kinda-Posten,lokalredaktion,redaktion,Dagspress,NTM
+370,2018-06-01,9,Hultsfreds kommun,Kalmar län,Vimmerby Tidning med Kinda-Posten,lokalredaktion,redaktion,Dagspress,NTM
+371,0,2018-01-14,Hultsfreds kommun,Kalmar län,"Vimmerby Tidning med Västerviks-Posten, Linköpings Tidning och Kinda-Posten",lokalredaktion,redaktion,Dagspress,Swepress
+372,2017-04-03,2018-09-01,Smedjebackens kommun,Dalarnas län,Bergmans Nyheter,huvudredaktion,redaktion,Sajt,
+373,0,9,Bjuvs kommun,Skåne län,Bjuvsnytt,huvudredaktion,redaktion,Sajt,
+374,2008-02-01,2019-10-17,Bjuvs kommun,Skåne län,Lokaltidningen Bjuv Klippan,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+375,2019-10-18,9,Bjuvs kommun,Skåne län,Lokaltidningen Bjuv Klippan,huvudredaktion,riktad titel,Gratistidning,Bonnier
+376,2017-03-01,9,Båstads kommun,Skåne län,Bjäre Nu,huvudredaktion,redaktion,Gratistidning,
+377,2008-01-16,2019-10-17,Båstads kommun,Skåne län,Lokaltidningen Båstad Laholm,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+378,2019-10-18,2019-12-01,Båstads kommun,Skåne län,Lokaltidningen Båstad Laholm,huvudredaktion,riktad titel,Gratistidning,Bonnier
+379,0,9,Olofströms kommun,Blekinge län,Blekinge Läns Tidning med Sölvesborgs-Tidningen och Karlshamns Allehanda,lokalredaktion,redaktion,Dagspress,Gota Media
+380,2011-01-01,9,Olofströms kommun,Blekinge län,Sydöstran,lokalredaktion,redaktion,Dagspress,Gota Media
+381,0,2010-12-31,Olofströms kommun,Blekinge län,Sydöstran,lokalredaktion,redaktion,Dagspress,Östra Småland
+382,0,9,Ronneby kommun,Blekinge län,Blekinge Läns Tidning med Sölvesborgs-Tidningen och Karlshamns Allehanda,lokalredaktion,redaktion,Dagspress,Gota Media
+383,1945,9,Ronneby kommun,Blekinge län,Blekinge-Posten,huvudredaktion,redaktion,Dagspress,
+384,1993-01-01,2017-02-01,Ronneby kommun,Blekinge län,Commersen,huvudredaktion,redaktion,Gratistidning,
+385,2011-01-01,9,Ronneby kommun,Blekinge län,Sydöstran,lokalredaktion,redaktion,Dagspress,Gota Media
+386,0,2010-12-31,Ronneby kommun,Blekinge län,Sydöstran,lokalredaktion,redaktion,Dagspress,Östra Småland
+387,0,2016-11-08,Ronneby kommun,Blekinge län,Vårt Ronneby,huvudredaktion,redaktion,Gratistidning,
+388,0,9,Karlshamns kommun,Blekinge län,Blekinge Läns Tidning med Sölvesborgs-Tidningen och Karlshamns Allehanda,lokalredaktion,redaktion,Dagspress,Gota Media
+389,1993-01-01,2017-02-01,Karlshamns kommun,Blekinge län,Commersen,huvudredaktion,redaktion,Gratistidning,
+390,2020-11-25,9,Karlshamns kommun,Blekinge län,SVT Nyheter Blekinge,lokalredaktion,redaktion,Etermedier,Sveriges Television
+391,2011-01-01,9,Karlshamns kommun,Blekinge län,Sydöstran,lokalredaktion,redaktion,Dagspress,Gota Media
+392,0,2010-12-31,Karlshamns kommun,Blekinge län,Sydöstran,lokalredaktion,redaktion,Dagspress,Östra Småland
+393,0,9,Sölvesborgs kommun,Blekinge län,Blekinge Läns Tidning med Sölvesborgs-Tidningen och Karlshamns Allehanda,lokalredaktion,redaktion,Dagspress,Gota Media
+394,1993-01-01,2017-02-01,Sölvesborgs kommun,Blekinge län,Commersen,huvudredaktion,redaktion,Gratistidning,
+395,2011-01-01,9,Sölvesborgs kommun,Blekinge län,Sydöstran,lokalredaktion,redaktion,Dagspress,Gota Media
+396,0,2010-12-31,Sölvesborgs kommun,Blekinge län,Sydöstran,lokalredaktion,redaktion,Dagspress,Östra Småland
+397,0,9,Sölvesborgs kommun,Blekinge län,Sölvesborgs närradio,huvudredaktion,redaktion,Etermedier,
+398,2016-09-15,2018-07-01,Säters kommun,Dalarnas län,Bloggen – Lokaltidningen i Säter,huvudredaktion,redaktion,Sajt,
+399,2007-08,2016-07-01,Åstorps kommun,Skåne län,BMZ.se Bjarnemagazinet,huvudredaktion,redaktion,Sajt,
+400,2009,2018-12,Bodens kommun,Norrbottens län,Bodens gratistidning,huvudredaktion,redaktion,Gratistidning,Svenska Civildatalogerna
+401,1861,2013-11-01,Bodens kommun,Norrbottens län,Norrbottens-Kuriren,lokalredaktion,redaktion,Dagspress,NTM
+402,0,9,Bodens kommun,Norrbottens län,Norrländska Socialdemokraten,lokalredaktion,redaktion,Dagspress,NTM
+403,2015-07-01,9,Bodens kommun,Norrbottens län,Extra Boden,huvudredaktion,riktad titel,Gratistidning,NTM
+404,0,2015-06-30,Bodens kommun,Norrbottens län,Extra Boden,huvudredaktion,riktad titel,Gratistidning,
+405,2009,9,Bodens kommun,Norrbottens län,Bodenguiden,huvudredaktion,redaktion,Gratistidning,
+406,1878,9,Uddevalla kommun,Västra Götalands län,Bohusläningen,huvudredaktion,redaktion,Dagspress,Stampen
+407,2019-05-15,2019-07-17,Uddevalla kommun,Västra Götalands län,Fokus Uddevalla,huvudredaktion,redaktion,Gratistidning,
+408,2011-07-01,2017-12-31,Uddevalla kommun,Västra Götalands län,Ljungskilebloggen.se,huvudredaktion,redaktion,Sajt,
+409,0,9,Uddevalla kommun,Västra Götalands län,Sveriges Radio P4 Väst,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+410,0,2015-04-12,Uddevalla kommun,Västra Götalands län,Västnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+411,2015-04-13,9,Uddevalla kommun,Västra Götalands län,SVT Nyheter Väst,lokalredaktion,redaktion,Etermedier,Sveriges Television
+412,0,9,Uddevalla kommun,Västra Götalands län,Tidningen Västsverige,huvudredaktion,redaktion,Dagspress,
+413,2012,2019-03-28,Uddevalla kommun,Västra Götalands län,Uddevalla 7 Dagar,huvudredaktion,redaktion,Gratistidning,Stampen
+414,1976,2017-03-01,Uddevalla kommun,Västra Götalands län,Uddevalla-Posten,huvudredaktion,redaktion,Dagspress,
+415,2015-03-21,9,Uddevalla kommun,Västra Götalands län,Uddevalla Nyheter,huvudredaktion,redaktion,Sajt,
+416,2019-09-01,9,Lysekils kommun,Västra Götalands län,Bohusläningen,lokalredaktion,redaktion,Dagspress,Stampen
+417,1905-02-02,9,Lysekils kommun,Västra Götalands län,Lysekilsposten,huvudredaktion,redaktion,Dagspress,
+418,2001,2019-12-15,Bollnäs kommun,Gävleborgs län,BollnäsNytt,huvudredaktion,redaktion,Gratistidning,
+419,1912,2019-03-31,Bollnäs kommun,Gävleborgs län,Hela Hälsingland,huvudredaktion,redaktion,Dagspress,Mittmedia
+420,2019-04-01,2020-04-01,Bollnäs kommun,Gävleborgs län,Hela Hälsingland,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+421,2020-04-02,9,Bollnäs kommun,Gävleborgs län,Hela Hälsingland,huvudredaktion,redaktion,Dagspress,Bonnier
+422,0,9,Bollnäs kommun,Gävleborgs län,Sveriges Radio P4 Gävleborg,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+423,2017-07-01,9,Borås kommun,Västra Götalands län,Borås DLY,huvudredaktion,redaktion,Sajt,Gota Media
+424,1826,9,Borås kommun,Västra Götalands län,Borås Tidning,huvudredaktion,redaktion,Dagspress,Gota Media
+425,2011-08-01,2014-11-30,Borås kommun,Västra Götalands län,Boråskuriren,huvudredaktion,redaktion,Gratistidning,Draken
+426,0,9,Borås kommun,Västra Götalands län,Sveriges Radio P4 Sjuhärad,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+427,2015-08,2015-04-12,Borås kommun,Västra Götalands län,Västnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+428,2015-08,9,Borås kommun,Västra Götalands län,SVT Nyheter Väst,lokalredaktion,redaktion,Etermedier,Sveriges Television
+429,2011-01-01,2018-04-25,Borås kommun,Västra Götalands län,Xtra Borås,huvudredaktion,redaktion,Gratistidning,Gota Media
+430,0,9,Marks kommun,Västra Götalands län,Borås Tidning,lokalredaktion,redaktion,Dagspress,Gota Media
+431,1967-12,9,Marks kommun,Västra Götalands län,Markbladet,huvudredaktion,redaktion,Gratistidning,Markbladet
+432,0,9,Svenljunga kommun,Västra Götalands län,Borås Tidning,lokalredaktion,redaktion,Dagspress,Gota Media
+433,2014-02-15,9,Svenljunga kommun,Västra Götalands län,Svenljunga Tranemo Tidning,lokalredaktion,riktad titel,Gratistidning,Markbladet
+434,1992,2014-02-14,Svenljunga kommun,Västra Götalands län,Svenljunga & Tranemo Tidning,lokalredaktion,riktad titel,Gratistidning,
+435,0,9,Tranås kommun,Jönköpings län,Tranås-Posten,huvudredaktion,redaktion,Gratistidning,
+436,0,2020-02-29,Tranås kommun,Jönköpings län,"Smålands-Tidningen med Smålands Dagblad, Vetlanda-Posten och Tranås tidning",lokalredaktion,redaktion,Dagspress,Hallpressen
+437,2020-03-01,9,Tranås kommun,Jönköpings län,"Smålands-Tidningen med Smålands Dagblad, Vetlanda-Posten och Tranås tidning",lokalredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+438,1975,2020-02-29,Tranås kommun,Jönköpings län,Tranås-Aktuellt,huvudredaktion,redaktion,Gratistidning,Hallpressen
+439,2020-03-01,9,Tranås kommun,Jönköpings län,Tranås-Aktuellt,huvudredaktion,redaktion,Gratistidning,Bonnier|Hallpressen
+440,1918-12-06,9,Tranås kommun,Jönköpings län,Tranås-Posten,huvudredaktion,redaktion,Dagspress,
+441,0,9,Burlövs kommun,Skåne län,Burlövs Nyheter,huvudredaktion,redaktion,Sajt,
+442,2020-01-01,2017-08-25,Burlövs kommun,Skåne län,Lokaltidningen Lomma,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+443,2020-01-01,2019-10-17,Burlövs kommun,Skåne län,Lokaltidningen Lomma och Burlöv,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+444,2020-01-01,9,Burlövs kommun,Skåne län,Lokaltidningen Lomma och Burlöv,huvudredaktion,riktad titel,Gratistidning,Bonnier
+445,2017-08-26,2017-08-25,Burlövs kommun,Skåne län,Lokaltidningen Lomma,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+446,2017-08-26,2019-10-17,Burlövs kommun,Skåne län,Lokaltidningen Lomma och Burlöv,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+447,2019-10-18,2019-12-31,Burlövs kommun,Skåne län,Lokaltidningen Lomma och Burlöv,huvudredaktion,redaktion,Gratistidning,Bonnier
+448,0,2018-12-20,Skellefteå kommun,Västerbottens län,burtrask.se,huvudredaktion,redaktion,Sajt,
+449,0,9,Skellefteå kommun,Västerbottens län,Folkbladet Västerbotten,lokalredaktion,redaktion,Dagspress,VK Media
+450,2012-03,9,Skellefteå kommun,Västerbottens län,Megafonen,huvudredaktion,redaktion,Gratistidning,
+451,1910,2019-12-31,Skellefteå kommun,Västerbottens län,Norran,huvudredaktion,redaktion,Dagspress,
+452,2020-01-01,9,Skellefteå kommun,Västerbottens län,Norran,huvudredaktion,redaktion,Dagspress,NTM
+453,0,9,Skellefteå kommun,Västerbottens län,Sveriges Radio P4 Västerbotten,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+454,0,2015-04-12,Skellefteå kommun,Västerbottens län,Västerbottensnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+455,2015-04-13,9,Skellefteå kommun,Västerbottens län,SVT Nyheter Västerbotten,lokalredaktion,redaktion,Etermedier,Sveriges Television
+456,1992,9,Skellefteå kommun,Västerbottens län,Västerbottens Mellanbygd,huvudredaktion,redaktion,Dagspress,Tidningar i Norr
+457,1996,9,Skellefteå kommun,Västerbottens län,Skellefteåguiden,huvudredaktion,redaktion,Gratistidning,
+458,1971,2019-05-01,Håbo kommun,Uppsala län,Bålsta Bladet,huvudredaktion,riktad titel,Gratistidning,Direktpress
+459,2019-05-02,9,Håbo kommun,Uppsala län,Bålsta Direkt,huvudredaktion,riktad titel,Gratistidning,Direktpress
+460,2003,9,Håbo kommun,Uppsala län,Håboportalen,huvudredaktion,redaktion,Sajt,
+461,0,2017-01-06,Håbo kommun,Uppsala län,Magasin Bålsta,huvudredaktion,redaktion,Gratistidning,
+462,2015-04-01,2019-03-31,Köpings kommun,Västmanlands län,Bärgslagsbladet/Arboga Tidning,huvudredaktion,redaktion,Dagspress,Mittmedia
+463,2019-04-01,2020-04-01,Köpings kommun,Västmanlands län,Bärgslagsbladet/Arboga Tidning,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+464,2020-04-02,9,Köpings kommun,Västmanlands län,Bärgslagsbladet/Arboga Tidning,huvudredaktion,redaktion,Dagspress,Bonnier
+465,1850,2015-03-31,Köpings kommun,Västmanlands län,Bärgslagsbladet/Arboga Tidning,huvudredaktion,redaktion,Dagspress,Promedia
+466,0,9,Köpings kommun,Västmanlands län,Magazin24,huvudredaktion,redaktion,Gratistidning,
+467,0,9,Köpings kommun,Västmanlands län,Västmanlands Television,huvudredaktion,redaktion,Etermedier,
+468,1992-01-01,2016-02-19,Karlskoga kommun,Örebro län,Carlskoga Television,huvudredaktion,redaktion,Etermedier,
+469,1941,9,Karlskoga kommun,Örebro län,Karlskoga Tidning,huvudredaktion,redaktion,Dagspress,NWT
+470,2019-09-01,9,Göteborgs kommun,Västra Götalands län,Dagens Nyheter,lokalredaktion,redaktion,Dagspress,Bonnier
+471,0,9,Göteborgs kommun,Västra Götalands län,ETC Göteborg,huvudredaktion,redaktion,Dagspress,ETC
+472,1902,9,Göteborgs kommun,Västra Götalands län,GT,huvudredaktion,redaktion,Dagspress,Bonnier
+473,2016-09-03,9,Göteborgs kommun,Västra Götalands län,Göteborg Direkt,huvudredaktion,redaktion,Gratistidning,Direktpress
+474,2003,2016-09-02,Göteborgs kommun,Västra Götalands län,"Tidningarna Centrum, Hisingen, Väster, Sydväst och Nordost",huvudredaktion,redaktion,Gratistidning,Direktpress
+475,2004,2017-12-31,Göteborgs kommun,Västra Götalands län,Göteborgs Fria Tidning,huvudredaktion,redaktion,Dagspress,ETC
+476,1813,9,Göteborgs kommun,Västra Götalands län,Göteborgs-Posten,huvudredaktion,redaktion,Dagspress,Stampen
+477,2011,9,Göteborgs kommun,Västra Götalands län,Hisingen ftw,huvudredaktion,redaktion,Sajt,
+478,2016-02-15,9,Göteborgs kommun,Västra Götalands län,Lite lokalt Göteborgs Manhattan och Backa/Kärra med Tuve och Säve,huvudredaktion,redaktion,Gratistidning,
+479,2004,2016-02-14,Göteborgs kommun,Västra Götalands län,"Lite lokalt Göteborgs Manhattan, Kvibergsstaden och Backa/Kärra med Tuve och Säve",huvudredaktion,redaktion,Gratistidning,
+480,1998,2019-08-10,Göteborgs kommun,Västra Götalands län,Metro Göteborg,huvudredaktion,redaktion,Gratistidning,Metro
+481,0,9,Göteborgs kommun,Västra Götalands län,Sveriges Radio P4 Göteborg,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+482,2014-05-01,9,Göteborgs kommun,Västra Götalands län,Spanaren,huvudredaktion,redaktion,Sajt,
+483,0,2015-04-12,Göteborgs kommun,Västra Götalands län,Västnytt,huvudredaktion,redaktion,Etermedier,Sveriges Television
+484,2015-04-13,9,Göteborgs kommun,Västra Götalands län,SVT Nyheter Väst,huvudredaktion,redaktion,Etermedier,Sveriges Television
+485,2018-03-18,2015-04-12,Göteborgs kommun,Västra Götalands län,Västnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+486,2018-03-18,9,Göteborgs kommun,Västra Götalands län,SVT Nyheter Väst,lokalredaktion,redaktion,Etermedier,Sveriges Television
+487,2016-09-01,2019-12-31,Göteborgs kommun,Västra Götalands län,Syre Göteborg,lokalredaktion,redaktion,Dagspress,Mediehuset Grönt
+488,1995,9,Göteborgs kommun,Västra Götalands län,Torslanda–Öckerötidningen,huvudredaktion,redaktion,Gratistidning,
+489,2015-03,2015-08-27,Vimmerby kommun,Kalmar län,Vimmerbybloggen,huvudredaktion,redaktion,Sajt,Dagens Vimmerby
+490,2015-08-28,9,Vimmerby kommun,Kalmar län,Dagens Vimmerby,huvudredaktion,redaktion,Sajt,Dagens Vimmerby
+491,2018-01-15,2018-05-31,Vimmerby kommun,Kalmar län,Vimmerby Tidning med Linköpings Tidning och Kinda-Posten,huvudredaktion,redaktion,Dagspress,NTM
+492,2018-06-01,9,Vimmerby kommun,Kalmar län,Vimmerby Tidning med Kinda-Posten,huvudredaktion,redaktion,Dagspress,NTM
+493,1856,2018-01-14,Vimmerby kommun,Kalmar län,"Vimmerby Tidning med Västerviks-Posten, Linköpings Tidning och Kinda-Posten",huvudredaktion,redaktion,Dagspress,Swepress
+494,2018-08-28,9,Västerviks kommun,Kalmar län,Dagens Västervik,huvudredaktion,riktad titel,Sajt,Dagens Vimmerby
+495,2018-03-01,2018-07-01,Västerviks kommun,Kalmar län,Mera Västervik Vimmerby Hultsfred,huvudredaktion,redaktion,Gratistidning,NTM
+496,0,2018-02-28,Västerviks kommun,Kalmar län,Mera Västervik Vimmerby Hultsfred,huvudredaktion,redaktion,Gratistidning,Swepress
+497,0,9,Västerviks kommun,Kalmar län,Sveriges Radio P4 Kalmar,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+498,2018-01-15,2018-04-15,Västerviks kommun,Kalmar län,Vimmerby Tidning med Linköpings Tidning och Kinda-Posten,lokalredaktion,redaktion,Dagspress,NTM
+499,2018-06-01,2018-04-15,Västerviks kommun,Kalmar län,Vimmerby Tidning med Kinda-Posten,lokalredaktion,redaktion,Dagspress,NTM
+500,0,2018-01-14,Västerviks kommun,Kalmar län,"Vimmerby Tidning med Västerviks-Posten, Linköpings Tidning och Kinda-Posten",lokalredaktion,redaktion,Dagspress,Swepress
+501,2018-01-15,2018-09-28,Västerviks kommun,Kalmar län,Västerviks Kommunextra,huvudredaktion,redaktion,Gratistidning,NTM
+502,0,2018-01-14,Västerviks kommun,Kalmar län,Västerviks Kommunextra,huvudredaktion,redaktion,Gratistidning,Swepress
+503,1834,9,Västerviks kommun,Kalmar län,Västervikstidningen,huvudredaktion,redaktion,Dagspress,NTM
+504,0,2019-05,Västerviks kommun,Kalmar län,Västervikstidningen,lokalredaktion,redaktion,Dagspress,NTM
+505,1917-12-14,2019-03-31,Falu kommun,Dalarnas län,Dala-Demokraten,huvudredaktion,redaktion,Dagspress,Mittmedia
+506,2019-04-01,2020-04-01,Falu kommun,Dalarnas län,Dala-Demokraten,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+507,2020-04-02,9,Falu kommun,Dalarnas län,Dala-Demokraten,huvudredaktion,redaktion,Dagspress,Bonnier
+508,2008-03-01,2019-03-31,Falu kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",huvudredaktion,redaktion,Dagspress,Mittmedia
+509,2019-04-01,2020-04-01,Falu kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+510,2020-04-02,2020-06-30,Falu kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",huvudredaktion,redaktion,Dagspress,Bonnier
+511,1894-07-02,2008-02-29,Falu kommun,Dalarnas län,Dalarnas Tidningar,huvudredaktion,redaktion,Dagspress,
+512,2020-07-01,9,Falu kommun,Dalarnas län,Falu-Kuriren,huvudredaktion,redaktion,Dagspress,Bonnier
+513,2012-12,2017-02-11,Falu kommun,Dalarnas län,Mitt Dalarna,huvudredaktion,redaktion,Gratistidning,
+514,0,9,Falu kommun,Dalarnas län,Sveriges Radio P4 Dalarna,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+515,2015-04-13,9,Falu kommun,Dalarnas län,SVT Nyheter Dalarna,huvudredaktion,redaktion,Etermedier,Sveriges Television
+516,0,2015-04-12,Falu kommun,Dalarnas län,Gävledala,lokalredaktion,redaktion,Etermedier,Sveriges Television
+517,2015-12-01,2016-08-30,Orsa kommun,Dalarnas län,Dalanytt,huvudredaktion,redaktion,Sajt,
+518,2018-01-01,9,Orsa kommun,Dalarnas län,Orsasajten.se,huvudredaktion,redaktion,Sajt,
+519,0,9,Malung-Sälens kommun,Dalarnas län,Dalavision,lokalredaktion,redaktion,Etermedier,
+520,2008-03-01,2015-05-13,Malung-Sälens kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Mittmedia
+521,2019-04-01,2015-05-13,Malung-Sälens kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+522,2020-04-02,2015-05-13,Malung-Sälens kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier
+523,0,2008-02-29,Malung-Sälens kommun,Dalarnas län,Dalarnas Tidningar,lokalredaktion,redaktion,Dagspress,
+524,2020-07-01,9,Malung-Sälens kommun,Dalarnas län,Falu-Kuriren,lokalredaktion,redaktion,Dagspress,Bonnier
+525,2015-04-13,9,Malung-Sälens kommun,Dalarnas län,SVT Nyheter Dalarna,lokalredaktion,redaktion,Etermedier,Sveriges Television
+526,0,2015-04-12,Malung-Sälens kommun,Dalarnas län,Gävledala,lokalredaktion,redaktion,Etermedier,Sveriges Television
+527,2020-10-26,0,Malung-Sälens kommun,Dalarnas län,Malungsbladet,huvudredaktion,redaktion,Gratistidning,
+528,0,9,Dals-Eds kommun,Västra Götalands län,Dalslänningen,lokalredaktion,redaktion,Dagspress,NWT
+529,0,9,Färgelanda kommun,Västra Götalands län,Dalslänningen,lokalredaktion,redaktion,Dagspress,NWT
+530,1925,9,Bengtsfors kommun,Västra Götalands län,Dalslänningen,huvudredaktion,redaktion,Dagspress,NWT
+531,0,2019-05-01,Danderyds kommun,Stockholms län,Danderyds Nyheter,huvudredaktion,riktad titel,Gratistidning,Direktpress
+532,2019-05-02,2020-06-17,Danderyds kommun,Stockholms län,Danderyd Direkt,huvudredaktion,riktad titel,Gratistidning,Direktpress
+533,2014-06-25,2020-06-17,Danderyds kommun,Stockholms län,Mitt i Danderyd,huvudredaktion,riktad titel,Gratistidning,Mitt i
+534,2020-06-18,9,Danderyds kommun,Stockholms län,Mitt i Danderyd,huvudredaktion,riktad titel,Gratistidning,Direktpress
+535,2008-12-01,2014-06-24,Danderyds kommun,Stockholms län,Mitt i Danderyd,huvudredaktion,riktad titel,Gratistidning,Stampen
+536,2008-03-01,2019-03-31,Gagnefs kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Mittmedia
+537,2019-04-01,2020-04-01,Gagnefs kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+538,2020-04-02,2020-06-30,Gagnefs kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier
+539,0,2008-02-29,Gagnefs kommun,Dalarnas län,Dalarnas Tidningar,lokalredaktion,redaktion,Dagspress,
+540,2020-07-01,9,Gagnefs kommun,Dalarnas län,Falu-Kuriren,lokalredaktion,redaktion,Dagspress,Bonnier
+541,2008-03-01,2019-03-31,Vansbro kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Mittmedia
+542,2019-04-01,2020-04-01,Vansbro kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+543,2020-04-02,2020-06-30,Vansbro kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier
+544,0,2008-02-29,Vansbro kommun,Dalarnas län,Dalarnas Tidningar,lokalredaktion,redaktion,Dagspress,
+545,2020-07-01,9,Vansbro kommun,Dalarnas län,Falu-Kuriren,lokalredaktion,redaktion,Dagspress,Bonnier
+546,2008-03-01,2019-03-31,Leksands kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Mittmedia
+547,2019-04-01,2020-04-01,Leksands kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+548,2020-04-02,2020-06-30,Leksands kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier
+549,0,2008-02-29,Leksands kommun,Dalarnas län,Dalarnas Tidningar,lokalredaktion,redaktion,Dagspress,
+550,2020-07-01,9,Leksands kommun,Dalarnas län,Falu-Kuriren,lokalredaktion,redaktion,Dagspress,Bonnier
+551,2017-04-01,9,Leksands kommun,Dalarnas län,Siljan News,huvudredaktion,redaktion,Sajt,
+552,2008-03-01,2019-03-31,Mora kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Mittmedia
+553,2019-04-01,2020-04-01,Mora kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+554,2020-04-02,2020-06-30,Mora kommun,Dalarnas län,"Dalarnas Tidningar med Mora Tidning, Falu-Kuriren, Borlänge Tidning, m.fl.",lokalredaktion,redaktion,Dagspress,Bonnier
+555,0,2008-02-29,Mora kommun,Dalarnas län,Dalarnas Tidningar,lokalredaktion,redaktion,Dagspress,
+556,2020-07-01,9,Mora kommun,Dalarnas län,Mora Tidning,huvudredaktion,redaktion,Dagspress,Bonnier
+557,0,9,Mora kommun,Dalarnas län,Sveriges Radio P4 Dalarna,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+558,1995-10-02,9,Mora kommun,Dalarnas län,Radio Siljan,huvudredaktion,redaktion,Etermedier,
+559,2003-08-11,2019-08-11,Eda kommun,Värmlands län,Edaportalen,huvudredaktion,redaktion,Sajt,
+560,0,2018-12-28,Eskilstuna kommun,Södermanlands län,Extra EK och Extra ST,huvudredaktion,redaktion,Gratistidning,Sörmlands Media
+561,2018-12-29,9,Eskilstuna kommun,Södermanlands län,Extra EK och Extra ST,huvudredaktion,redaktion,Gratistidning,NTM|Sörmlands Media
+562,1890-12-08,2018-12-28,Eskilstuna kommun,Södermanlands län,Eskilstuna-Kuriren,huvudredaktion,redaktion,Dagspress,Sörmlands Media
+563,2018-12-29,9,Eskilstuna kommun,Södermanlands län,Eskilstuna-Kuriren,huvudredaktion,redaktion,Dagspress,NTM|Sörmlands Media
+564,0,9,Eskilstuna kommun,Södermanlands län,Sveriges Radio P4 Sörmland,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+565,2015-04-13,9,Eskilstuna kommun,Södermanlands län,SVT Nyheter Sörmland,huvudredaktion,redaktion,Etermedier,Sveriges Television
+566,2015-04-13,2015-04-12,Eskilstuna kommun,Södermanlands län,SVT Nyheter Öst,lokalredaktion,redaktion,Etermedier,Sveriges Television
+567,1989,2015-04-12,Eskilstuna kommun,Södermanlands län,Östnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+568,1905,2015-06-13,Eskilstuna kommun,Södermanlands län,Tidningen Folket,huvudredaktion,redaktion,Dagspress,Sörmlands Media
+569,0,9,Eksjö kommun,Jönköpings län,Eksjö-Tidningen,huvudredaktion,redaktion,Gratistidning,
+570,2006,2020-02-29,Eksjö kommun,Jönköpings län,Höglandet Nu,huvudredaktion,redaktion,Gratistidning,Hallpressen
+571,2020-03-01,9,Eksjö kommun,Jönköpings län,Höglandet Nu,huvudredaktion,redaktion,Gratistidning,Bonnier|Hallpressen
+572,1998,9,Eksjö kommun,Jönköpings län,Höglandsnytt,huvudredaktion,redaktion,Sajt,Höglandsnytt
+573,1899,2020-02-29,Eksjö kommun,Jönköpings län,"Smålands-Tidningen med Smålands Dagblad, Vetlanda-Posten och Tranås tidning",huvudredaktion,redaktion,Dagspress,Hallpressen
+574,2020-03-01,9,Eksjö kommun,Jönköpings län,"Smålands-Tidningen med Smålands Dagblad, Vetlanda-Posten och Tranås tidning",huvudredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+575,2018-01-15,2018-03-01,Eksjö kommun,Jönköpings län,Vimmerby Tidning med Linköpings Tidning och Kinda-Posten,lokalredaktion,redaktion,Dagspress,NTM
+576,2018-06-01,2018-03-01,Eksjö kommun,Jönköpings län,Vimmerby Tidning med Kinda-Posten,lokalredaktion,redaktion,Dagspress,NTM
+577,0,2018-01-14,Eksjö kommun,Jönköpings län,"Vimmerby Tidning med Västerviks-Posten, Linköpings Tidning och Kinda-Posten",lokalredaktion,redaktion,Dagspress,Swepress
+578,2014-07-25,2016-12-31,Luleå kommun,Norrbottens län,Eljester Norrbotten ,huvudredaktion,redaktion,Sajt,
+579,2009,2018-12,Luleå kommun,Norrbottens län,Luleå gratistidning,huvudredaktion,redaktion,Gratistidning,Svenska Civildatalogerna
+580,1861,9,Luleå kommun,Norrbottens län,Norrbottens-Kuriren,huvudredaktion,redaktion,Dagspress,NTM
+581,1919-01-04,9,Luleå kommun,Norrbottens län,Norrländska Socialdemokraten,huvudredaktion,redaktion,Dagspress,NTM
+582,0,9,Luleå kommun,Norrbottens län,Sveriges Radio P4 Norrbotten,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+583,0,9,Luleå kommun,Norrbottens län,Radio Luleå,huvudredaktion,redaktion,Etermedier,
+584,2015-04-13,9,Luleå kommun,Norrbottens län,SVT Nyheter Norrbotten,huvudredaktion,redaktion,Etermedier,Sveriges Television
+585,1971,2015-04-12,Luleå kommun,Norrbottens län,Nordnytt,huvudredaktion,redaktion,Etermedier,Sveriges Television
+586,2015-07-01,9,Luleå kommun,Norrbottens län,Extra Luleå,huvudredaktion,redaktion,Gratistidning,NTM
+587,0,2015-06-30,Luleå kommun,Norrbottens län,Extra Luleå,huvudredaktion,redaktion,Gratistidning,
+588,2005,2019-05-01,Enköpings kommun,Uppsala län,Ena-Håbo Tidningen,huvudredaktion,redaktion,Gratistidning,Direktpress
+589,2019-05-02,2020-06-17,Enköpings kommun,Uppsala län,Enköping Direkt,huvudredaktion,redaktion,Gratistidning,Direktpress
+590,2020-06-18,9,Enköpings kommun,Uppsala län,Mitt i Enköping,huvudredaktion,redaktion,Gratistidning,Direktpress
+591,2017-01-01,9,Enköpings kommun,Uppsala län,Enköpings-Posten,huvudredaktion,redaktion,Dagspress,NTM
+592,1880,2016-12-31,Enköpings kommun,Uppsala län,Enköpings-Posten,huvudredaktion,redaktion,Dagspress,NWT
+593,0,2018-12-28,Strängnäs kommun,Södermanlands län,Eskilstuna-Kuriren,lokalredaktion,redaktion,Dagspress,Sörmlands Media
+594,2018-12-29,9,Strängnäs kommun,Södermanlands län,Eskilstuna-Kuriren,lokalredaktion,redaktion,Dagspress,NTM|Sörmlands Media
+595,0,9,Strängnäs kommun,Södermanlands län,Gilla Stallarholmen,huvudredaktion,redaktion,Gratistidning,
+596,2005,9,Strängnäs kommun,Södermanlands län,Mariefreds Tidning med Måsen Nykvarn och Måsen Strängnäs,huvudredaktion,redaktion,Dagspress,
+597,0,2018-12-28,Flens kommun,Södermanlands län,Eskilstuna-Kuriren,lokalredaktion,redaktion,Dagspress,Sörmlands Media
+598,2018-12-29,9,Flens kommun,Södermanlands län,Eskilstuna-Kuriren,lokalredaktion,redaktion,Dagspress,NTM|Sörmlands Media
+599,2010-11-01,2017-12-31,Hällefors kommun,Örebro län,ETC Bergslagen,huvudredaktion,redaktion,Dagspress,ETC
+600,2015-04-01,2019-03-31,Hällefors kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Mittmedia
+601,2019-04-01,2020-04-01,Hällefors kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+602,2020-04-02,9,Hällefors kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier
+603,0,2015-03-31,Hällefors kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Promedia
+604,2017-02-03,2017-12-31,Jönköpings kommun,Jönköpings län,ETC Jönköping,huvudredaktion,redaktion,Dagspress,ETC
+605,2012-09-01,2017-05-31,Jönköpings kommun,Jönköpings län,Jmini,huvudredaktion,redaktion,Sajt,Jmini
+606,2017-06-01,2018-06-01,Jönköpings kommun,Jönköpings län,JKPG News,huvudredaktion,redaktion,Sajt,Jmini
+607,2006,2020-02-29,Jönköpings kommun,Jönköpings län,Jnytt,huvudredaktion,redaktion,Sajt,Hallpressen
+608,2016-06-01,2018-07-05,Jönköpings kommun,Jönköpings län,Jönköping News,huvudredaktion,redaktion,Sajt,Höglandsnytt
+609,2005-02-16,2020-02-29,Jönköpings kommun,Jönköpings län,Jönköping Nu,huvudredaktion,redaktion,Gratistidning,Hallpressen
+610,2020-03-01,9,Jönköpings kommun,Jönköpings län,Jönköping Nu,huvudredaktion,redaktion,Gratistidning,Bonnier|Hallpressen
+611,1865,2020-02-29,Jönköpings kommun,Jönköpings län,Jönköpings-Posten,huvudredaktion,redaktion,Dagspress,Hallpressen
+612,2020-03-01,9,Jönköpings kommun,Jönköpings län,Jönköpings-Posten,huvudredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+613,0,9,Jönköpings kommun,Jönköpings län,Sveriges Radio P4 Jönköping,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+614,1926,2017-12-22,Jönköpings kommun,Jönköpings län,Smålandsbygdens Tidning,huvudredaktion,redaktion,Dagspress,
+615,2015-04-13,9,Jönköpings kommun,Jönköpings län,SVT Nyheter Jönköping,huvudredaktion,redaktion,Etermedier,Sveriges Television
+616,2015-04-13,2015-04-12,Jönköpings kommun,Jönköpings län,SVT Nyheter Småland,lokalredaktion,redaktion,Etermedier,Sveriges Television
+617,0,2015-04-12,Jönköpings kommun,Jönköpings län,Smålandsnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+618,2015-06-26,2017-12-31,Sundsvalls kommun,Västernorrlands län,ETC Sundsvall,huvudredaktion,redaktion,Dagspress,ETC
+619,2013-01-01,9,Sundsvalls kommun,Västernorrlands län,Heja Sundsvall,huvudredaktion,redaktion,Sajt,
+620,0,9,Sundsvalls kommun,Västernorrlands län,Njurundabladet,huvudredaktion,redaktion,Gratistidning,
+621,0,9,Sundsvalls kommun,Västernorrlands län,Sveriges Radio P4 Västernorrland,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+622,2007-10-20,2012-12-31,Sundsvalls kommun,Västernorrlands län,Sundsvalls Nyheter,huvudredaktion,redaktion,Gratistidning,
+623,2013-01-01,2019-03-31,Sundsvalls kommun,Västernorrlands län,Sundsvalls Nyheter,huvudredaktion,redaktion,Gratistidning,Mittmedia
+624,2019-04-01,2020-04-01,Sundsvalls kommun,Västernorrlands län,Sundsvalls Nyheter,huvudredaktion,redaktion,Gratistidning,Bonnier|Mittmedia
+625,2020-04-02,9,Sundsvalls kommun,Västernorrlands län,Sundsvalls Nyheter,huvudredaktion,redaktion,Gratistidning,Bonnier
+626,1841-01-16,2019-03-31,Sundsvalls kommun,Västernorrlands län,Sundsvalls Tidning,huvudredaktion,redaktion,Dagspress,Mittmedia
+627,2019-04-01,2020-04-01,Sundsvalls kommun,Västernorrlands län,Sundsvalls Tidning,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+628,2020-04-02,9,Sundsvalls kommun,Västernorrlands län,Sundsvalls Tidning,huvudredaktion,redaktion,Dagspress,Bonnier
+629,2015-04-13,9,Sundsvalls kommun,Västernorrlands län,SVT Nyheter Västernorrland,huvudredaktion,redaktion,Etermedier,Sveriges Television
+630,0,2015-04-12,Sundsvalls kommun,Västernorrlands län,Mittnytt,huvudredaktion,redaktion,Etermedier,Sveriges Television
+631,2016-09-02,2017-12-31,Umeå kommun,Västerbottens län,ETC Umeå,huvudredaktion,redaktion,Dagspress,ETC
+632,1917-09-14,9,Umeå kommun,Västerbottens län,Folkbladet Västerbotten,huvudredaktion,redaktion,Dagspress,VK Media
+633,2016-09-15,9,Umeå kommun,Västerbottens län,Nyheter i Västerbotten,huvudredaktion,redaktion,Sajt,Moderaterna
+634,0,9,Umeå kommun,Västerbottens län,Sveriges Radio P4 Västerbotten,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+635,2001-03-05,2015-04-12,Umeå kommun,Västerbottens län,Västerbottensnytt,huvudredaktion,redaktion,Etermedier,Sveriges Television
+636,2015-04-13,9,Umeå kommun,Västerbottens län,SVT Nyheter Västerbotten,huvudredaktion,redaktion,Etermedier,Sveriges Television
+637,2012,2016-02-24,Umeå kommun,Västerbottens län,Nöjesmagasinet City,huvudredaktion,redaktion,Gratistidning,VK Media
+638,2016-02-25,9,Umeå kommun,Västerbottens län,Totalt Umeå,huvudredaktion,redaktion,Gratistidning,VK Media
+639,2012-08-01,2018-10-31,Umeå kommun,Västerbottens län,Umeå Tidning,huvudredaktion,redaktion,Gratistidning,
+640,1900,9,Umeå kommun,Västerbottens län,Västerbottens-Kuriren,huvudredaktion,redaktion,Dagspress,VK Media
+641,1979,9,Umeå kommun,Västerbottens län,Västerbottningen,huvudredaktion,redaktion,Dagspress,Tidningar i Norr
+642,1998,9,Umeå kommun,Västerbottens län,Umeåguiden,huvudredaktion,redaktion,Gratistidning,
+643,2017-03-01,2017-12-31,Växjö kommun,Kronobergs län,ETC Växjö,huvudredaktion,redaktion,Dagspress,ETC
+644,2011-07-01,2017-02-01,Växjö kommun,Kronobergs län,Lokaltidningen Växjö,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+645,2019-03-01,2017-02-01,Växjö kommun,Kronobergs län,Lokaltidningen Växjö Alvesta,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+646,2019-10-18,2017-02-01,Växjö kommun,Kronobergs län,Lokaltidningen Växjö Alvesta,huvudredaktion,redaktion,Gratistidning,Bonnier
+647,2020-01-29,2017-02-01,Växjö kommun,Kronobergs län,Lokaltidningen Växjö Alvesta,huvudredaktion,redaktion,Gratistidning,
+648,2019-03-01,2017-02-01,Växjö kommun,Kronobergs län,Lokaltidningen Växjö,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+649,2019-03-01,2019-10-17,Växjö kommun,Kronobergs län,Lokaltidningen Växjö Alvesta,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+650,2019-10-18,2020-01-28,Växjö kommun,Kronobergs län,Lokaltidningen Växjö Alvesta,huvudredaktion,redaktion,Gratistidning,Bonnier
+651,2020-01-29,9,Växjö kommun,Kronobergs län,Lokaltidningen Växjö Alvesta,huvudredaktion,redaktion,Gratistidning,
+652,1996-01-01,2010-12-31,Växjö kommun,Kronobergs län,Magazinet i Växjö,huvudredaktion,redaktion,Gratistidning,
+653,2011-01-01,9,Växjö kommun,Kronobergs län,Magazinet i Växjö,huvudredaktion,redaktion,Gratistidning,Gota Media
+654,0,9,Växjö kommun,Kronobergs län,Sveriges Radio P4 Kronoberg,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+655,1866,9,Växjö kommun,Kronobergs län,Smålandsposten,huvudredaktion,redaktion,Dagspress,Gota Media
+656,2015-04-13,9,Växjö kommun,Kronobergs län,SVT Nyheter Småland,huvudredaktion,redaktion,Etermedier,Sveriges Television
+657,1983-03-14,2015-04-12,Växjö kommun,Kronobergs län,Smålandsnytt,huvudredaktion,redaktion,Etermedier,Sveriges Television
+658,2015-12-17,2020-05-29,Växjö kommun,Kronobergs län,VXO News,huvudredaktion,redaktion,Sajt,Gota Media
+659,2020-05-30,9,Växjö kommun,Kronobergs län,VXO News/Mosaik,huvudredaktion,redaktion,Sajt,Gota Media
+660,2015-01-01,2017-11-12,Växjö kommun,Kronobergs län,Växjö Nyheter,huvudredaktion,redaktion,Sajt,Höglandsnytt
+661,2011-01-01,9,Växjö kommun,Kronobergs län,Växjöbladet Kronobergaren,huvudredaktion,redaktion,Dagspress,Gota Media
+662,0,2010-12-31,Växjö kommun,Kronobergs län,Växjöbladet Kronobergaren,huvudredaktion,redaktion,Dagspress,
+663,2018-06-01,2020-05-29,Växjö kommun,Kronobergs län,Mosaik,huvudredaktion,redaktion,Gratistidning,Gota Media
+664,2008-09-05,2017-12-31,Örebro kommun,Örebro län,ETC Örebro,huvudredaktion,redaktion,Dagspress,ETC
+665,2015-04-01,2019-03-31,Örebro kommun,Örebro län,Örebroar'n,huvudredaktion,redaktion,Gratistidning,Mittmedia
+666,2019-04-01,2020-04-01,Örebro kommun,Örebro län,Örebroar'n,huvudredaktion,redaktion,Gratistidning,Bonnier|Mittmedia
+667,2020-04-02,9,Örebro kommun,Örebro län,Örebroar'n,huvudredaktion,redaktion,Gratistidning,Bonnier
+668,1988,2015-03-31,Örebro kommun,Örebro län,Örebroar'n,huvudredaktion,redaktion,Gratistidning,Promedia
+669,1950,9,Örebro kommun,Örebro län,Länsposten,huvudredaktion,redaktion,Dagspress,Sveagruppen
+670,2015-04-01,2019-03-31,Örebro kommun,Örebro län,Nerikes Allehanda,huvudredaktion,redaktion,Dagspress,Mittmedia
+671,2019-04-01,2020-04-01,Örebro kommun,Örebro län,Nerikes Allehanda,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+672,2020-04-02,9,Örebro kommun,Örebro län,Nerikes Allehanda,huvudredaktion,redaktion,Dagspress,Bonnier
+673,1843,2015-03-31,Örebro kommun,Örebro län,Nerikes Allehanda,huvudredaktion,redaktion,Dagspress,Promedia
+674,2014-11-04,9,Örebro kommun,Örebro län,Örebrokuriren,huvudredaktion,redaktion,Sajt,
+675,0,9,Örebro kommun,Örebro län,Örebro Tribune,huvudredaktion,redaktion,Sajt,
+676,0,9,Örebro kommun,Örebro län,Sveriges Radio P4 Örebro,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+677,2015-04-13,9,Örebro kommun,Örebro län,SVT Nyheter Örebro,huvudredaktion,redaktion,Etermedier,Sveriges Television
+678,1986,2015-04-12,Örebro kommun,Örebro län,Tvärsnytt,huvudredaktion,redaktion,Etermedier,Sveriges Television
+679,0,9,Örebro kommun,Örebro län,Örebronyheter,huvudredaktion,redaktion,Sajt,
+680,2004,2019-08-16,Örebro kommun,Örebro län,Östernärkebladet,huvudredaktion,redaktion,Sajt,
+681,2014-08-01,2017-02-20,Katrineholms kommun,Södermanlands län,Expanderad.se,huvudredaktion,redaktion,Sajt,
+682,1917-01-05,2018-12-28,Katrineholms kommun,Södermanlands län,Katrineholms-Kuriren,huvudredaktion,redaktion,Dagspress,Sörmlands Media
+683,2018-12-29,9,Katrineholms kommun,Södermanlands län,Katrineholms-Kuriren,huvudredaktion,redaktion,Dagspress,NTM|Sörmlands Media
+684,0,2018-12-28,Katrineholms kommun,Södermanlands län,Extra KK,huvudredaktion,redaktion,Gratistidning,Sörmlands Media
+685,2018-12-29,9,Katrineholms kommun,Södermanlands län,Extra KK,huvudredaktion,redaktion,Gratistidning,NTM|Sörmlands Media
+686,1927,9,Katrineholms kommun,Södermanlands län,Sörmlandsbygden,huvudredaktion,redaktion,Dagspress,Sveagruppen
+687,2010-01-28,2015-01-05,Gällivare kommun,Norrbottens län,Extra Malmfälten,huvudredaktion,redaktion,Gratistidning,NTM
+688,1861,2013-11-01,Gällivare kommun,Norrbottens län,Norrbottens-Kuriren,lokalredaktion,redaktion,Dagspress,NTM
+689,0,9,Gällivare kommun,Norrbottens län,Norrländska Socialdemokraten,lokalredaktion,redaktion,Dagspress,NTM
+690,2015-04-01,2019-03-31,Fagersta kommun,Västmanlands län,Fagersta-Posten,huvudredaktion,redaktion,Dagspress,Mittmedia
+691,2019-04-01,2020-04-01,Fagersta kommun,Västmanlands län,Fagersta-Posten,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+692,2020-04-02,9,Fagersta kommun,Västmanlands län,Fagersta-Posten,huvudredaktion,redaktion,Dagspress,Bonnier
+693,1938,2015-03-31,Fagersta kommun,Västmanlands län,Fagersta-Posten,huvudredaktion,redaktion,Dagspress,Promedia
+694,1857,2020-02-29,Falköpings kommun,Västra Götalands län,Falköpings Tidning,huvudredaktion,redaktion,Dagspress,Hallpressen
+695,2020-03-01,9,Falköpings kommun,Västra Götalands län,Falköpings Tidning,huvudredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+696,2017-08-30,9,Lindesbergs kommun,Örebro län,Fellingsbro.se,huvudredaktion,redaktion,Sajt,
+697,1999,9,Lindesbergs kommun,Örebro län,Lindenytt,huvudredaktion,redaktion,Sajt,
+698,2015-04-01,2019-03-31,Lindesbergs kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Mittmedia
+699,2019-04-01,2020-04-01,Lindesbergs kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+700,2020-04-02,9,Lindesbergs kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier
+701,0,2015-03-31,Lindesbergs kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Promedia
+702,0,9,Filipstads kommun,Värmlands län,Filipstads Tidning,huvudredaktion,redaktion,Dagspress,NWT
+703,2003,2020-02-29,Värnamo kommun,Jönköpings län,Finnveden Nu,huvudredaktion,redaktion,Gratistidning,Hallpressen
+704,2020-03-01,9,Värnamo kommun,Jönköpings län,Finnveden Nu,huvudredaktion,redaktion,Gratistidning,Bonnier|Hallpressen
+705,0,9,Värnamo kommun,Jönköpings län,Sveriges Radio P4 Jönköping,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+706,1930,2020-02-29,Värnamo kommun,Jönköpings län,Värnamo Nyheter,huvudredaktion,redaktion,Dagspress,Hallpressen
+707,2020-03-01,9,Värnamo kommun,Jönköpings län,Värnamo Nyheter,huvudredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+708,2010-01-01,9,Värnamo kommun,Jönköpings län,Värnamo.nu,huvudredaktion,riktad titel,Sajt,
+709,0,9,Lerums kommun,Västra Götalands län,Radio pE20,huvudredaktion,redaktion,Etermedier,
+710,0,2019-10-31,Lerums kommun,Västra Götalands län,Floda Nyheter,huvudredaktion,redaktion,Sajt,
+711,2019-11-01,9,Lerums kommun,Västra Götalands län,Lerums Nyheter,huvudredaktion,redaktion,Sajt,
+712,1969,2019-10-14,Lerums kommun,Västra Götalands län,Lerums Tidning,huvudredaktion,redaktion,Gratistidning,WM Media
+713,2019-10-15,9,Lerums kommun,Västra Götalands län,Lerums Tidning,huvudredaktion,redaktion,Gratistidning,Stampen
+714,2015-01-01,2020-05-01,Lerums kommun,Västra Götalands län,Lokalpressen Lerum,huvudredaktion,riktad titel,Gratistidning,
+715,2020-05-02,9,Lerums kommun,Västra Götalands län,Lokalpressen Lerum,huvudredaktion,redaktion,Gratistidning,
+716,2006,9,Finspångs kommun,Östergötlands län,Fokus Finspång,huvudredaktion,redaktion,Gratistidning,
+717,0,9,Finspångs kommun,Östergötlands län,Folkbladet,lokalredaktion,redaktion,Dagspress,NTM
+718,0,9,Finspångs kommun,Östergötlands län,Norrköpings Tidningar,lokalredaktion,redaktion,Dagspress,NTM
+719,0,9,Lycksele kommun,Västerbottens län,Folkbladet Västerbotten,lokalredaktion,redaktion,Dagspress,VK Media
+720,2008,9,Lycksele kommun,Västerbottens län,Lokaltidningen,huvudredaktion,redaktion,Dagspress,Tidningar i Norr
+721,0,9,Lycksele kommun,Västerbottens län,Sveriges Radio P4 Västerbotten,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+722,0,9,Lycksele kommun,Västerbottens län,Västerbottens-Kuriren,lokalredaktion,redaktion,Dagspress,VK Media
+723,0,9,Vilhelmina kommun,Västerbottens län,Folkbladet Västerbotten,lokalredaktion,redaktion,Dagspress,VK Media
+724,0,9,Vilhelmina kommun,Västerbottens län,Lokaltidningen,lokalredaktion,redaktion,Dagspress,Tidningar i Norr
+725,2014-12-26,9,Forshaga kommun,Värmlands län,Forshaga-Dejenytt,huvudredaktion,redaktion,Sajt,
+726,1941,9,Sunne kommun,Värmlands län,Fryksdalsbygden,huvudredaktion,redaktion,Dagspress,NWT
+727,0,2018-09-01,Sunne kommun,Värmlands län,Nya Wermlands-Tidningen,lokalredaktion,redaktion,Dagspress,NWT
+728,1873,9,Region Gotland,Gotlands län,Gotlands Allehanda,huvudredaktion,redaktion,Dagspress,NTM
+729,2001,9,Region Gotland,Gotlands län,Gotlands Gratistidning,huvudredaktion,redaktion,Gratistidning,Svenska Civildatalogerna
+730,1983,9,Region Gotland,Gotlands län,Gotlands Tidningar,huvudredaktion,redaktion,Dagspress,NTM
+731,0,9,Region Gotland,Gotlands län,Nyhetsmagasinet Horisont,huvudredaktion,redaktion,Nyhetsmagasin,
+732,0,9,Region Gotland,Gotlands län,Sveriges Radio P4 Gotland,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+733,2015-04-13,9,Region Gotland,Gotlands län,SVT Nyheter Öst,lokalredaktion,redaktion,Etermedier,Sveriges Television
+734,0,2015-04-12,Region Gotland,Gotlands län,Östnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+735,2003,2017-02,Nyköpings kommun,Södermanlands län,Gratistidningen Succé,huvudredaktion,redaktion,Gratistidning,
+736,0,9,Nyköpings kommun,Södermanlands län,Sveriges Radio P4 Sörmland,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+737,0,2018-12-28,Nyköpings kommun,Södermanlands län,Extra SN,huvudredaktion,redaktion,Gratistidning,Sörmlands Media
+738,2018-12-29,9,Nyköpings kommun,Södermanlands län,Extra SN,huvudredaktion,redaktion,Gratistidning,NTM|Sörmlands Media
+739,1893,2018-12-28,Nyköpings kommun,Södermanlands län,Södermanlands Nyheter,huvudredaktion,redaktion,Dagspress,Sörmlands Media
+740,2018-12-29,9,Nyköpings kommun,Södermanlands län,Södermanlands Nyheter,huvudredaktion,redaktion,Dagspress,NTM|Sörmlands Media
+741,2009-03-18,9,Härnösands kommun,Västernorrlands län,Gratistidningen Yippie,huvudredaktion,redaktion,Gratistidning,
+742,2000,2019-03-31,Härnösands kommun,Västernorrlands län,Tidningen Ångermanland,huvudredaktion,redaktion,Dagspress,Mittmedia
+743,2019-04-01,2020-04-01,Härnösands kommun,Västernorrlands län,Tidningen Ångermanland,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+744,2020-04-02,9,Härnösands kommun,Västernorrlands län,Tidningen Ångermanland,huvudredaktion,redaktion,Dagspress,Bonnier
+745,0,2016-06-05,Laholms kommun,Hallands län,Gråbo.nu,huvudredaktion,redaktion,Sajt,
+746,0,9,Laholms kommun,Hallands län,Hallandsposten,lokalredaktion,redaktion,Dagspress,Stampen
+747,1931-12-05,2013-12-31,Laholms kommun,Hallands län,Laholms Tidning,huvudredaktion,redaktion,Dagspress,Skånska Dagbladet
+748,2014-01-01,2018-10-25,Laholms kommun,Hallands län,Laholms Tidning,huvudredaktion,redaktion,Dagspress,
+749,2019-04-26,2018-10-25,Laholms kommun,Hallands län,Laholms Tidning,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+750,2019-10-18,2018-10-25,Laholms kommun,Hallands län,Laholms Tidning,huvudredaktion,redaktion,Gratistidning,Bonnier
+751,2019-04-26,2013-12-31,Laholms kommun,Hallands län,Laholms Tidning,huvudredaktion,redaktion,Dagspress,Skånska Dagbladet
+752,2019-04-26,2018-10-25,Laholms kommun,Hallands län,Laholms Tidning,huvudredaktion,redaktion,Dagspress,
+753,2019-04-26,2019-10-17,Laholms kommun,Hallands län,Laholms Tidning,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+754,2019-10-18,9,Laholms kommun,Hallands län,Laholms Tidning,huvudredaktion,redaktion,Gratistidning,Bonnier
+755,2020-03-16,9,Partille kommun,Västra Götalands län,Göteborgs-Posten,lokalredaktion,redaktion,Dagspress,Stampen
+756,2015-01-01,9,Partille kommun,Västra Götalands län,Lokalpressen Partille,huvudredaktion,redaktion,Gratistidning,
+757,2003,2019-02-13,Partille kommun,Västra Götalands län,Partille Tidning,huvudredaktion,redaktion,Gratistidning,WM Media
+758,2019-02-14,2019-10-07,Partille kommun,Västra Götalands län,Härrydaposten och Partille Tidning,huvudredaktion,redaktion,Gratistidning,WM Media
+759,1986,2020-04-30,Götene kommun,Västra Götalands län,Götene Tidning,huvudredaktion,redaktion,Gratistidning,Markbladet
+760,2020-05-01,9,Götene kommun,Västra Götalands län,Götene Tidning,huvudredaktion,redaktion,Gratistidning,NWT
+761,1999-05-01,9,Götene kommun,Västra Götalands län,Hällekiskuriren,huvudredaktion,redaktion,Sajt,
+762,2019-01-02,9,Götene kommun,Västra Götalands län,Nya Lidköpings-Tidningen,lokalredaktion,redaktion,Dagspress,NWT
+763,1903-04-03,2019-01-01,Götene kommun,Västra Götalands län,Nya Lidköpings-Tidningen,lokalredaktion,redaktion,Dagspress,
+764,0,9,Hylte kommun,Hallands län,Hallandsposten,lokalredaktion,redaktion,Dagspress,Stampen
+765,0,2019-12-20,Höganäs kommun,Skåne län,Hallå Höganäs,huvudredaktion,redaktion,Gratistidning,Bonnier
+766,2014-07-01,9,Höganäs kommun,Skåne län,Helsingborgs Dagblad,lokalredaktion,redaktion,Dagspress,Bonnier
+767,0,2014-06-30,Höganäs kommun,Skåne län,Helsingborgs Dagblad,lokalredaktion,redaktion,Dagspress,
+768,2008-02-01,2019-10-17,Höganäs kommun,Skåne län,Lokaltidningen Höganäs,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+769,2019-10-18,9,Höganäs kommun,Skåne län,Lokaltidningen Höganäs,huvudredaktion,riktad titel,Gratistidning,Bonnier
+770,2015-02-24,2018-08-15,Höganäs kommun,Skåne län,Nättidningen Fyren,huvudredaktion,redaktion,Sajt,
+771,0,2019-12-22,Kävlinge kommun,Skåne län,Hallå Kävlinge/Lödde,huvudredaktion,riktad titel,Gratistidning,Bonnier
+772,2008-02-01,2015-12-15,Kävlinge kommun,Skåne län,Kävlinge Nya,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+773,2015-12-16,2019-10-17,Kävlinge kommun,Skåne län,Lokaltidningen Kävlinge,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+774,2019-10-18,9,Kävlinge kommun,Skåne län,Lokaltidningen Kävlinge,huvudredaktion,riktad titel,Gratistidning,Bonnier
+775,0,2019-12-19,Landskrona kommun,Skåne län,Hallå Landskrona,huvudredaktion,redaktion,Gratistidning,Bonnier
+776,2014-07-01,9,Landskrona kommun,Skåne län,Helsingborgs Dagblad,lokalredaktion,redaktion,Dagspress,Bonnier
+777,0,2014-06-30,Landskrona kommun,Skåne län,Helsingborgs Dagblad,lokalredaktion,redaktion,Dagspress,
+778,0,9,Landskrona kommun,Skåne län,landskronadirekt.com,huvudredaktion,redaktion,Sajt,
+779,2008-02-01,2019-10-17,Landskrona kommun,Skåne län,Lokaltidningen Landskrona – Svalöv,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+780,2019-10-18,9,Landskrona kommun,Skåne län,Lokaltidningen Landskrona – Svalöv,huvudredaktion,redaktion,Gratistidning,Bonnier
+781,2016-04-01,2018-03-05,Landskrona kommun,Skåne län,Papperstidningen Landskrona och Svalövsbygden,huvudredaktion,redaktion,Gratistidning,
+782,0,2019-12-23,Lomma kommun,Skåne län,Hallå Lomma,huvudredaktion,riktad titel,Gratistidning,Bonnier
+783,2008-01-16,2017-08-25,Lomma kommun,Skåne län,Lokaltidningen Lomma,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+784,2017-08-26,2019-10-17,Lomma kommun,Skåne län,Lokaltidningen Lomma och Burlöv,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+785,2019-10-18,9,Lomma kommun,Skåne län,Lokaltidningen Lomma och Burlöv,huvudredaktion,riktad titel,Gratistidning,Bonnier
+786,0,2019-12-26,Lunds kommun,Skåne län,Hallå Lund,huvudredaktion,redaktion,Gratistidning,Bonnier
+787,2008-11-26,2019-10-17,Lunds kommun,Skåne län,Lokaltidningen Lund – Staffanstorp,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+788,2019-10-18,9,Lunds kommun,Skåne län,Lokaltidningen Lund – Staffanstorp,huvudredaktion,riktad titel,Gratistidning,Bonnier
+789,0,9,Lunds kommun,Skåne län,Sydsvenskan,lokalredaktion,redaktion,Dagspress,Bonnier
+790,1978,2020,Lunds kommun,Skåne län,Torna Hällestad Veckoblad,huvudredaktion,redaktion,Gratistidning,
+791,0,2019-12-24,Vellinge kommun,Skåne län,Hallå Vellinge/Höllviken,huvudredaktion,riktad titel,Gratistidning,Bonnier
+792,2019-10-18,9,Vellinge kommun,Skåne län,Lokaltidningen Vellinge-Näset,huvudredaktion,riktad titel,Gratistidning,Bonnier
+793,2008-02-01,2019-10-17,Vellinge kommun,Skåne län,Lokaltidningen Vellinge-Näset,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+794,0,9,Vellinge kommun,Skåne län,Vellingeposten,huvudredaktion,redaktion,Gratistidning,
+795,0,9,Vellinge kommun,Skåne län,Vi på Näset,huvudredaktion,riktad titel,Gratistidning,
+796,0,2019-12-18,Ängelholms kommun,Skåne län,Hallå Ängelholm,huvudredaktion,redaktion,Gratistidning,Bonnier
+797,2014-07-01,9,Ängelholms kommun,Skåne län,Helsingborgs Dagblad,lokalredaktion,redaktion,Dagspress,Bonnier
+798,0,2014-06-30,Ängelholms kommun,Skåne län,Helsingborgs Dagblad,lokalredaktion,redaktion,Dagspress,
+799,2008-02-01,2019-10-17,Ängelholms kommun,Skåne län,Lokaltidningen Ängelholm,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+800,2019-10-18,2019-10-17,Ängelholms kommun,Skåne län,Lokaltidningen Ängelholm,huvudredaktion,redaktion,Gratistidning,Bonnier
+801,2019-10-18,2019-10-17,Ängelholms kommun,Skåne län,Lokaltidningen Ängelholm,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+802,2019-10-18,9,Ängelholms kommun,Skåne län,Lokaltidningen Ängelholm,huvudredaktion,redaktion,Gratistidning,Bonnier
+803,2012-03-23,9,Hammarö kommun,Värmlands län,Hammarö-Nytt,huvudredaktion,redaktion,Gratistidning,
+804,1994,2016-06-01,Hammarö kommun,Värmlands län,Värmlandsbörsen,huvudredaktion,redaktion,Gratistidning,
+805,0,2016-11-11,Pajala kommun,Norrbottens län,Haparandabladet,lokalredaktion,redaktion,Dagspress,
+806,1995,9,Pajala kommun,Norrbottens län,Meän raatio,huvudredaktion,redaktion,Etermedier,
+807,0,9,Pajala kommun,Norrbottens län,Sveriges Radio P4 Norrbotten,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+808,0,2016-11-11,Övertorneå kommun,Norrbottens län,Haparandabladet,lokalredaktion,redaktion,Dagspress,
+809,1995,9,Övertorneå kommun,Norrbottens län,Meän raatio,lokalredaktion,redaktion,Etermedier,
+810,2016-12-01,9,Övertorneå kommun,Norrbottens län,SVT Nyheter Norrbotten,lokalredaktion,redaktion,Etermedier,Sveriges Television
+811,2016-12-01,2015-04-12,Övertorneå kommun,Norrbottens län,Nordnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+812,1882,9,Haparanda kommun,Norrbottens län,Haparandabladet,huvudredaktion,redaktion,Dagspress,
+813,2009-01-08,2017-12-31,Haparanda kommun,Norrbottens län,HB-webben,huvudredaktion,redaktion,Gratistidning,
+814,1861,2013-11-01,Haparanda kommun,Norrbottens län,Norrbottens-Kuriren,lokalredaktion,redaktion,Dagspress,NTM
+815,0,9,Haparanda kommun,Norrbottens län,Norrländska Socialdemokraten,lokalredaktion,redaktion,Dagspress,NTM
+816,1988,2019-04-04,Tanums kommun,Västra Götalands län,Havsbandet,huvudredaktion,redaktion,Gratistidning,
+817,2015-12-23,9,Tanums kommun,Västra Götalands län,Veckovis,huvudredaktion,redaktion,Gratistidning,
+818,2014-04-16,2017,Heby kommun,Uppsala län,Heby-tv,huvudredaktion,redaktion,Etermedier,
+819,2010,9,Heby kommun,Uppsala län,Västra Uppland,huvudredaktion,riktad titel,Gratistidning,
+820,0,2017-01-01,Heby kommun,Uppsala län,Upsala Nya Tidning,lokalredaktion,redaktion,Dagspress,NTM
+821,0,9,Härjedalens kommun,Jämtlands län,Hedeinfo,huvudredaktion,redaktion,Sajt,
+822,2001,9,Härjedalens kommun,Jämtlands län,sveg.se,huvudredaktion,redaktion,Sajt,
+823,1944,2019-03-31,Härjedalens kommun,Jämtlands län,Tidningen Härjedalen,huvudredaktion,redaktion,Dagspress,Mittmedia
+824,2019-04-01,2020-04-01,Härjedalens kommun,Jämtlands län,Tidningen Härjedalen,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+825,2020-04-02,9,Härjedalens kommun,Jämtlands län,Tidningen Härjedalen,huvudredaktion,redaktion,Dagspress,Bonnier
+826,0,2019-03-31,Härjedalens kommun,Jämtlands län,Östersunds-Posten,lokalredaktion,redaktion,Dagspress,Mittmedia
+827,2019-04-01,2020-04-01,Härjedalens kommun,Jämtlands län,Östersunds-Posten,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+828,2020-04-02,9,Härjedalens kommun,Jämtlands län,Östersunds-Posten,lokalredaktion,redaktion,Dagspress,Bonnier
+829,2014-07-01,9,Klippans kommun,Skåne län,Helsingborgs Dagblad,lokalredaktion,redaktion,Dagspress,Bonnier
+830,0,2014-06-30,Klippans kommun,Skåne län,Helsingborgs Dagblad,lokalredaktion,redaktion,Dagspress,
+831,0,9,Klippans kommun,Skåne län,Söderåsjournalen,huvudredaktion,redaktion,Gratistidning,
+832,1847-11-13,9,Hjo kommun,Västra Götalands län,Hjo Tidning,huvudredaktion,redaktion,Dagspress,NWT
+833,0,2018-12-16,Hudiksvalls kommun,Gävleborgs län,HudikNytt,huvudredaktion,redaktion,Gratistidning,
+834,1909-12-11,2019-03-31,Hudiksvalls kommun,Gävleborgs län,Hudiksvalls Tidning,huvudredaktion,redaktion,Dagspress,Mittmedia
+835,2019-04-01,2020-04-01,Hudiksvalls kommun,Gävleborgs län,Hudiksvalls Tidning,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+836,2020-04-02,9,Hudiksvalls kommun,Gävleborgs län,Hudiksvalls Tidning,huvudredaktion,redaktion,Dagspress,Bonnier
+837,0,9,Hudiksvalls kommun,Gävleborgs län,Sveriges Radio P4 Gävleborg,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+838,2015-04-13,9,Hudiksvalls kommun,Gävleborgs län,SVT Nyheter Gävleborg,lokalredaktion,redaktion,Etermedier,Sveriges Television
+839,0,2015-04-12,Hudiksvalls kommun,Gävleborgs län,Gävledala,lokalredaktion,redaktion,Etermedier,Sveriges Television
+840,0,2017-01-01,Nordanstigs kommun,Gävleborgs län,Hudiksvalls Tidning,lokalredaktion,redaktion,Dagspress,Mittmedia
+841,2019-04-01,2017-01-01,Nordanstigs kommun,Gävleborgs län,Hudiksvalls Tidning,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+842,2020-04-02,2017-01-01,Nordanstigs kommun,Gävleborgs län,Hudiksvalls Tidning,lokalredaktion,redaktion,Dagspress,Bonnier
+843,0,2018-01-24,Ljusdals kommun,Gävleborgs län,Hälsinge Allehanda,huvudredaktion,redaktion,Gratistidning,
+844,2018-01-25,9,Ljusdals kommun,Gävleborgs län,Tidningen Hälsingland,huvudredaktion,redaktion,Gratistidning,
+845,2014-12-02,2017-01-01,Ljusdals kommun,Gävleborgs län,Jarvsobygden.se,huvudredaktion,redaktion,Sajt,
+846,1914,2019-03-31,Ljusdals kommun,Gävleborgs län,Ljusdals-Posten,huvudredaktion,redaktion,Dagspress,Mittmedia
+847,2019-04-01,2020-04-01,Ljusdals kommun,Gävleborgs län,Ljusdals-Posten,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+848,2020-04-02,9,Ljusdals kommun,Gävleborgs län,Ljusdals-Posten,huvudredaktion,redaktion,Dagspress,Bonnier
+849,2013-06-18,9,Hallstahammars kommun,Västmanlands län,Här och nu längs kanalen,huvudredaktion,redaktion,Gratistidning,
+850,2016-01-01,2017-01-01,Hallstahammars kommun,Västmanlands län,Vestmanlands Läns Tidning,lokalredaktion,redaktion,Dagspress,Mittmedia
+851,2019-04-01,2017-01-01,Hallstahammars kommun,Västmanlands län,Vestmanlands Läns Tidning,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+852,2020-04-02,2017-01-01,Hallstahammars kommun,Västmanlands län,Vestmanlands Läns Tidning,lokalredaktion,redaktion,Dagspress,Bonnier
+853,0,2015-12-31,Hallstahammars kommun,Västmanlands län,Vestmanlands Läns Tidning,lokalredaktion,redaktion,Dagspress,Promedia
+854,2004,2019-02-13,Härryda kommun,Västra Götalands län,Härryda-Posten,huvudredaktion,redaktion,Gratistidning,WM Media
+855,2015-01-01,9,Härryda kommun,Västra Götalands län,Lokalpressen Härryda,huvudredaktion,riktad titel,Gratistidning,
+856,2012-09-01,2019-07-18,Nora kommun,Örebro län,24 i Bergslagen,huvudredaktion,redaktion,Sajt,
+857,2019-07-19,9,Nora kommun,Örebro län,24 i Bergslagen,huvudredaktion,riktad titel,Sajt,
+858,2015-04-01,2018-12-01,Nora kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Mittmedia
+859,2019-04-01,2018-12-01,Nora kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+860,2020-04-02,2018-12-01,Nora kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier
+861,0,2015-03-31,Nora kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Promedia
+862,2004,9,Bromölla kommun,Skåne län,Info-Bladet,huvudredaktion,redaktion,Gratistidning,
+863,0,2011-09-30,Bromölla kommun,Skåne län,Kristianstadsbladet,lokalredaktion,redaktion,Dagspress,Bonnier
+864,2011-10-01,9,Bromölla kommun,Skåne län,Kristianstadsbladet,lokalredaktion,redaktion,Dagspress,Gota Media
+865,2003-05-08,2018-12-31,Trosa kommun,Södermanlands län,I Trosa,huvudredaktion,redaktion,Sajt,
+866,0,2018-12-28,Trosa kommun,Södermanlands län,Södermanlands Nyheter,lokalredaktion,redaktion,Dagspress,Sörmlands Media
+867,2018-12-29,9,Trosa kommun,Södermanlands län,Södermanlands Nyheter,lokalredaktion,redaktion,Dagspress,NTM|Sörmlands Media
+868,2018-01-01,2018-09-09,Trosa kommun,Södermanlands län,Trosapodden,huvudredaktion,redaktion,Etermedier,
+869,1997,9,Trosa kommun,Södermanlands län,Östra Sörmlandsposten,huvudredaktion,redaktion,Gratistidning,
+870,2020-06-30,9,Bräcke kommun,Jämtlands län,Jämtlands Tidning,lokalredaktion,redaktion,Dagspress,
+871,0,2019-05-01,Järfälla kommun,Stockholms län,Järfälla Tidning,huvudredaktion,riktad titel,Gratistidning,Direktpress
+872,2019-05-02,2020-06-17,Järfälla kommun,Stockholms län,Järfälla Direkt,huvudredaktion,riktad titel,Gratistidning,Direktpress
+873,2014-02-02,2017-01-07,Järfälla kommun,Stockholms län,Järfällanytt,huvudredaktion,redaktion,Sajt,
+874,2014-06-25,2020-06-17,Järfälla kommun,Stockholms län,Mitt i Järfalla,huvudredaktion,riktad titel,Gratistidning,Mitt i
+875,2020-06-18,9,Järfälla kommun,Stockholms län,Mitt i Järfalla,huvudredaktion,riktad titel,Gratistidning,Direktpress
+876,2008-12-01,2014-06-24,Järfälla kommun,Stockholms län,Mitt i Järfalla,huvudredaktion,riktad titel,Gratistidning,Stampen
+877,0,2020-02-29,Habo kommun,Jönköpings län,Jönköpings-Posten,lokalredaktion,redaktion,Dagspress,Hallpressen
+878,2020-03-01,9,Habo kommun,Jönköpings län,Jönköpings-Posten,lokalredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+879,0,2020-02-29,Mullsjö kommun,Jönköpings län,Jönköpings-Posten,lokalredaktion,redaktion,Dagspress,Hallpressen
+880,2020-03-01,9,Mullsjö kommun,Jönköpings län,Jönköpings-Posten,lokalredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+881,0,2020-02-29,Vaggeryds kommun,Jönköpings län,Jönköpings-Posten,lokalredaktion,redaktion,Dagspress,Hallpressen
+882,2020-03-01,9,Vaggeryds kommun,Jönköpings län,Jönköpings-Posten,lokalredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+883,2002-04,9,Vaggeryds kommun,Jönköpings län,Skillingaryd.nu och Vaggeryd.nu,huvudredaktion,redaktion,Sajt,
+884,0,9,Degerfors kommun,Örebro län,Karlskoga Tidning,lokalredaktion,redaktion,Dagspress,NWT
+885,0,9,Karlstads kommun,Värmlands län,KH aktuellt,huvudredaktion,redaktion,Gratistidning,
+886,2017-03-01,9,Karlstads kommun,Värmlands län,Karlstads Tidningen,huvudredaktion,redaktion,Dagspress,NWT
+887,1879-11-15,2017-02-28,Karlstads kommun,Värmlands län,Karlstads Tidningen,huvudredaktion,redaktion,Dagspress,NWT
+888,2015,2018-03,Karlstads kommun,Värmlands län,Karlstadsliv,huvudredaktion,redaktion,Sajt,NWT
+889,1948,9,Karlstads kommun,Värmlands län,Länstidningen Värmlandsbygden,huvudredaktion,redaktion,Dagspress,
+890,2012-04,2017-04-21,Karlstads kommun,Värmlands län,Metro Värmland,huvudredaktion,redaktion,Gratistidning,Metro
+891,2012,2016-12-31,Karlstads kommun,Värmlands län,Nya Bygdebladet,huvudredaktion,redaktion,Gratistidning,
+892,1837,9,Karlstads kommun,Värmlands län,Nya Wermlands-Tidningen,huvudredaktion,redaktion,Dagspress,NWT
+893,0,9,Karlstads kommun,Värmlands län,Sveriges Radio P4 Värmland,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+894,1986,2015-04-12,Karlstads kommun,Värmlands län,Värmlandsnytt,huvudredaktion,redaktion,Etermedier,Sveriges Television
+895,2015-04-13,9,Karlstads kommun,Värmlands län,SVT Nyheter Värmland,huvudredaktion,redaktion,Etermedier,Sveriges Television
+896,2017-03-01,9,Karlstads kommun,Värmlands län,Värmlands Folkblad,huvudredaktion,redaktion,Dagspress,NWT
+897,1918,2017-02-28,Karlstads kommun,Värmlands län,Värmlands Folkblad,huvudredaktion,redaktion,Dagspress,
+898,0,2017-12-20,Vingåkers kommun,Södermanlands län,Katrineholms-Kuriren,lokalredaktion,redaktion,Dagspress,Sörmlands Media
+899,2018-12-29,2017-12-20,Vingåkers kommun,Södermanlands län,Katrineholms-Kuriren,lokalredaktion,redaktion,Dagspress,NTM|Sörmlands Media
+900,1959,2019-12,Kiruna kommun,Norrbottens län,Kiruna annonsblad,huvudredaktion,redaktion,Gratistidning,Svenska Civildatalogerna
+901,0,9,Kiruna kommun,Norrbottens län,Kiruna-Tidningen,huvudredaktion,redaktion,Nyhetsmagasin,
+902,1861,2013-11-01,Kiruna kommun,Norrbottens län,Norrbottens-Kuriren,lokalredaktion,redaktion,Dagspress,NTM
+903,0,9,Kiruna kommun,Norrbottens län,Norrländska Socialdemokraten,lokalredaktion,redaktion,Dagspress,NTM
+904,2011-09-01,2018-12,Kiruna kommun,Norrbottens län,Pajala gratistidning,huvudredaktion,riktad titel,Gratistidning,Svenska Civildatalogerna
+905,2015-04-13,9,Kiruna kommun,Norrbottens län,SVT Nyheter Norrbotten,lokalredaktion,redaktion,Etermedier,Sveriges Television
+906,0,2015-04-12,Kiruna kommun,Norrbottens län,Nordnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+907,1980,9,Herrljunga kommun,Västra Götalands län,Knallebladet,huvudredaktion,redaktion,Gratistidning,
+908,2003-04-09,2020-12-17,Knivsta kommun,Uppsala län,Knivstabygden,huvudredaktion,riktad titel,Gratistidning,NTM
+909,2012-04-10,9,Ljusnarsbergs kommun,Örebro län,Kopparbergarn.se,huvudredaktion,redaktion,Sajt,
+910,2006,9,Kramfors kommun,Västernorrlands län,Kramforsbladet,huvudredaktion,redaktion,Gratistidning,
+911,0,9,Kramfors kommun,Västernorrlands län,Nordsverige,lokalredaktion,redaktion,Dagspress,Tidningar i Norr
+912,0,2019-03-31,Kramfors kommun,Västernorrlands län,Tidningen Ångermanland,lokalredaktion,redaktion,Dagspress,Mittmedia
+913,2019-04-01,2020-04-01,Kramfors kommun,Västernorrlands län,Tidningen Ångermanland,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+914,2020-04-02,9,Kramfors kommun,Västernorrlands län,Tidningen Ångermanland,lokalredaktion,redaktion,Dagspress,Bonnier
+915,0,9,Kristinehamns kommun,Värmlands län,Kristinehamns lokal-tv,huvudredaktion,redaktion,Etermedier,
+916,1978-12-05,9,Kristinehamns kommun,Värmlands län,Kristinehamns-Aktuellt,huvudredaktion,redaktion,Gratistidning,
+917,0,9,Kristinehamns kommun,Värmlands län,Nya Kristinehamns-Posten,huvudredaktion,redaktion,Dagspress,NWT
+918,2017-03-01,9,Kristinehamns kommun,Värmlands län,Värmlands Folkblad,lokalredaktion,redaktion,Dagspress,NWT
+919,0,2017-02-28,Kristinehamns kommun,Värmlands län,Värmlands Folkblad,lokalredaktion,redaktion,Dagspress,
+920,2009-01-09,2017-03-16,Kungsbacka kommun,Hallands län,Kungsbacka-Nytt,huvudredaktion,redaktion,Gratistidning,OTV
+921,0,9,Kungsbacka kommun,Hallands län,Kungsbacka-Posten,huvudredaktion,redaktion,Dagspress,OTV
+922,1921,9,Kungsbacka kommun,Hallands län,Norra Halland,huvudredaktion,redaktion,Dagspress,
+923,0,9,Kungälvs kommun,Västra Götalands län,Kungälvs-Posten,huvudredaktion,redaktion,Dagspress,OTV
+924,2015-09,2017-06-05,Kungälvs kommun,Västra Götalands län,Kungälvskuriren,huvudredaktion,redaktion,Sajt,
+925,2015,2017-04-18,Kungälvs kommun,Västra Götalands län,Kungälvsnyheter,huvudredaktion,redaktion,Sajt,
+926,0,9,Ockelbo kommun,Gävleborgs län,Kuxabladet,huvudredaktion,redaktion,Gratistidning,
+927,1955-04-22,2017-02-06,Ockelbo kommun,Gävleborgs län,Ockelbo-Nytt,huvudredaktion,redaktion,Gratistidning,
+928,2005,2016-10-01,Söderhamns kommun,Gävleborgs län,Larm-Söderhamn,huvudredaktion,redaktion,Sajt,
+929,2016-10-02,9,Söderhamns kommun,Gävleborgs län,Xnytt,huvudredaktion,redaktion,Sajt,
+930,1895,2019-03-31,Söderhamns kommun,Gävleborgs län,Söderhamns-Kuriren,huvudredaktion,redaktion,Dagspress,Mittmedia
+931,2019-04-01,2020-04-01,Söderhamns kommun,Gävleborgs län,Söderhamns-Kuriren,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+932,2020-04-02,9,Söderhamns kommun,Gävleborgs län,Söderhamns-Kuriren,huvudredaktion,redaktion,Dagspress,Bonnier
+933,2000-01-24,2019-12-15,Söderhamns kommun,Gävleborgs län,SöderhamnsNytt,huvudredaktion,redaktion,Gratistidning,
+934,2014-06-25,2017-06-30,Lidingö kommun,Stockholms län,Lidingö Tidning ,huvudredaktion,redaktion,Dagspress,Mitt i
+935,2010-01-01,2014-06-24,Lidingö kommun,Stockholms län,Lidingö Tidning ,huvudredaktion,redaktion,Dagspress,Stampen
+936,1910-01-01,2009-12-31,Lidingö kommun,Stockholms län,Lidingö Tidning ,huvudredaktion,redaktion,Dagspress,
+937,2004-03-17,2018-12-31,Lidingö kommun,Stockholms län,Lidingösidan,huvudredaktion,redaktion,Sajt,
+938,2014-06-25,2020-06-17,Lidingö kommun,Stockholms län,Mitt i Lidingö,huvudredaktion,riktad titel,Gratistidning,Mitt i
+939,2020-06-18,9,Lidingö kommun,Stockholms län,Mitt i Lidingö,huvudredaktion,riktad titel,Gratistidning,Direktpress
+940,2008-12-01,2014-06-24,Lidingö kommun,Stockholms län,Mitt i Lidingö,huvudredaktion,riktad titel,Gratistidning,Stampen
+941,2019-01-01,9,Lidingö kommun,Stockholms län,Lidingö Nyheter,huvudredaktion,redaktion,Sajt,
+942,2005,9,Lidköpings kommun,Västra Götalands län,Lidköpingsextra,huvudredaktion,redaktion,Gratistidning,
+943,0,9,Lidköpings kommun,Västra Götalands län,Lidköpingsnytt,huvudredaktion,redaktion,Sajt,
+944,2019-01-02,9,Lidköpings kommun,Västra Götalands län,Nya Lidköpings-Tidningen,huvudredaktion,redaktion,Dagspress,NWT
+945,1903-04-03,2019-01-01,Lidköpings kommun,Västra Götalands län,Nya Lidköpings-Tidningen,huvudredaktion,redaktion,Dagspress,
+946,2009-08,2018-07-14,Ånge kommun,Västernorrlands län,ljungandalen.info,huvudredaktion,redaktion,Sajt,
+947,0,2019-03-31,Ånge kommun,Västernorrlands län,Sundsvalls Tidning,lokalredaktion,redaktion,Dagspress,Mittmedia
+948,2019-04-01,2020-04-01,Ånge kommun,Västernorrlands län,Sundsvalls Tidning,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+949,2020-04-02,9,Ånge kommun,Västernorrlands län,Sundsvalls Tidning,lokalredaktion,redaktion,Dagspress,Bonnier
+950,0,9,Öckerö kommun,Västra Götalands län,Lokalbladet,huvudredaktion,redaktion,Gratistidning,
+951,0,9,Öckerö kommun,Västra Götalands län,Torslanda–Öckerötidningen,lokalredaktion,riktad titel,Gratistidning,
+952,0,9,Storumans kommun,Västerbottens län,Lokaltidningen,lokalredaktion,redaktion,Dagspress,Tidningar i Norr
+953,2019-10-16,9,Storumans kommun,Västerbottens län,Västerbottens-Kuriren,lokalredaktion,redaktion,Dagspress,VK Media
+954,1993-01-01,2015-11-01,Alvesta kommun,Kronobergs län,Lokaltidningen Alvesta,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+955,2015-11-02,2017-02-01,Alvesta kommun,Kronobergs län,Lokaltidningen Alvesta,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+956,0,9,Alvesta kommun,Kronobergs län,Smålandsposten,lokalredaktion,redaktion,Dagspress,Gota Media
+957,1993-01-01,2015-11-01,Ljungby kommun,Kronobergs län,Lokaltidningen Ljungby,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+958,2015-11-02,2017-02-01,Ljungby kommun,Kronobergs län,Lokaltidningen Ljungby,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+959,0,9,Ljungby kommun,Kronobergs län,Radio Ljungby,huvudredaktion,redaktion,Etermedier,
+960,1921,2020-02-29,Ljungby kommun,Kronobergs län,Smålänningen,huvudredaktion,redaktion,Dagspress,Hallpressen
+961,2020-03-01,9,Ljungby kommun,Kronobergs län,Smålänningen,huvudredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+962,0,2020-02-29,Ljungby kommun,Kronobergs län,Smålänningen Veckobladet,huvudredaktion,redaktion,Gratistidning,Hallpressen
+963,2020-03-01,9,Ljungby kommun,Kronobergs län,Smålänningen Veckobladet,huvudredaktion,redaktion,Gratistidning,Bonnier|Hallpressen
+964,2020-03-24,9,Ljungby kommun,Kronobergs län,Mera Ljungby,huvudredaktion,riktad titel,Sajt,Gota Media
+965,2008-02-01,2019-10-17,Eslövs kommun,Skåne län,Lokaltidningen Mellanskåne,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+966,2019-10-18,9,Eslövs kommun,Skåne län,Lokaltidningen Mellanskåne,huvudredaktion,riktad titel,Gratistidning,Bonnier
+967,2015,9,Eslövs kommun,Skåne län,Mycket mer Mittskåne,huvudredaktion,redaktion,Gratistidning,Skånska Dagbladet
+968,0,9,Eslövs kommun,Skåne län,Skånska Dagbladet,lokalredaktion,redaktion,Dagspress,Skånska Dagbladet
+969,2008-09-24,2018-11-01,Sjöbo kommun,Skåne län,Lokaltidningen Sjöbo,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+970,2018-11-02,2019-10-17,Sjöbo kommun,Skåne län,"Lokaltidningen Sjöbo, Tomellilla och Simrishamn",huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+971,2019-10-18,9,Sjöbo kommun,Skåne län,"Lokaltidningen Sjöbo, Tomellilla och Simrishamn",huvudredaktion,riktad titel,Gratistidning,Bonnier
+972,2014,9,Sjöbo kommun,Skåne län,Mycket mer Sydöst,huvudredaktion,redaktion,Gratistidning,Skånska Dagbladet
+973,0,9,Sjöbo kommun,Skåne län,Skånska Dagbladet,lokalredaktion,redaktion,Dagspress,Skånska Dagbladet
+974,0,2011-09-30,Sjöbo kommun,Skåne län,Ystads Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier
+975,2011-10-01,9,Sjöbo kommun,Skåne län,Ystads Allehanda,lokalredaktion,redaktion,Dagspress,Gota Media
+976,2013,2017-06-19,Gullspångs kommun,Västra Götalands län,Skagerns Nyheter,huvudredaktion,redaktion,Sajt,
+977,0,9,Gullspångs kommun,Västra Götalands län,Mariestads-Tidningen,lokalredaktion,redaktion,Dagspress,NWT
+978,2008-02-01,2019-10-17,Skurups kommun,Skåne län,Lokaltidningen Skurup,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+979,2019-10-18,9,Skurups kommun,Skåne län,Lokaltidningen Skurup,huvudredaktion,riktad titel,Gratistidning,Bonnier
+980,0,9,Skurups kommun,Skåne län,Skånska Dagbladet,lokalredaktion,redaktion,Dagspress,Skånska Dagbladet
+981,0,2011-09-30,Skurups kommun,Skåne län,Ystads Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier
+982,2011-10-01,9,Skurups kommun,Skåne län,Ystads Allehanda,lokalredaktion,redaktion,Dagspress,Gota Media
+983,2019-10-18,9,Staffanstorps kommun,Skåne län,Lokaltidningen Staffanstorp,huvudredaktion,riktad titel,Gratistidning,Bonnier
+984,2010-04-28,2019-10-17,Staffanstorps kommun,Skåne län,Lokaltidningen Staffanstorp,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+985,1998,9,Staffanstorps kommun,Skåne län,Spegeln,huvudredaktion,redaktion,Gratistidning,
+986,2010-03-01,9,Stenungsunds kommun,Västra Götalands län,Lokaltidningen STO,huvudredaktion,redaktion,Dagspress,OTV
+987,0,9,Stenungsunds kommun,Västra Götalands län,Nyheter4.com,huvudredaktion,redaktion,Sajt,
+988,0,9,Stenungsunds kommun,Västra Götalands län,ST-tidningen,huvudredaktion,redaktion,Gratistidning,OTV
+989,0,9,Orusts kommun,Västra Götalands län,Lokaltidningen STO,lokalredaktion,redaktion,Dagspress,OTV
+990,2019-10-18,9,Svalövs kommun,Skåne län,Lokaltidningen Landskrona Svalöv,huvudredaktion,riktad titel,Gratistidning,Bonnier
+991,2008-02-01,2019-10-17,Svalövs kommun,Skåne län,Lokaltidningen Landskrona Svalöv,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+992,2016-04-01,2018-03-05,Svalövs kommun,Skåne län,Papperstidningen Landskrona och Svalövsbygden,lokalredaktion,redaktion,Gratistidning,
+993,2019-10-18,9,Svedala kommun,Skåne län,Lokaltidningen Svedala,huvudredaktion,riktad titel,Gratistidning,Bonnier
+994,2008-01-23,2019-10-17,Svedala kommun,Skåne län,Lokaltidningen Svedala,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+995,2019-10-18,9,Tomelilla kommun,Skåne län,Lokaltidningen Österlen,huvudredaktion,riktad titel,Gratistidning,Bonnier
+996,2008-02-01,2019-10-17,Tomelilla kommun,Skåne län,Lokaltidningen Österlen,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+997,0,2011-09-30,Tomelilla kommun,Skåne län,Ystads Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier
+998,2011-10-01,9,Tomelilla kommun,Skåne län,Ystads Allehanda,lokalredaktion,redaktion,Dagspress,Gota Media
+999,2017-02-01,2020-02-29,Gislaveds kommun,Jönköpings län,Västboandan,huvudredaktion,redaktion,Gratistidning,Hallpressen
+1000,2020-03-01,9,Gislaveds kommun,Jönköpings län,Västboandan,huvudredaktion,redaktion,Gratistidning,Bonnier|Hallpressen
+1001,1994,2017-01-31,Gislaveds kommun,Jönköpings län,Västboandan,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+1002,0,2020-02-29,Gislaveds kommun,Jönköpings län,Värnamo Nyheter,lokalredaktion,redaktion,Dagspress,Hallpressen
+1003,2020-03-01,9,Gislaveds kommun,Jönköpings län,Värnamo Nyheter,lokalredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+1004,1996,2019-10-17,Mjölby kommun,Östergötlands län,Östgötatidningen,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+1005,2019-10-18,2019-12-30,Mjölby kommun,Östergötlands län,Östgötatidningen,huvudredaktion,redaktion,Gratistidning,Bonnier
+1006,2019-12-31,9,Mjölby kommun,Östergötlands län,Östgötatidningen,huvudredaktion,redaktion,Gratistidning,
+1007,0,9,Mjölby kommun,Östergötlands län,Östgöta Correspondenten,lokalredaktion,redaktion,Dagspress,NTM
+1008,1996,2015-12-29,Motala kommun,Östergötlands län,Östgötatidningen,huvudredaktion,redaktion,Gratistidning,Lokaltidningen
+1009,2015-12-30,2018-03-15,Motala kommun,Östergötlands län,Östgötatidningen,huvudredaktion,riktad titel,Gratistidning,Lokaltidningen
+1010,1948-01-01,9,Motala kommun,Östergötlands län,Länstidningen Östergötland,huvudredaktion,redaktion,Dagspress,
+1011,2012-11-01,9,Motala kommun,Östergötlands län,Motala & Vadstena Tidning,huvudredaktion,redaktion,Dagspress,NTM
+1012,1868,2012-10-31,Motala kommun,Östergötlands län,Motala & Vadstena Tidning,huvudredaktion,redaktion,Dagspress,Promedia
+1013,2011,2020-01-31,Östhammars kommun,Uppsala län,Östra Uppland,huvudredaktion,redaktion,Gratistidning,NTM
+1014,2020-02-01,9,Östhammars kommun,Uppsala län,Östra Uppland,huvudredaktion,riktad titel,Gratistidning,NTM
+1015,0,9,Östhammars kommun,Uppsala län,Upsala Nya Tidning,lokalredaktion,redaktion,Dagspress,NTM
+1016,2015-04-01,2019-03-31,Södertälje kommun,Stockholms län,Länstidningen Södertälje,huvudredaktion,redaktion,Dagspress,Mittmedia
+1017,2019-04-01,2020-04-01,Södertälje kommun,Stockholms län,Länstidningen Södertälje,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+1018,2020-04-02,9,Södertälje kommun,Stockholms län,Länstidningen Södertälje,huvudredaktion,redaktion,Dagspress,Bonnier
+1019,1861,2015-03-31,Södertälje kommun,Stockholms län,Länstidningen Södertälje,huvudredaktion,redaktion,Dagspress,Promedia
+1020,2019-01-01,2019-11-07,Södertälje kommun,Stockholms län,Sveriges Radio P4 Stockholm,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+1021,2019-11-08,9,Södertälje kommun,Stockholms län,Sveriges Radio P4 Södertälje,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+1022,2015-04-12,9,Södertälje kommun,Stockholms län,SVT Nyheter Södertälje,huvudredaktion,redaktion,Etermedier,Sveriges Television
+1023,1993,9,Södertälje kommun,Stockholms län,Södertäljeposten,huvudredaktion,redaktion,Gratistidning,
+1024,2013-05-01,2016-06-30,Mariestads kommun,Västra Götalands län,Mariestad.nu,huvudredaktion,redaktion,Sajt,
+1025,1817,9,Mariestads kommun,Västra Götalands län,Mariestads-Tidningen,huvudredaktion,redaktion,Dagspress,NWT
+1026,2012,9,Mariestads kommun,Västra Götalands län,Tidningen Unica Mariestad,huvudredaktion,redaktion,Gratistidning,
+1027,0,9,Töreboda kommun,Västra Götalands län,Mariestads-Tidningen,lokalredaktion,redaktion,Dagspress,NWT
+1028,2009,9,Töreboda kommun,Västra Götalands län,Törebodakanalen,huvudredaktion,redaktion,Gratistidning,
+1029,0,9,Melleruds kommun,Västra Götalands län,Melleruds Nyheter,huvudredaktion,redaktion,Gratistidning,
+1030,2014-09-26,2015-10-21,Perstorps kommun,Skåne län,Mera Perstorp,huvudredaktion,redaktion,Gratistidning,Skånska Dagbladet
+1031,0,2019-12-31,Tingsryds kommun,Kronobergs län,Mera Tingsryd,huvudredaktion,redaktion,Gratistidning,Gota Media
+1032,0,9,Tingsryds kommun,Kronobergs län,Nya Allehanda,huvudredaktion,redaktion,Gratistidning,
+1033,0,9,Tingsryds kommun,Kronobergs län,Smålandsposten,lokalredaktion,redaktion,Dagspress,Gota Media
+1034,2014-06-25,2020-06-17,Botkyrka kommun,Stockholms län,Mitt i Botkyrka/Salem,huvudredaktion,riktad titel,Gratistidning,Mitt i
+1035,2020-06-18,9,Botkyrka kommun,Stockholms län,Mitt i Botkyrka/Salem,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1036,2008-12-01,2014-06-24,Botkyrka kommun,Stockholms län,Mitt i Botkyrka/Salem,huvudredaktion,riktad titel,Gratistidning,Stampen
+1037,2011,9,Botkyrka kommun,Stockholms län,Radio Botkyrka,huvudredaktion,redaktion,Etermedier,
+1038,2015-03,2017-08-19,Botkyrka kommun,Stockholms län,Södra Sidan Tumba/Tullinge,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1039,2017-08-20,2020-06-17,Botkyrka kommun,Stockholms län,Botkyrka Direkt,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1040,2014-06-25,2020-06-17,Haninge kommun,Stockholms län,Mitt i Haninge,huvudredaktion,riktad titel,Gratistidning,Mitt i
+1041,2020-06-18,9,Haninge kommun,Stockholms län,Mitt i Haninge,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1042,2008-12-01,2014-06-24,Haninge kommun,Stockholms län,Mitt i Haninge,huvudredaktion,riktad titel,Gratistidning,Stampen
+1043,2014-06-25,2020-06-17,Huddinge kommun,Stockholms län,Mitt i Huddinge,huvudredaktion,riktad titel,Gratistidning,Mitt i
+1044,2020-06-18,9,Huddinge kommun,Stockholms län,Mitt i Huddinge,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1045,2008-12-01,2014-06-24,Huddinge kommun,Stockholms län,Mitt i Huddinge,huvudredaktion,riktad titel,Gratistidning,Stampen
+1046,2019-09-01,9,Huddinge kommun,Stockholms län,Sveriges Radio P4 Stockholm,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+1047,2015-03,2017-08-19,Huddinge kommun,Stockholms län,Södra Sidan Huddinge,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1048,2017-08-20,2020-06-17,Huddinge kommun,Stockholms län,Huddinge Direkt,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1049,2014-06-25,2020-06-17,Nacka kommun,Stockholms län,Mitt i Nacka,huvudredaktion,riktad titel,Gratistidning,Mitt i
+1050,2020-06-18,9,Nacka kommun,Stockholms län,Mitt i Nacka,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1051,2008-12-01,2014-06-24,Nacka kommun,Stockholms län,Mitt i Nacka,huvudredaktion,riktad titel,Gratistidning,Stampen
+1052,1989-04,9,Nacka kommun,Stockholms län,Nacka Värmdö-posten,huvudredaktion,redaktion,Gratistidning,
+1053,0,9,Nacka kommun,Stockholms län,Saltsjöbladet,huvudredaktion,redaktion,Gratistidning,
+1054,2017-01-01,9,Nacka kommun,Stockholms län,Skärgårdsradion,huvudredaktion,redaktion,Etermedier,
+1055,2007-05,9,Nacka kommun,Stockholms län,Västra Sicklaön,huvudredaktion,redaktion,Sajt,
+1056,2014-06-25,2020-06-17,Sollentuna kommun,Stockholms län,Mitt i Sollentuna,huvudredaktion,riktad titel,Gratistidning,Mitt i
+1057,2020-06-18,9,Sollentuna kommun,Stockholms län,Mitt i Sollentuna,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1058,2008-12-01,2014-06-24,Sollentuna kommun,Stockholms län,Mitt i Sollentuna,huvudredaktion,riktad titel,Gratistidning,Stampen
+1059,2015-04-01,2019-05-01,Sollentuna kommun,Stockholms län,Sveriges Radio P4 Stockholm,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+1060,2011-08-27,2017-11-03,Sollentuna kommun,Stockholms län,Vi i Sollentuna,huvudredaktion,redaktion,Gratistidning,Direktpress
+1061,2019-05-02,2017-11-03,Sollentuna kommun,Stockholms län,Sollentuna Direkt,huvudredaktion,redaktion,Gratistidning,Direktpress
+1062,2017-11-04,2019-05-01,Sollentuna kommun,Stockholms län,Vi i Sollentuna,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1063,2019-05-02,2020-06-17,Sollentuna kommun,Stockholms län,Sollentuna Direkt,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1064,2014-06-25,2020-06-17,Solna kommun,Stockholms län,Mitt i Solna,huvudredaktion,riktad titel,Gratistidning,Mitt i
+1065,2020-06-18,9,Solna kommun,Stockholms län,Mitt i Solna,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1066,2008-12-01,2014-06-24,Solna kommun,Stockholms län,Mitt i Solna,huvudredaktion,riktad titel,Gratistidning,Stampen
+1067,2017-04-01,2019-05-01,Solna kommun,Stockholms län,Vi i Solna,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1068,2019-05-02,2020-06-17,Solna kommun,Stockholms län,Solna Direkt,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1069,2015-01-17,2017-03-31,Solna kommun,Stockholms län,Vi i Solna,huvudredaktion,redaktion,Gratistidning,Direktpress
+1070,2019-05-02,2017-03-31,Solna kommun,Stockholms län,Solna Direkt,huvudredaktion,redaktion,Gratistidning,Direktpress
+1071,2014-06-25,2020-06-17,Sundbybergs kommun,Stockholms län,Mitt i Sundbyberg,huvudredaktion,riktad titel,Gratistidning,Mitt i
+1072,2020-06-18,9,Sundbybergs kommun,Stockholms län,Mitt i Sundbyberg,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1073,2008-12-01,2014-06-24,Sundbybergs kommun,Stockholms län,Mitt i Sundbyberg,huvudredaktion,riktad titel,Gratistidning,Stampen
+1074,2013,2019-03-27,Sundbybergs kommun,Stockholms län,Sundbybergsnytt.se,huvudredaktion,redaktion,Sajt,
+1075,2015-01-01,2019-05-01,Sundbybergs kommun,Stockholms län,Vi i Sundbyberg,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1076,2019-05-02,2020-06-17,Sundbybergs kommun,Stockholms län,Sundbyberg Direkt,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1077,2014-06-25,2020-06-17,Österåkers kommun,Stockholms län,Mitt i Södra Roslagen,lokalredaktion,riktad titel,Gratistidning,Mitt i
+1078,2020-06-18,9,Österåkers kommun,Stockholms län,Mitt i Södra Roslagen,lokalredaktion,riktad titel,Gratistidning,Direktpress
+1079,2008-12-01,2014-06-24,Österåkers kommun,Stockholms län,Mitt i Södra Roslagen,lokalredaktion,riktad titel,Gratistidning,Stampen
+1080,0,9,Österåkers kommun,Stockholms län,Mitt Österåker,huvudredaktion,redaktion,Sajt,
+1081,1997,9,Österåkers kommun,Stockholms län,Åkersbergakanalen,huvudredaktion,redaktion,Gratistidning,
+1082,2014-06-25,2020-06-17,Vaxholms kommun,Stockholms län,Mitt i Södra Roslagen,lokalredaktion,riktad titel,Gratistidning,Mitt i
+1083,2020-06-18,9,Vaxholms kommun,Stockholms län,Mitt i Södra Roslagen,lokalredaktion,riktad titel,Gratistidning,Direktpress
+1084,2008-12-01,2014-06-24,Vaxholms kommun,Stockholms län,Mitt i Södra Roslagen,lokalredaktion,riktad titel,Gratistidning,Stampen
+1085,2006,2018-09-01,Vaxholms kommun,Stockholms län,Waxholmslotsen,huvudredaktion,redaktion,Gratistidning,
+1086,1997,9,Vaxholms kommun,Stockholms län,Åkersbergakanalen,lokalredaktion,riktad titel,Gratistidning,
+1087,2014-06-25,2020-06-17,Tyresö kommun,Stockholms län,Mitt i Tyresö,huvudredaktion,riktad titel,Gratistidning,Mitt i
+1088,2020-06-18,9,Tyresö kommun,Stockholms län,Mitt i Tyresö,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1089,2008-12-01,2014-06-24,Tyresö kommun,Stockholms län,Mitt i Tyresö,huvudredaktion,riktad titel,Gratistidning,Stampen
+1090,1972,9,Tyresö kommun,Stockholms län,Tyresö Nyheter,huvudredaktion,redaktion,Gratistidning,
+1091,2010,9,Tyresö kommun,Stockholms län,Vi i Tyresö,huvudredaktion,redaktion,Sajt,Moderaterna
+1092,2014-06-25,2020-06-17,Täby kommun,Stockholms län,Mitt i Täby,huvudredaktion,riktad titel,Gratistidning,Mitt i
+1093,2020-06-18,9,Täby kommun,Stockholms län,Mitt i Täby,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1094,2008-12-01,2014-06-24,Täby kommun,Stockholms län,Mitt i Täby,huvudredaktion,riktad titel,Gratistidning,Stampen
+1095,1981-05-11,9,Täby kommun,Stockholms län,Täby Allehanda,huvudredaktion,redaktion,Sajt,
+1096,0,2019-05-01,Täby kommun,Stockholms län,Täby Nyheter,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1097,2019-05-02,2020-06-17,Täby kommun,Stockholms län,Täby Direkt,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1098,2014-06-25,2020-06-17,Upplands Väsby kommun,Stockholms län,Mitt i Upplands Väsby,huvudredaktion,riktad titel,Gratistidning,Mitt i
+1099,2020-06-18,9,Upplands Väsby kommun,Stockholms län,Mitt i Upplands Väsby,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1100,2008-12-01,2014-06-24,Upplands Väsby kommun,Stockholms län,Mitt i Upplands Väsby,huvudredaktion,riktad titel,Gratistidning,Stampen
+1101,2019-06-01,9,Upplands Väsby kommun,Stockholms län,Vi i Väsby,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1102,2019-06-01,2011-07-31,Upplands Väsby kommun,Stockholms län,Vi i Väsby,huvudredaktion,riktad titel,Gratistidning,
+1103,2011-08-01,2019-05-31,Upplands Väsby kommun,Stockholms län,Vi i Väsby,huvudredaktion,redaktion,Gratistidning,Direktpress
+1104,2004,2011-07-31,Upplands Väsby kommun,Stockholms län,Vi i Väsby,huvudredaktion,redaktion,Gratistidning,
+1105,2014-06-25,2020-06-17,Upplands-Bro kommun,Stockholms län,Mitt i Upplands-Bro,huvudredaktion,riktad titel,Gratistidning,Mitt i
+1106,2020-06-18,9,Upplands-Bro kommun,Stockholms län,Mitt i Upplands-Bro,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1107,2008-12-01,2014-06-24,Upplands-Bro kommun,Stockholms län,Mitt i Upplands-Bro,huvudredaktion,riktad titel,Gratistidning,Stampen
+1108,2012-11-01,9,Upplands-Bro kommun,Stockholms län,ubro.se,huvudredaktion,redaktion,Sajt,
+1109,2016-01-09,2019-05-01,Upplands-Bro kommun,Stockholms län,Upplands-BroBladet,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1110,2019-05-02,2020-06-17,Upplands-Bro kommun,Stockholms län,Upplands-Bro Direkt,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1111,2017-09-01,2020-06-17,Vallentuna kommun,Stockholms län,Mitt i Vallentuna,huvudredaktion,riktad titel,Gratistidning,Mitt i
+1112,2014-06-25,2017-08-31,Vallentuna kommun,Stockholms län,Mitt i Vallentunasteget,huvudredaktion,riktad titel,Gratistidning,Mitt i
+1113,2020-06-18,9,Vallentuna kommun,Stockholms län,Mitt i Vallentuna,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1114,2008-12-01,2014-06-24,Vallentuna kommun,Stockholms län,Mitt i Vallentuna,huvudredaktion,riktad titel,Gratistidning,Stampen
+1115,2010,9,Vallentuna kommun,Stockholms län,Vallentuna Nya Tidning,huvudredaktion,redaktion,Gratistidning,
+1116,2015-01-01,2019-05-01,Vallentuna kommun,Stockholms län,Vallentuna Nyheter,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1117,2019-05-02,2020-06-17,Vallentuna kommun,Stockholms län,Vallentuna Direkt,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1118,2014-06-25,2020-06-17,Värmdö kommun,Stockholms län,Mitt i Värmdö,huvudredaktion,riktad titel,Gratistidning,Mitt i
+1119,2020-06-18,9,Värmdö kommun,Stockholms län,Mitt i Värmdö,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1120,2008-12-01,2014-06-24,Värmdö kommun,Stockholms län,Mitt i Värmdö,huvudredaktion,riktad titel,Gratistidning,Stampen
+1121,1990-08,9,Värmdö kommun,Stockholms län,Nacka Värmdö-posten,lokalredaktion,riktad titel,Gratistidning,
+1122,2007-06,2016-12-31,Värmdö kommun,Stockholms län,Skärgårdsradion,huvudredaktion,redaktion,Etermedier,
+1123,2012-11-01,9,Vadstena kommun,Östergötlands län,Motala & Vadstena Tidning,lokalredaktion,riktad titel,Dagspress,NTM
+1124,0,2012-10-31,Vadstena kommun,Östergötlands län,Motala & Vadstena Tidning,lokalredaktion,riktad titel,Dagspress,Promedia
+1125,2014-01-01,2019-05-01,Ekerö kommun,Stockholms län,Mälarö Tidning,huvudredaktion,redaktion,Gratistidning,Direktpress
+1126,2019-05-02,2019-10-11,Ekerö kommun,Stockholms län,Mälarö Direkt,huvudredaktion,redaktion,Gratistidning,Direktpress
+1127,2020-06-18,2019-10-11,Ekerö kommun,Stockholms län,Mitt i Mälarö,huvudredaktion,redaktion,Gratistidning,Direktpress
+1128,2019-10-12,2019-05-01,Ekerö kommun,Stockholms län,Mälarö Tidning,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1129,2019-10-12,2020-06-17,Ekerö kommun,Stockholms län,Mälarö Direkt,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1130,2020-06-18,9,Ekerö kommun,Stockholms län,Mitt i Mälarö,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1131,1995-01-01,9,Ekerö kommun,Stockholms län,Mälaröarnas nyheter,huvudredaktion,redaktion,Gratistidning,
+1132,2008-02-01,9,Sigtuna kommun,Stockholms län,Märsta.nu,huvudredaktion,redaktion,Sajt,
+1133,1883,2020-06-26,Sigtuna kommun,Stockholms län,Sigtunabygden,huvudredaktion,riktad titel,Gratistidning,NTM
+1134,0,9,Mölndals kommun,Västra Götalands län,Mölndals-Posten,huvudredaktion,redaktion,Dagspress,OTV
+1135,2015-04-01,2019-03-31,Lekebergs kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Mittmedia
+1136,2019-04-01,2020-04-01,Lekebergs kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+1137,2020-04-02,9,Lekebergs kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier
+1138,0,2015-03-31,Lekebergs kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Promedia
+1139,2015-04-01,2019-03-31,Laxå kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Mittmedia
+1140,2019-04-01,2020-04-01,Laxå kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+1141,2020-04-02,9,Laxå kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier
+1142,0,2015-03-31,Laxå kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Promedia
+1143,2015-04-01,2019-03-31,Kumla kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Mittmedia
+1144,2019-04-01,2020-04-01,Kumla kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+1145,2020-04-02,9,Kumla kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier
+1146,0,2015-03-31,Kumla kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Promedia
+1147,0,9,Kumla kommun,Örebro län,"Radio 94,3",huvudredaktion,redaktion,Etermedier,
+1148,2007,9,Kumla kommun,Örebro län,Sydnärkenytt,huvudredaktion,redaktion,Sajt,
+1149,2015-04-01,2019-03-31,Askersunds kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Mittmedia
+1150,2019-04-01,2020-04-01,Askersunds kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+1151,2020-04-02,9,Askersunds kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier
+1152,0,2015-03-31,Askersunds kommun,Örebro län,Nerikes Allehanda,lokalredaktion,redaktion,Dagspress,Promedia
+1153,1964,9,Årjängs kommun,Värmlands län,Nordmarksbygden,huvudredaktion,redaktion,Gratistidning,
+1154,0,9,Årjängs kommun,Värmlands län,Nya Wermlands-Tidningen,lokalredaktion,redaktion,Dagspress,NWT
+1155,0,9,Sollefteå kommun,Västernorrlands län,Nordsverige,lokalredaktion,redaktion,Dagspress,Tidningar i Norr
+1156,1991,9,Sollefteå kommun,Västernorrlands län,Sollefteåbladet,huvudredaktion,redaktion,Gratistidning,
+1157,0,2019-03-31,Sollefteå kommun,Västernorrlands län,Tidningen Ångermanland,lokalredaktion,redaktion,Dagspress,Mittmedia
+1158,2019-04-01,2020-04-01,Sollefteå kommun,Västernorrlands län,Tidningen Ångermanland,lokalredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+1159,2020-04-02,9,Sollefteå kommun,Västernorrlands län,Tidningen Ångermanland,lokalredaktion,redaktion,Dagspress,Bonnier
+1160,1919-01-01,9,Örnsköldsviks kommun,Västernorrlands län,Nordsverige,huvudredaktion,redaktion,Dagspress,Tidningar i Norr
+1161,0,9,Örnsköldsviks kommun,Västernorrlands län,Sveriges Radio P4 Västernorrland,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+1162,2015-04-13,9,Örnsköldsviks kommun,Västernorrlands län,SVT Nyheter Västernorrland,lokalredaktion,redaktion,Etermedier,Sveriges Television
+1163,0,2015-04-12,Örnsköldsviks kommun,Västernorrlands län,Mittnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+1164,2005,9,Örnsköldsviks kommun,Västernorrlands län,Webben 7,huvudredaktion,redaktion,Gratistidning,
+1165,1894,2019-03-31,Örnsköldsviks kommun,Västernorrlands län,Örnsköldsviks Allehanda,huvudredaktion,redaktion,Dagspress,Mittmedia
+1166,2019-04-01,2020-04-01,Örnsköldsviks kommun,Västernorrlands län,Örnsköldsviks Allehanda,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+1167,2020-04-02,9,Örnsköldsviks kommun,Västernorrlands län,Örnsköldsviks Allehanda,huvudredaktion,redaktion,Dagspress,Bonnier
+1168,0,2017-01-01,Malå kommun,Västerbottens län,Norran,lokalredaktion,redaktion,Dagspress,
+1169,2020-01-01,2017-01-01,Malå kommun,Västerbottens län,Norran,lokalredaktion,redaktion,Dagspress,NTM
+1170,0,2019-12-31,Norsjö kommun,Västerbottens län,Norran,lokalredaktion,redaktion,Dagspress,
+1171,2020-01-01,9,Norsjö kommun,Västerbottens län,Norran,lokalredaktion,redaktion,Dagspress,NTM
+1172,0,2018-12-31,Arvidsjaurs kommun,Norrbottens län,Norran,lokalredaktion,redaktion,Dagspress,
+1173,2020-01-01,2018-12-31,Arvidsjaurs kommun,Norrbottens län,Norran,lokalredaktion,redaktion,Dagspress,NTM
+1174,0,2018-12-31,Arvidsjaurs kommun,Norrbottens län,Piteå-Tidningen,lokalredaktion,redaktion,Dagspress,
+1175,2020-01-01,2018-12-31,Arvidsjaurs kommun,Norrbottens län,Piteå-Tidningen,lokalredaktion,redaktion,Dagspress,NTM
+1176,2020-01-07,9,Arvidsjaurs kommun,Norrbottens län,SVT Nyheter Norrbotten,lokalredaktion,redaktion,Etermedier,Sveriges Television
+1177,2020-01-07,2015-04-12,Arvidsjaurs kommun,Norrbottens län,Nordnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+1178,1861,2013-11-01,Kalix kommun,Norrbottens län,Norrbottens-Kuriren,lokalredaktion,redaktion,Dagspress,NTM
+1179,0,9,Kalix kommun,Norrbottens län,Norrländska Socialdemokraten,lokalredaktion,redaktion,Dagspress,NTM
+1180,2019-09-26,9,Jokkmokks kommun,Norrbottens län,Norrbottens-Kuriren,lokalredaktion,redaktion,Dagspress,NTM
+1181,0,9,Söderköpings kommun,Östergötlands län,Norrköpings Tidningar,lokalredaktion,redaktion,Dagspress,NTM
+1182,0,9,Valdemarsviks kommun,Östergötlands län,Norrköpings Tidningar,lokalredaktion,redaktion,Dagspress,NTM
+1183,0,9,Valdemarsviks kommun,Östergötlands län,Radio Wix,huvudredaktion,redaktion,Etermedier,
+1184,1992,9,Valdemarsviks kommun,Östergötlands län,Valdemarsviksbladet,huvudredaktion,redaktion,Gratistidning,
+1185,2015-01-01,2019-06-01,Norrtälje kommun,Stockholms län,Norrtelje nyheter,huvudredaktion,redaktion,Sajt,
+1186,2015-04-01,2019-03-31,Norrtälje kommun,Stockholms län,Norrtelje Tidning,huvudredaktion,redaktion,Dagspress,Mittmedia
+1187,2019-04-01,2020-04-01,Norrtälje kommun,Stockholms län,Norrtelje Tidning,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+1188,2020-04-02,9,Norrtälje kommun,Stockholms län,Norrtelje Tidning,huvudredaktion,redaktion,Dagspress,Bonnier
+1189,1880,2015-03-31,Norrtälje kommun,Stockholms län,Norrtelje Tidning,huvudredaktion,redaktion,Dagspress,Promedia
+1190,2019-09-01,9,Norrtälje kommun,Stockholms län,Sveriges Radio P4 Stockholm,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+1191,1993-03-01,9,Norrtälje kommun,Stockholms län,Roslagen Runt,huvudredaktion,redaktion,Gratistidning,
+1192,0,9,Norrtälje kommun,Stockholms län,Roslagsliv,huvudredaktion,redaktion,Gratistidning,
+1193,2020-12-10,2015-04-12,Norrtälje kommun,Stockholms län,ABC,lokalredaktion,redaktion,Etermedier,Sveriges Television
+1194,2020-12-10,9,Norrtälje kommun,Stockholms län,SVT Nyheter Stockholm,lokalredaktion,redaktion,Etermedier,Sveriges Television
+1195,2019-02-06,9,Norrtälje kommun,Stockholms län,Mitt Roslagen,huvudredaktion,redaktion,Gratistidning,
+1196,2019-01-02,9,Essunga kommun,Västra Götalands län,Nya Lidköpings-Tidningen,lokalredaktion,redaktion,Dagspress,NWT
+1197,1903-04-03,2019-01-01,Essunga kommun,Västra Götalands län,Nya Lidköpings-Tidningen,lokalredaktion,redaktion,Dagspress,
+1198,2019-01-02,9,Grästorps kommun,Västra Götalands län,Nya Lidköpings-Tidningen,lokalredaktion,redaktion,Dagspress,NWT
+1199,1903-04-03,2019-01-01,Grästorps kommun,Västra Götalands län,Nya Lidköpings-Tidningen,lokalredaktion,redaktion,Dagspress,
+1200,2019-01-02,9,Vara kommun,Västra Götalands län,Nya Lidköpings-Tidningen,lokalredaktion,redaktion,Dagspress,NWT
+1201,1903-04-03,2019-01-01,Vara kommun,Västra Götalands län,Nya Lidköpings-Tidningen,lokalredaktion,redaktion,Dagspress,
+1202,2019-01-02,9,Skara kommun,Västra Götalands län,Nya Lidköpings-Tidningen,lokalredaktion,redaktion,Dagspress,NWT
+1203,1903-04-03,2019-01-01,Skara kommun,Västra Götalands län,Nya Lidköpings-Tidningen,lokalredaktion,redaktion,Dagspress,
+1204,1884,2020-02-29,Skara kommun,Västra Götalands län,Skaraborgs Läns Tidning,huvudredaktion,redaktion,Dagspress,Hallpressen
+1205,2020-03-01,9,Skara kommun,Västra Götalands län,Skaraborgs Läns Tidning,huvudredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+1206,2010-01-01,2017-11-01,Skara kommun,Västra Götalands län,Skaraborgs Nyheterna,huvudredaktion,redaktion,Sajt,
+1207,1955,9,Skara kommun,Västra Götalands län,Skaraborgsbygden,huvudredaktion,redaktion,Dagspress,
+1208,2020-01-01,2015-04-12,Skara kommun,Västra Götalands län,Västnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+1209,2020-01-01,9,Skara kommun,Västra Götalands län,SVT Nyheter Väst,lokalredaktion,redaktion,Etermedier,Sveriges Television
+1210,0,9,Torsby kommun,Värmlands län,Nya Wermlands-Tidningen,lokalredaktion,redaktion,Dagspress,NWT
+1211,0,9,Torsby kommun,Värmlands län,Sveriges Radio P4 Värmland,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+1212,2017-03-01,2015-06-01,Torsby kommun,Värmlands län,Värmlands Folkblad,lokalredaktion,redaktion,Dagspress,NWT
+1213,0,2015-06-01,Torsby kommun,Värmlands län,Värmlands Folkblad,lokalredaktion,redaktion,Dagspress,
+1214,0,9,Hagfors kommun,Värmlands län,Nya Wermlands-Tidningen,lokalredaktion,redaktion,Dagspress,NWT
+1215,2017-03-01,9,Hagfors kommun,Värmlands län,Värmlands Folkblad,lokalredaktion,redaktion,Dagspress,NWT
+1216,0,2017-02-28,Hagfors kommun,Värmlands län,Värmlands Folkblad,lokalredaktion,redaktion,Dagspress,
+1217,0,9,Tjörns kommun,Västra Götalands län,NyheterSTO,huvudredaktion,redaktion,Sajt,
+1218,1925,2019-03-31,Nynäshamns kommun,Stockholms län,Nynäshamns-Posten,huvudredaktion,redaktion,Dagspress,Mittmedia
+1219,2019-04-01,2020-04-01,Nynäshamns kommun,Stockholms län,Nynäshamns-Posten,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+1220,2020-04-02,9,Nynäshamns kommun,Stockholms län,Nynäshamns-Posten,huvudredaktion,redaktion,Dagspress,Bonnier
+1221,0,9,Simrishamns kommun,Skåne län,Sveriges Radio P4 Kristianstad,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+1222,0,2011-09-30,Simrishamns kommun,Skåne län,Ystads Allehanda,lokalredaktion,redaktion,Dagspress,Bonnier
+1223,2011-10-01,9,Simrishamns kommun,Skåne län,Ystads Allehanda,lokalredaktion,redaktion,Dagspress,Gota Media
+1224,1986,2011-09-30,Simrishamns kommun,Skåne län,Österlen Magasinet,huvudredaktion,redaktion,Gratistidning,Bonnier
+1225,2011-10-01,9,Simrishamns kommun,Skåne län,Österlen Magasinet,huvudredaktion,redaktion,Gratistidning,Gota Media
+1226,0,9,Skövde kommun,Västra Götalands län,Sveriges Radio P4 Skaraborg,huvudredaktion,redaktion,Etermedier,Sveriges Radio
+1227,1884,9,Skövde kommun,Västra Götalands län,Skaraborgs Allehanda,huvudredaktion,redaktion,Dagspress,NWT
+1228,0,2020-02-29,Skövde kommun,Västra Götalands län,Skövde Nyheter,huvudredaktion,redaktion,Gratistidning,Hallpressen
+1229,2020-03-01,9,Skövde kommun,Västra Götalands län,Skövde Nyheter,huvudredaktion,redaktion,Gratistidning,Bonnier|Hallpressen
+1230,2019-01-28,2015-04-12,Skövde kommun,Västra Götalands län,Västnytt,lokalredaktion,redaktion,Etermedier,Sveriges Television
+1231,2019-01-28,9,Skövde kommun,Västra Götalands län,SVT Nyheter Väst,lokalredaktion,redaktion,Etermedier,Sveriges Television
+1232,2019-01-01,2020-05-01,Skövde kommun,Västra Götalands län,Skövde City News,huvudredaktion,redaktion,Sajt,
+1233,2020-05-02,9,Skövde kommun,Västra Götalands län,Skaraborgs Nyheter,huvudredaktion,redaktion,Sajt,
+1234,0,9,Åmåls kommun,Västra Götalands län,Sveriges Radio P4 Väst,lokalredaktion,redaktion,Etermedier,Sveriges Radio
+1235,1911-12,2013-10-31,Åmåls kommun,Västra Götalands län,Provinstidningen Dalsland,huvudredaktion,redaktion,Dagspress,Draken
+1236,2013-11-01,9,Åmåls kommun,Västra Götalands län,Provinstidningen Dalsland,huvudredaktion,redaktion,Dagspress,NWT
+1237,2010,2018-18,Piteå kommun,Norrbottens län,Piteå gratistidning,huvudredaktion,redaktion,Gratistidning,Svenska Civildatalogerna
+1238,1915,2019-12-31,Piteå kommun,Norrbottens län,Piteå-Tidningen,huvudredaktion,redaktion,Dagspress,
+1239,2020-01-01,9,Piteå kommun,Norrbottens län,Piteå-Tidningen,huvudredaktion,redaktion,Dagspress,NTM
+1240,0,2019-12-31,Älvsbyns kommun,Norrbottens län,Piteå-Tidningen,lokalredaktion,redaktion,Dagspress,
+1241,2020-01-01,9,Älvsbyns kommun,Norrbottens län,Piteå-Tidningen,lokalredaktion,redaktion,Dagspress,NTM
+1242,2010-01-15,9,Älvsbyns kommun,Norrbottens län,Älvsbyn just nu,huvudredaktion,redaktion,Sajt,
+1243,1989,9,Sotenäs kommun,Västra Götalands län,Radio Sotenäs,huvudredaktion,redaktion,Etermedier,
+1244,1879,2019-03-31,Sala kommun,Västmanlands län,Sala Allehanda,huvudredaktion,redaktion,Dagspress,Mittmedia
+1245,2019-04-01,2020-04-01,Sala kommun,Västmanlands län,Sala Allehanda,huvudredaktion,redaktion,Dagspress,Bonnier|Mittmedia
+1246,2020-04-02,9,Sala kommun,Västmanlands län,Sala Allehanda,huvudredaktion,redaktion,Dagspress,Bonnier
+1247,0,2019-03-19,Sala kommun,Västmanlands län,sala.nu,huvudredaktion,redaktion,Sajt,
+1248,2020-08,9,Älvdalens kommun,Dalarnas län,Siljan News,lokalredaktion,redaktion,Sajt,
+1249,0,9,Karlsborgs kommun,Västra Götalands län,Skaraborgs Allehanda,lokalredaktion,redaktion,Dagspress,NWT
+1250,0,9,Tibro kommun,Västra Götalands län,Skaraborgs Allehanda,lokalredaktion,redaktion,Dagspress,NWT
+1251,0,9,Hörby kommun,Skåne län,Skånska Dagbladet,lokalredaktion,redaktion,Dagspress,Skånska Dagbladet
+1252,0,2020-02-29,Aneby kommun,Jönköpings län,"Smålands-Tidningen med Smålands Dagblad, Vetlanda-Posten och Tranås tidning",lokalredaktion,redaktion,Dagspress,Hallpressen
+1253,2020-03-01,9,Aneby kommun,Jönköpings län,"Smålands-Tidningen med Smålands Dagblad, Vetlanda-Posten och Tranås tidning",lokalredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+1254,0,2020-02-29,Sävsjö kommun,Jönköpings län,"Smålands-Tidningen med Smålands Dagblad, Vetlanda-Posten och Tranås tidning",lokalredaktion,redaktion,Dagspress,Hallpressen
+1255,2020-03-01,9,Sävsjö kommun,Jönköpings län,"Smålands-Tidningen med Smålands Dagblad, Vetlanda-Posten och Tranås tidning",lokalredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+1256,0,9,Sävsjö kommun,Jönköpings län,Sävsjö-appen,huvudredaktion,redaktion,Sajt,
+1257,0,9,Sävsjö kommun,Jönköpings län,Vision Höglandet,huvudredaktion,redaktion,Gratistidning,
+1258,0,2020-02-29,Vetlanda kommun,Jönköpings län,"Smålands-Tidningen med Smålands Dagblad, Vetlanda-Posten och Tranås tidning",lokalredaktion,redaktion,Dagspress,Hallpressen
+1259,2020-03-01,9,Vetlanda kommun,Jönköpings län,"Smålands-Tidningen med Smålands Dagblad, Vetlanda-Posten och Tranås tidning",lokalredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+1260,0,9,Vetlanda kommun,Jönköpings län,Vetlanda-appen,huvudredaktion,riktad titel,Sajt,
+1261,0,9,Uppvidinge kommun,Kronobergs län,Smålandsposten,lokalredaktion,redaktion,Dagspress,Gota Media
+1262,1989-02,9,Uppvidinge kommun,Kronobergs län,Uppvidinge Tidning,huvudredaktion,riktad titel,Gratistidning,
+1263,0,9,Lessebo kommun,Kronobergs län,Smålandsposten,lokalredaktion,redaktion,Dagspress,Gota Media
+1264,0,2020-02-29,Markaryds kommun,Kronobergs län,Smålänningen,lokalredaktion,redaktion,Dagspress,Hallpressen
+1265,2020-03-01,9,Markaryds kommun,Kronobergs län,Smålänningen,lokalredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+1266,2014-02-15,9,Tranemo kommun,Västra Götalands län,Svenljunga Tranemo Tidning,huvudredaktion,redaktion,Gratistidning,Markbladet
+1267,1992,2014-02-14,Tranemo kommun,Västra Götalands län,Svenljunga & Tranemo Tidning,huvudredaktion,redaktion,Gratistidning,
+1268,2020-08,9,Hallsbergs kommun,Örebro län,Sydnärkenytt,lokalredaktion,redaktion,Sajt,
+1269,0,9,Säffle kommun,Värmlands län,Säffle-Tidningen,huvudredaktion,redaktion,Dagspress,NWT
+1270,0,2018-12-28,Gnesta kommun,Södermanlands län,Södermanlands Nyheter,lokalredaktion,redaktion,Dagspress,Sörmlands Media
+1271,2018-12-29,9,Gnesta kommun,Södermanlands län,Södermanlands Nyheter,lokalredaktion,redaktion,Dagspress,NTM|Sörmlands Media
+1272,2015-01-19,2017-08-21,Salems kommun,Stockholms län,Södra Sidan Salem/Rönninge,huvudredaktion,riktad titel,Gratistidning,Direktpress
+1273,0,9,Kinda kommun,Östergötlands län,Tidningen Innehåll,lokalredaktion,riktad titel,Gratistidning,
+1274,2018-01-15,2018-05-31,Kinda kommun,Östergötlands län,Vimmerby Tidning med Linköpings Tidning och Kinda-Posten,lokalredaktion,redaktion,Dagspress,NTM
+1275,2018-06-01,9,Kinda kommun,Östergötlands län,Vimmerby Tidning med Kinda-Posten,lokalredaktion,redaktion,Dagspress,NTM
+1276,0,2018-01-14,Kinda kommun,Östergötlands län,"Vimmerby Tidning med Västerviks-Posten, Linköpings Tidning och Kinda-Posten",lokalredaktion,redaktion,Dagspress,Swepress
+1277,2018-06-01,2018-09-04,Kinda kommun,Östergötlands län,Kindaplatsen,huvudredaktion,riktad titel,Gratistidning,
+1278,2018-09-05,9,Kinda kommun,Östergötlands län,Kinda-/Ydreplatsen,huvudredaktion,riktad titel,Gratistidning,
+1279,0,2018-09-03,Kinda kommun,Östergötlands län,Östgöta Correspondenten,lokalredaktion,redaktion,Dagspress,NTM
+1280,0,2019-04-03,Trollhättans kommun,Västra Götalands län,Trollhättan 7 dagar,huvudredaktion,redaktion,Gratistidning,Stampen
+1281,0,9,Trollhättans kommun,Västra Götalands län,TTELA,huvudredaktion,redaktion,Dagspress,Stampen
+1282,0,9,Vänersborgs kommun,Västra Götalands län,TTELA,lokalredaktion,redaktion,Dagspress,Stampen
+1283,2011-02-02,2020-09-22,Vänersborgs kommun,Västra Götalands län,Vänersborgaren,huvudredaktion,redaktion,Gratistidning,
+1284,0,9,Ulricehamns kommun,Västra Götalands län,Ulricehamns Tidning,huvudredaktion,redaktion,Dagspress,Gota Media
+1285,0,2020-02-29,Gnosjö kommun,Jönköpings län,Värnamo Nyheter,lokalredaktion,redaktion,Dagspress,Hallpressen
+1286,2020-03-01,9,Gnosjö kommun,Jönköpings län,Värnamo Nyheter,lokalredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+1287,0,9,Robertsfors kommun,Västerbottens län,Västerbottens Mellanbygd,lokalredaktion,redaktion,Dagspress,Tidningar i Norr
+1288,0,9,Vindelns kommun,Västerbottens län,Västerbottningen,lokalredaktion,redaktion,Dagspress,Tidningar i Norr
+1289,0,9,Vännäs kommun,Västerbottens län,Västerbottningen,lokalredaktion,redaktion,Dagspress,Tidningar i Norr
+1290,0,9,Nordmalings kommun,Västerbottens län,Västerbottningen,lokalredaktion,redaktion,Dagspress,Tidningar i Norr
+1291,1906-01-04,2020-02-29,Tidaholms kommun,Västra Götalands län,Västgöta-Bladet,huvudredaktion,redaktion,Dagspress,Hallpressen
+1292,2020-03-01,9,Tidaholms kommun,Västra Götalands län,Västgöta-Bladet,huvudredaktion,redaktion,Dagspress,Bonnier|Hallpressen
+1293,1996,9,Åtvidabergs kommun,Östergötlands län,Åtvidabergsplatsen,huvudredaktion,redaktion,Gratistidning,
+1294,0,9,Åtvidabergs kommun,Östergötlands län,Östgöta Correspondenten,lokalredaktion,redaktion,Dagspress,NTM
