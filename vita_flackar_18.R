@@ -5,7 +5,7 @@ library(lubridate)
 library(fuzzyjoin)
 
 # to load all this already in your environment
-#load(file = "municipalities,funding,white spots.RData")
+load(file = "municipalities,funding,white spots.RData")
 
 #¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
@@ -94,14 +94,17 @@ select(-c(name_short.x, name_short.y))
 
 
 
+
 #¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
 #--- Dataset of white spots in 2018 (municipalities with no newsroom)
 
 white_spots_2018 <- anti_join(kommuner, newsrooms_2018, by = "municipality_name")
+white_spots_2018$dummy <- 1
 
 #--- Which white spots did not request any funding?
 white_spots_18_no_funding <- anti_join(white_spots_2018, funds_fuzzy, by = "municipality_name") 
+
 
 
 
@@ -115,7 +118,13 @@ alla_kommuner_funding <- left_join(kommuner, funding_clear_munic, by = "municipa
   group_by(municipality_name) %>% mutate(id=row_number()) %>%
   pivot_longer(-c(municipality_name,id)) %>%
   mutate(name=paste0(name,'.',id)) %>% select(-id) %>%
-  pivot_wider(names_from = name,values_from=value)
+  pivot_wider(names_from = name,values_from=value) 
+
+#--- Adding a dummy to see if the municipality was a white spot in 2018 or not
+complete_df <- left_join(alla_kommuner_funding, white_spots_2018, by ="municipality_name") %>% 
+  select(-name_short) %>% 
+  replace_na(list(dummy = 0, y = "0")) %>% 
+  relocate(dummy)
 
 
-#save.image(file = "municipalities,funding,white spots.RData")
+save.image(file = "municipalities,funding,white spots.RData")
