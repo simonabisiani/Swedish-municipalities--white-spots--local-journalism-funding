@@ -32,12 +32,17 @@ newsrooms_2018 <- newsrooms %>%
 
 #--- Dataset of Swedish municipalities
 
-kommuner <- read_excel("kommuner_bra.xlsx", col_names = "municipality_name")
+kommuner <- read_excel("kommuner_codes.xlsx", col_names = c("Kommunkod","name_short", "municipality_name"))
 
 kommuner <- kommuner %>% 
-  mutate(municipality_name = gsub(" stad", " kommun", municipality_name)) %>%  # change "city" to "municipality" to merge with other dfs
-  mutate(name_short = str_replace(municipality_name, " kommun", "")) # for inexact matching purposes
+  mutate(municipality_name = gsub(" stad", " kommun", municipality_name))  # change "city" to "municipality" to merge with other dfs
 
+
+komm2 <- read_excel("Översiktstabell och lista_Kommungruppsindelning 2017 reviderad.xlsx", col_names = TRUE)
+
+kommuner_komplett <- komm2 %>% 
+  left_join(kommuner, by = c("Kommunkod"))
+  
 
 
 
@@ -70,7 +75,7 @@ funding[200,3] <- "Sundsvall"
 funding[244,3] <- "Askersund, Laxå"
 funding[247,3] <- "Motala"
 funding <- funding %>% 
-  separate_rows(name_short, sep = ", ") #%>% # where one outlet received funding to cover one municipality, split to get one observation for each municipality (careful as money totals won't match anymore)
+  separate_rows(name_short, sep = ", ") #%>% # where one outlet received funding to cover more than one municipality, split to get one observation for each municipality (careful as money totals won't match anymore)
   #group_by(name_short, year) %>%  #how many municipalities received funding in 2019 and 2020?
   #count()
 
@@ -78,18 +83,15 @@ funding <- funding %>%
 #--- Which municipalities have received funding for two consecutive years?
 fund_19_20 <- funding[funding$name_short %in% names(which(table(funding$name_short) > 1)), ]
 
-funds_fuzzy <- fund_19_20 %>% 
-  stringdist_inner_join(kommuner, max_dist = 1) %>% 
-  select(-c(name_short.x, name_short.y)) %>% 
-  slice(-c(18, 104)) # Avesta and Alvesta are two different municipalities but matched using stringdist due to their close names. Here I remove the wrong arising matches
+fund_19_20 <- fund_19_20 %>% 
+  left_join(kommuner_komplett, by = "name_short") # let's complete this with information from the other dataset
 
   
 #--- This is a dataframe that only retains, within the funding, those observations that have a clear municipality targeted (removing for example "Västra Mälardalen")
 funding_clear_munic <- funding %>% 
-stringdist_inner_join(kommuner, by = c(name_short = "name_short"), max_dist = 1) %>% 
-slice(-c(19, 127)) %>% # again removing Avesta and Alvesta duplicates
-select(-c(name_short.x, name_short.y))
+inner_join(kommuner, by = "name_short")
 
+who <- anti_join(funding, kommuner) # which observations am I getting rid of? (helpful to see for example that Kil and Grums - 2 white spots in 2018, actually did receive funding in 2020)
 
 
 
@@ -103,7 +105,7 @@ white_spots_2018 <- anti_join(kommuner, newsrooms_2018, by = "municipality_name"
 white_spots_2018$dummy <- 1
 
 #--- Which white spots did not request any funding in both 2019 and 2020?
-white_spots_18_no_funding <- anti_join(white_spots_2018, funds_fuzzy, by = "municipality_name") 
+white_spots_18_no_fund_both_years <- anti_join(white_spots_2018, fund_19_20, by = "municipality_name") 
 
 
 
@@ -114,17 +116,22 @@ white_spots_18_no_funding <- anti_join(white_spots_2018, funds_fuzzy, by = "muni
 #--- Dataframe to see all municipalities, outlets, amount and year of receiving funding
 
 alla_kommuner_funding <- left_join(kommuner, funding_clear_munic, by = "municipality_name") %>% 
-  select(-name_short) %>% 
+  select(-c(Kommunkod.y, name_short.y)) %>% 
   group_by(municipality_name) %>% mutate(id=row_number()) %>%
   pivot_longer(-c(municipality_name,id)) %>%
   mutate(name=paste0(name,'.',id)) %>% select(-id) %>%
   pivot_wider(names_from = name,values_from=value) 
+
 
 #--- Adding a dummy to see if the municipality was a white spot in 2018 or not
 complete_df <- left_join(alla_kommuner_funding, white_spots_2018, by ="municipality_name") %>% 
   select(-name_short) %>% 
   replace_na(list(dummy = 0, y = "0")) %>% 
   relocate(dummy)
+
+#--- A dataset of municipalities which did not get funding, both white spots and not, in 2019 and/or 2020
+no_funding_municipalities <- complete_df %>% 
+  filter(is.na(newspaper.1))
 
 
 save.image(file = "municipalities,funding,white spots.RData")
