@@ -21,7 +21,7 @@ newsrooms <- newsrooms %>%
 # (ignore error of 2 failed to parse, code works)
 
 newsrooms_2018 <- newsrooms %>% 
-  filter(sdate <= "2018-01-01", edate >= "2018-12-31")  # %>% subset for all newsrooms which existing during the entirety of 2018
+  filter(sdate <= "2018-01-01", edate >= "2018-12-28")  # %>% subset for all newsrooms which existing during the entirety of 2018
   #group_by(municipality_name) %>% 
   #count() #how many did each municipality have?
 
