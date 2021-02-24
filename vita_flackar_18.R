@@ -35,7 +35,7 @@ newsrooms_2018 <- newsrooms %>%
 kommuner <- read_excel("kommuner_bra.xlsx", col_names = "municipality_name")
 
 kommuner <- kommuner %>% 
-  mutate(municipality_name = gsub(" stad", "kommun", municipality_name)) %>%  # change "city" to "municipality" to merge with other dfs
+  mutate(municipality_name = gsub(" stad", " kommun", municipality_name)) %>%  # change "city" to "municipality" to merge with other dfs
   mutate(name_short = str_replace(municipality_name, " kommun", "")) # for inexact matching purposes
 
 
