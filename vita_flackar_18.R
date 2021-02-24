@@ -35,7 +35,7 @@ newsrooms_2018 <- newsrooms %>%
 kommuner <- read_excel("kommuner_bra.xlsx", col_names = "municipality_name")
 
 kommuner <- kommuner %>% 
-  mutate(municipality_name = gsub("stad", "kommun", municipality_name)) %>%  # change "city" to "municipality" to merge with other dfs
+  mutate(municipality_name = gsub(" stad", "kommun", municipality_name)) %>%  # change "city" to "municipality" to merge with other dfs
   mutate(name_short = str_replace(municipality_name, " kommun", "")) # for inexact matching purposes
 
 
@@ -102,7 +102,7 @@ select(-c(name_short.x, name_short.y))
 white_spots_2018 <- anti_join(kommuner, newsrooms_2018, by = "municipality_name")
 white_spots_2018$dummy <- 1
 
-#--- Which white spots did not request any funding?
+#--- Which white spots did not request any funding in both 2019 and 2020?
 white_spots_18_no_funding <- anti_join(white_spots_2018, funds_fuzzy, by = "municipality_name") 
 
 
