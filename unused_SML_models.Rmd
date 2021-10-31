@@ -1,0 +1,640 @@
+---
+title: "CMD_SML"
+author: "Simona Bisiani"
+date: "5/18/2021"
+output: html_document
+---
+
+```{r}
+
+# INSTALL PACKAGES
+install.packages("tidyverse") #data manipulation
+install.packages("pbapply") #check progress while doing a loop
+install.packages("fastDummies") #create fast dummies
+install.packages("CMDist") # concept movers distance
+install.packages("tidytext") # handle text
+install.packages("text2vec") #word emb
+install.packages("SnowballC") # stopwords
+install.packages("fastTextR") #work with FT word emb
+install.packages("plotROC")  # plot roc auc
+install.packages("magrittr") # tidyverse functionalities
+install.packages("tidymodels") # sml in a tidy way
+install.packages("hardhat") # fot SML
+install.packages("ranger") # random forest 
+install.packages("caret") # all things SML
+install.packages("textrecipes") # write models handling text
+install.packages("themis") # upsampling package
+install.packages("rsample") # split train / test
+install.packages("e1071") # support vector machines (SVM)
+install.packages("kernlab") # SVM
+
+
+# LOAD LIBRARIES
+library(tidyverse)
+library(pbapply)
+library(fastDummies)
+library(CMDist)
+library(tidytext)
+library(text2vec)
+library(SnowballC)
+library(fastTextR)
+library(plotROC) 
+library(magrittr)
+library(tidymodels)
+library(hardhat)
+library(ranger)
+library(caret)
+library(textrecipes)
+library(themis)
+library(rsample)
+library(e1071)
+library(kernlab)
+
+```
+
+
+In this script, I attempt an alternative way to classify my articles, based on Concept Mover's Distance (CMD) (Stoltz and Taylor, 2019). 
+
+The steps followed include:
+-extraction of keywords associated with each category (here 20 top TF-IDF words from the annotated set for each label)
+-using pre-trained FastText word embeddings for the Swedish language (retrieved at https://fasttext.cc/docs/en/crawl-vectors.html), I calculate the CMD distance between each document and each keyword, which is the average distance between each word in a document and a specific keyword, measured by means of word embeddings. 
+-I train a model (the best performing one was random forest, but alternatives include naive bayes, support vector machines)
+
+
+
+```{r}
+
+# Set the working directory to the current folder location
+current_path <- rstudioapi::getActiveDocumentContext()$path 
+setwd(dirname(current_path))
+setwd(print(getwd()))
+getwd()
+
+```
+
+
+
+# EXTRACT DICTIONARY OF KEYWORDS FOR EACH LABEL
+
+```{r}
+
+#load data
+df_labelled <- read_csv("df_labelled.csv",locale = locale(encoding = "ISO-8859-1"))
+
+#tokenize
+df_labelled_tok <- df_labelled %>% 
+  unnest_tokens(word, "article1", to_lower = TRUE)
+
+#obtain Swedish stopwords
+stop_words <- stopwords::stopwords(language = "sv") %>% as_tibble() %>% rename(word = "value")
+
+#identify numerical values
+nums <- df_labelled_tok %>%
+  filter(str_detect(word, "^[0-9]")) %>%
+  select(word) %>% unique()
+
+# some irrelevant words that muddle the quality of the TF-IDF
+irrelevant_words <- c("säger", "ska", "smedjebacken", "Älvdalen", "hallsberg",
+                      "vingåker", "nordanstig", "bräcke", "också", "två",
+                      "bland", "annat", "sydnärke")
+
+# turn into a tibble
+irrelevant_words <- as_tibble(irrelevant_words) %>%
+  rename(word = "value")
+
+#obtain TF-IDF
+df_labelled_tf_idf <- df_labelled_tok %>% 
+  anti_join(stop_words) %>% 
+  anti_join(nums, by = "word") %>% 
+  anti_join(irrelevant_words, by = "word") %>% 
+  count(word, label) %>% 
+  bind_tf_idf(word, label, n)
+
+# additional words to remove
+more_removal <- c("c", "Örebro", "ludvika", " ", "", "   ", "rättvik", "katrineholm", "johansson", "andersson", "finns", "hofors", "eriksson", "per", "kommun", "får", "även", "a", "emil", "erik", "potatis", "dalarna", "kom", "fick", "in", "lindesberg", "borlänge", "falun")
+
+more_removal <- as_tibble(more_removal) %>% rename(word = "value")
+
+# now only keep the top 20 words per label
+tf_idf_reduced <- df_labelled_tf_idf %>% 
+  anti_join(more_removal) %>% 
+  group_by(label) %>% 
+  arrange(desc(tf_idf)) %>%
+  dplyr::slice(1:20) 
+ #%>% 
+  #group_by(word) %>% 
+  #filter(n == max(n)) # not using just the unique words lead to better estimates, so leave this out
+
+# keep only variables of interest
+tf_idf_dict <- tf_idf_reduced %>% select(word, label)
+
+# save
+write.csv(tf_idf_dict, "dictionary_top20_tfidf.csv")
+```
+
+
+
+
+# CONCEPT MOVER'S DISTANCE OF ANNOTATED SET
+
+
+```{r}
+
+# clean the work environment
+rm(list=ls())
+
+#load data
+df_labelled <- read_csv("df_labelled.csv",locale = locale(encoding = "ISO-8859-1"))
+
+#keywords
+keywords <- read_csv("dictionary_top20_tfidf.csv",locale = locale(encoding = "ISO-8859-1"))
+
+#tibbles
+stopwords_tbl <- as_tibble(stopwords::stopwords(language = "sv")) %>% rename(word = "value")
+
+#tokenize and remove stopwords
+sample_article_tokens <- 
+  df_labelled %>%
+  rename(text = article1,
+         doc_id = X1) %>% 
+  unnest_tokens(output = word,input = text, to_lower = TRUE) %>% 
+  anti_join(stopwords_tbl)
+
+#turn into a document-term matrix
+dtm <-
+  sample_article_tokens %>% 
+  count(doc_id,word) %>% 
+  cast_sparse(doc_id,word,n)
+
+#extract distinct words from all articles in annotated dataset (to then retrieve the word embeddings)
+words_sample <- sample_article_tokens %>% distinct(word) %>% pull()
+
+#keywords vector
+keywords <- keywords %>% distinct(word) %>% pull()
+
+# merge (because of the TF-IDF procedure, all keywords are actually contained in the words_sample, but this is good practice)
+vocab <- union(words_sample, keywords)
+
+
+# THE DOWNLOAD OF THE FASTTEXT MODEL ON THE LOCAL MACHINE IS REQUIRED
+#the file can be retrieved at the following link: https://fasttext.cc/docs/en/crawl-vectors.html
+#after navigating to the page, one needs to find Swedish in the list of languages and download the "bin" model
+
+# fast embedding model
+ft_We <- ft_load("cc.sv.300.bin") # load
+ft_we_vocab <- ft_word_vectors(ft_We,vocab) # extract relevant word embeddings
+remove(ft_We) # remove model
+
+#Concept Mover's Distance (thanks to Pablo Bello for showing me the function)
+distance_articles <- pblapply(keywords, function(terms) {
+  doc_closeness <- lapply(terms, function(t){
+  doc_dist <- CMDist(dtm = dtm, cw = t, wv = ft_we_vocab)
+  names(doc_dist)[2] <- "distance"
+  return(doc_dist)
+  })
+ names(doc_closeness) <- terms 
+ dist_tbl <- bind_rows(doc_closeness,.id = "keyword")
+return(dist_tbl)
+})
+
+# grab each doc and its label
+tbl <- df_labelled  %>% transmute (docs = as.character(X1),label)
+
+# find the CMD distance between each keyword and each doc
+articles_distances <- 
+  bind_rows(distance_articles) %>% 
+  mutate(distance = as.numeric(distance)) %>% 
+  rename(word = keyword) %>% 
+  left_join(tbl, by = "docs") 
+
+# turn it around to have one doc per row and each keyword in a column
+doc_dist_wide <-
+  articles_distances %>%
+  pivot_wider(names_from = word, values_from = distance)
+
+# remove empty word embeddings
+doc_dist_wide[is.na(doc_dist_wide)] <- NA
+doc_dist_wide_clean <- doc_dist_wide[,colSums(is.na(doc_dist_wide))<nrow(doc_dist_wide)]
+
+
+```
+
+
+
+
+
+# SML MODEL
+
+# Preparing the recipe, creating train/test split
+
+```{r}
+
+# recipe with added upsampling 
+data_trim <- doc_dist_wide_clean %>% select(-docs)
+outcome <- names(data_trim[1])
+formula <- as.formula(paste(outcome, "~ ."))
+
+recipe <- recipe(formula, data = data_trim) %>% 
+    step_upsample(label) # <- extra rows added to minority classes
+  
+
+# what does the data look like?
+recipe %>% prep() %>% juice() 
+  
+
+# train/test split
+set.seed(10)
+split <- initial_split(data = doc_dist_wide_clean,prop = .8, strata = outcome[[1]])
+train <- training(split)
+test <- testing(split)
+
+
+# stratified cross validation folds
+set.seed(123)
+df_folds <- vfold_cv(data = train, strata = label)
+
+```
+
+
+# What results gives a null model?
+
+```{r}
+
+null_classification <- 
+  null_model() %>%
+  set_engine("parsnip") %>%
+  set_mode("classification")
+
+null_wf <- 
+  workflow() %>%
+  add_recipe(recipe) %>%
+  add_model(null_classification) 
+
+null_cv <- 
+  fit_resamples(null_wf,
+    df_folds)
+
+null_cv %>%
+  collect_metrics() 
+
+
+```
+
+
+# Random Forest
+
+```{r}
+
+# model specifications
+rf_model <- 
+  rand_forest(mtry = tune(), trees = tune()) %>%
+  set_engine("ranger", importance = "impurity") %>%
+  set_mode("classification") 
+
+
+# workflow
+rf_workflow <- 
+  workflow() %>%
+  add_recipe(recipe) %>%
+  add_model(rf_model)
+  
+
+# specify which values want to try
+rf_grid <- expand.grid(mtry = c(13, 15), trees = c(500, 1000))
+
+# Define tuning process
+model_control <- control_grid(save_pred = TRUE)
+model_metrics <- metric_set(accuracy, sens, spec, roc_auc)
+
+# extract results
+rf_tune_results <- 
+  rf_workflow %>%
+  tune_grid(resamples = df_folds, #CV object
+            grid = rf_grid, # grid of values to try
+            control = model_control,
+            metrics = model_metrics # metrics we care about
+            )
+
+# print results
+rf_tune_results %>%
+  collect_metrics()
+
+# which are the best hyperparameters tuning values?
+best_m <- show_best(rf_tune_results, metric = "roc_auc")
+
+
+# collect predictions
+rf_tune_preds <- 
+  rf_tune_results %>% 
+  collect_predictions() %>% 
+  filter(mtry == "13", trees == "1000") 
+
+spec(rf_tune_preds, truth = label, estimate = .pred_class)
+sens(rf_tune_preds, truth = label, estimate = .pred_class)
+
+# confusion matrix
+confusionMatrix(data = rf_tune_preds$.pred_class, reference = rf_tune_preds$label)
+
+# roc_auc curve
+rf_tune_preds %>%
+  group_by(id) %>%
+  roc_auc(label, `.pred_Civic Info`:.pred_Transportation)
+
+# plot roc_auc
+rf_tune_preds %>%
+   filter(mtry == "13", trees == "1000") %>% 
+   group_by(id) %>%
+   roc_curve(label, `.pred_Civic Info`:.pred_Transportation) %>%
+   ggplot(aes(1 - specificity, sensitivity, color = id)) +
+   geom_abline(lty = 2, color = "gray80", size = 1.5) +
+   geom_path(show.legend = FALSE, alpha = 0.6, size = 0.8) +
+   coord_equal()
+
+
+```
+
+
+
+# Applying my model on the test set
+
+```{r}
+
+# get the parameters of the best model
+param_final <- rf_tune_results %>%
+  select_best(metric = "roc_auc")
+
+# finalize the workflow
+rf_workflow <- rf_workflow %>%
+  finalize_workflow(param_final)
+
+# fit on the training set and evaluate on test set
+rf_fit <- rf_workflow %>%
+    last_fit(split)
+
+# collect metrics and predictions
+rf_fit %>% collect_metrics()
+test_preds <- rf_fit %>% collect_predictions()
+
+# plot predictions
+test_preds %>%
+  ggplot(aes(label, .pred_class, color = id)) +
+  geom_abline(lty = 2, color = "gray80", size = 1.5) +
+  geom_point(alpha = 0.3) +
+  geom_jitter() +
+  theme(axis.text.x = element_text(angle = 25, hjust = 1)) +
+  labs(
+    x = "Truth",
+    y = "Predicted label",
+    color = NULL,
+    title = paste("Predicted and true article labels using",
+                  "a random forest model", sep = "\n"),
+    subtitle = "Each cross-validation fold is shown in a different color"
+  )
+
+# for roc
+test_preds %>%
+  group_by(id) %>%
+  roc_auc(label, `.pred_Civic Info`:.pred_Transportation)
+
+# plot roc auc curve
+test_preds %>% 
+   roc_curve(label, `.pred_Civic Info`:.pred_Transportation) %>%
+   ggplot(aes(1 - specificity, sensitivity)) +
+   geom_abline(lty = 2, color = "gray80", size = 1.5) +
+   geom_path(show.legend = FALSE, alpha = 0.6, size = 0.8) +
+   coord_equal()
+
+# plot confusion matrix
+library(cvms)
+conf_mat <- confusion_matrix(targets = test_preds$label, prediction = test_preds$.pred_class)
+plot_confusion_matrix(conf_mat$`Confusion Matrix`[[1]], add_normalized = FALSE, palette = "Oranges")
+
+```
+
+
+# Training on full annotated data
+
+```{r}
+
+# final step: take the best model and finally train it one last time on the full annotated set
+final_model <- fit(rf_workflow, data_trim)
+
+```
+
+
+
+
+
+
+
+
+# PREDICTION ON FULL DATASET
+
+
+
+# CONCEPT MOVER'S DISTANCE OF FULL DF
+
+```{r}
+# load full df
+articles_dataframe <- read_csv("articles_dataframe.csv",locale = locale(encoding = "UTF-8"))
+
+# load keywords
+keywords <- read_csv("dictionary_top20_tfidf.csv",locale = locale(encoding = "ISO-8859-1"))
+
+# swedish stopwords to be removed later
+stopwords <- stopwords::stopwords(language = "sv") %>% as_tibble() %>% rename(word = "value")
+
+# tokenize
+article_tokens <- 
+  articles_dataframe %>%
+  rename(text = article1) %>% 
+  unnest_tokens(output = word,input = text, to_lower = TRUE)
+  
+# remove stopwords
+article_tokens <- 
+  article_tokens %>% 
+  anti_join(stopwords)
+
+
+# sparse matrix for CMDist function
+dtm <-
+  article_tokens %>% 
+  count(article_n, word) %>% 
+  cast_sparse(article_n,word,n)
+
+# vocabulary creation
+words <- article_tokens %>% distinct(word) %>% pull()
+keywords <- keywords %>% distinct(word) %>% pull()
+vocab <- union(words, keywords) # these should be the same as words
+
+
+# importing the pre-trained word embeddings from FastText
+library(fastTextR)
+ft_We <- ft_load("cc.sv.300.bin")
+ft_we_vocab <- ft_word_vectors(ft_We,vocab)
+remove(ft_We)
+
+
+# CMD
+distance_articles <- pblapply(keywords, function(terms) {
+  doc_closeness <- lapply(terms, function(t){ 
+  doc_dist <- CMDist(dtm = dtm, cw = t, wv = ft_we_vocab)
+  names(doc_dist)[2] <- "distance"
+  return(doc_dist)
+  })
+ names(doc_closeness) <- terms 
+ dist_tbl <- bind_rows(doc_closeness,.id = "keyword")
+return(dist_tbl)
+})
+
+
+articles_distances <- 
+  bind_rows(distance_articles) %>% 
+  mutate(distance = as.numeric(distance)) %>% 
+  rename(word = keyword) %>% 
+  left_join(tbl, by = "docs") 
+
+# get one document per row and each keyword in a column
+doc_dist_wide <-
+  articles_distances %>%
+  pivot_wider(names_from = word, values_from = distance)
+
+# remove those words that did not have a corresponding embedding in the FastText model 
+doc_dist_wide[is.na(doc_dist_wide)] <- NA
+doc_dist_wide_clean <- doc_dist_wide[,colSums(is.na(doc_dist_wide))<nrow(doc_dist_wide)]
+
+# save file
+write_csv(x = doc_dist_wide_clean, file = "cmd_full_df.csv")
+
+```
+
+# PREDICTIONS
+
+```{r}
+
+# load CMD file for entire dataset
+df <- read_csv("cmd_full_df.csv")
+
+# generate predictions
+df_preds <- predict(final_model, new_data = df, type = "class") 
+
+# create if column to merge predicted label to original dataframe
+df_preds <- 
+  df_preds %>%
+  rowid_to_column() %>%
+  rename(article_n = "rowid")
+
+# load original dataframe
+data <- readRDS("df.RData")
+
+# merge prediced label and original df
+df <- 
+  data %>% 
+  left_join(df_preds, by = "article_n") %>% 
+  select(-c(article,row.id)) %>%
+  rename(label = ".pred_class")
+
+# save the new file as a csv
+write_csv(df, "df_predicted_cmd.csv")
+
+```
+
+
+
+
+# ADDITIONAL MODELS THAT WERE DISCARDED AS COMPARATIVELY PERFORMING WORSE THAN RANDOM FOREST
+
+#Support Vector Machines
+
+```{r}
+
+# model
+svm_model <- svm_poly() %>%
+  set_mode("classification") %>% set_engine("kernlab")
+
+# workflow
+svm_workflow <- 
+  workflow() %>%
+  add_recipe(recipe) %>%
+  add_model(svm_model)
+
+# fit resamples
+svm_cv <- svm_workflow %>%
+  fit_resamples(
+    df_folds,
+    control = control_resamples(save_pred = TRUE)
+  )
+
+# collect metrics
+svm_cv %>% collect_metrics()
+
+# get predictions
+test_predictions_cv_svm <- svm_cv %>% collect_predictions()
+
+# and other metrics
+specificity <- spec(test_predictions_cv_svm, truth = label, estimate = .pred_class)
+sensitivity <- sens(test_predictions_cv_svm, truth = label, estimate = .pred_class)
+
+#confusion matrix
+cm_svm <- confusionMatrix(data = test_predictions_cv_svm$.pred_class, reference = test_predictions_cv_svm$label)
+
+# test model on test set
+sv_fit <- svm_workflow %>%
+  last_fit(split)
+
+# collect metrics
+sv_fit %>% collect_metrics()
+
+# get roc auc 
+test_predictions_cv_svm %>%
+  group_by(id) %>%
+  roc_auc(label, `.pred_Civic Info`:.pred_Transportation)
+
+# plot it
+svm_cv %>%
+  collect_predictions() %>%
+  group_by(id) %>%
+  roc_curve(label, `.pred_Civic Info`:.pred_Transportation) %>%
+  ggplot(aes(1 - specificity, sensitivity, color = id)) +
+  geom_abline(lty = 2, color = "gray80", size = 1.5) +
+  geom_path(show.legend = FALSE, alpha = 0.6, size = 1.2) +
+  coord_equal()
+
+```
+
+
+# Multinomial Logistic Regression
+
+```{r}
+
+# model
+logistic_model <- multinom_reg(penalty = tune(), mixture = 1) %>% 
+  set_engine("glmnet") %>% 
+  set_mode("classification")
+
+# specify grid
+logistic_grid <- grid_regular(parameters(logistic_model), levels = 3)
+
+# define tuning
+model_control <- control_grid(save_pred = TRUE)
+model_metrics <- metric_set(accuracy, sens, spec, mn_log_loss, roc_auc)
+
+# tune model
+linear_res <- tune_grid(
+  logistic_model,
+  recipe,
+  grid = logistic_grid,
+  control = model_control,
+  metrics = model_metrics,
+  resamples = df_folds
+)
+
+# collect predictions and metrics
+linear_res %>% collect_metrics()
+linear_preds <- linear_res %>% collect_predictions()
+
+# see best performing model
+best_glm <- show_best(linear_res, metric = "roc_auc")
+
+```
+
