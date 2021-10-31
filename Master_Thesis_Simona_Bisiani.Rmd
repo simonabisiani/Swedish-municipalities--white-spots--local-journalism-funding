@@ -1,0 +1,1414 @@
+---
+title: "Master Thesis Main Script"
+author: "Simona Bisiani"
+date: "5/14/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r}
+
+# Install relevant packages
+install.packages("rstudioapi") # for working directory install
+install.packages("tidyverse") # data manipulation, visualization
+install.packages("lubridate") # handling dates
+install.packages("stargazer") # creating tables
+install.packages("readxl") # load excel sheets
+install.packages("data.table") # handling data tables
+install.packages("openxlsx") # write excel sheets
+install.packages("fastTextR") # supervised fasttext classification
+install.packages("caret") # support in SML related tasks
+install.packages("zoo") # handling dates again
+install.packages("coefplot") # visualise statistical analysis results
+install.packages("sjstats") # shortcuts for statistical measures
+install.packages("sandwich") # generate robust standard errors
+install.packages("did") # difference-in-differences
+
+
+# Load them
+library(rstudioapi)
+library(tidyverse)
+library(lubridate)
+library(stargazer)
+library(readxl)
+library(data.table)
+library(openxlsx)
+library(fastTextR)
+library(caret)
+library(zoo)
+library(coefplot)
+library(sjstats)
+library(sandwich)
+library(did)
+
+```
+
+
+
+
+#This file contains all the code for this Master Thesis about blank spots, critical information needs and local journalism funding. 
+
+It is divided in different sections:
+1. *Preprocessing steps* (subdivided in the identification of blank spots, funding allocation, exploration of the demographic variables used in the Kolada matching)
+2. *Article processing*
+3. *Annotation related tasks*
+4. *Supervised Classification*, including training a model, evaluating on the test, and predicting on full dataset
+5. *Statistical Analysis*, divided in DID analysis at the publisher and municipality level
+
+
+
+```{r}
+
+# Set the working directory to the current folder location
+current_path <- rstudioapi::getActiveDocumentContext()$path 
+setwd(dirname(current_path))
+setwd(print(getwd()))
+getwd()
+
+```
+
+
+
+# PREPROCESSING STEPS
+
+
+1. Find the Blank Spots
+
+```{r}
+
+# Load newsrooms data from kommundatabasen
+newsrooms <- read_csv("newsrooms.csv") 
+
+# Clean it up
+newsrooms <- 
+  newsrooms %>% 
+  mutate(sdate = ifelse(as.character(sdate) == "0", "1900-01-01", as.character(sdate)), # to avoid NAs when converting to date, I am putting a random date
+         sdate = ymd(sdate, truncated = 3), # convert to date (recognising both obs with only year, ym, or ymd format)
+         edate = ifelse(as.character(edate) == "9", "2021-01-01", as.character(edate)), # to avoid NAs when converting to date, I am putting a random date
+         edate = ymd(edate, truncated = 3)) %>% 
+  filter(sdate < edate) # some bug in the json script from kommundatabasen, whereby I end up with extra rows 
+# ignore error of 2 failed to parse, code works
+
+
+#  Which newsrooms existed at the time of funding application and kept existing since? 
+nr_fund_opp <- newsrooms %>% 
+  filter(edate >= "2019-02-01")
+
+
+# Which newsrooms existed in Sweden in 2018 and until application period?
+newsrooms_for_ws <- newsrooms %>% 
+  filter(sdate <= "2019-01-31", edate >= "2019-02-01") #subset newsrooms which existing during the entirety of 2018
+
+
+# Dataset of Swedish municipalities
+kommuner <- read_excel("kommuner_codes.xlsx", col_names = c("Kommunkod","name_short", "municipality_name"))
+
+kommuner <- kommuner %>% 
+  mutate(municipality_name = gsub(" stad", " kommun", municipality_name))  # change "city" to "municipality" to merge with other dfs
+
+kommuner[68,3] <- "Region Gotland"
+
+
+
+# Dataset of white spots up until funding application period (municipalities with no newsroom)
+white_spots <- anti_join(kommuner, newsrooms_for_ws, by = "municipality_name")
+white_spots$dummy <- 1 # add a dummy for later identification
+
+
+```
+
+
+2. Find out who has received funding and who has not
+
+```{r}
+
+# Who received funding for local journalism? 
+
+# In 2019
+funding_19 <- read_excel("funding_2019.xlsx", col_names = c("newspaper", "amount", "name_short"))
+funding_19 <- funding_19 %>% 
+  filter(!is.na(newspaper) & !is.na(name_short)) # cleanup NAs
+funding_19$year <- "2019" # add year column      
+
+# In 2020
+funding_20 <- read_excel("funding_2020.xlsx", col_names = c("newspaper", "amount", "name_short"))
+funding_20 <- funding_20 %>% 
+  filter(!is.na(newspaper) & !is.na(name_short)) # cleanup NAs
+funding_20$year <- "2020" # add year column
+
+
+# Merge and cleanup
+funding <- bind_rows(list(funding_19, funding_20), .id = NULL)
+funding[8,3] <- "Älvkarleby" 
+funding[25,3] <- "Piteå, Älvsbyn, Luleå, Boden, Kalix, Överkalix, Arjeplog, Jokkmokk, Arvidsjaur"
+funding[88,3] <- "Krokom"
+funding <- funding[-167,]
+funding[80,3] <- "Älvkarleby"
+funding[150,3] <- "Tensta, Rinkeby"
+funding[200,3] <- "Sundsvall"
+funding[244,3] <- "Askersund, Laxå"
+funding[247,3] <- "Motala"
+
+funding <- funding %>% 
+  separate_rows(name_short, sep = ", ") %>% # where one outlet received funding to cover more than one municipality, split to get one observation for each municipality (careful as money totals won't match anymore)
+  group_by(name_short, year) %>%  #how many municipalities received funding in 2019 and 2020?
+  count()
+
+
+
+# This is a dataframe that only retains, within the funding, those observations that have a clear municipality targeted (removing for example "Västra Mälardalen")
+funding_clear <- funding %>% 
+inner_join(kommuner, by = "name_short") %>% 
+  group_by(name_short) %>% #how many publications received funding in 2019 and 2020?
+  summarise(n = sum(n)) %>% 
+  ungroup()
+ 
+
+funding_clear$dummy <- 1
+
+saveRDS(funding_clear, "funding_clear.RData")
+
+#anti_join(funding, kommuner) # which observations am I getting rid of? (helpful to see for example that Kil and Grums - 2 white spots in 2018, actually did receive funding in 2020)
+
+```
+
+
+3. Demographic variables from the Kolada website 
+
+```{r}
+
+# Statistics of variables used for matching
+variables_data <- read_excel("Kolada_variables.xlsx") # load data 
+
+variables_data <- 
+  variables_data %>% 
+  spread(Nyckeltal, Värde) %>% 
+  rename(municipality = "Område",
+         pop = "Invånare  totalt, antal",                                 
+         edu = "Invånare 25-64 år med eftergymnasial utbildning, andel (%)",
+         gender = "Kvinnor i befolkningen kommun, andel (%)",  
+         wage = "Lönesumma, nattbefolkning, mkr",               
+         age = "Medelålder, år",                          
+         for_born = "Utrikes födda, andel (%)",                                 
+         turnout = "Valdeltagande i senaste riksdagsvalet, andel (%)") %>% 
+  select(-Period)
+
+
+# table for Appendix
+variables_data <- as.data.frame(variables_data) # convert to df from tbl for stargazer to read it
+
+stargazer(variables_data, summary = TRUE, type = "latex", min.max=TRUE, mean.sd = TRUE, 
+          nobs = FALSE, median = FALSE, iqr = FALSE,
+          digits=1, align=T,
+          title = "Summary Statistics")
+
+
+# filtering sampled municipalities
+target <- c("Munkedal", "Ovanåker", "Nordanstig", "Bräcke", "Smedjebacken", "Hallsberg", "Älvdalen", "Vingåker")
+
+variables_sample <- variables_data %>% 
+  filter(municipality %in% target) 
+
+
+# table for paper
+#stargazer(variables_sample, summary = FALSE, type = "latex")
+
+```
+
+
+
+
+
+
+# ARTICLE PROCESSING
+
+The Retriever downloads were text files containing max 500 articles in each. I thus ended with a large number of text files, which I had organised chronologically and divided by municipality. I converted each text file to a csv file. I here create a series of functions that enable me to work with the csv files and extract the relevant information from each file.
+
+```{r}
+
+# Function to make a dataframe to work with 
+make_df <- function(x) {
+# filter empty rows and uses the === pattern to separate the articles
+  x %>% 
+  filter(is.na(text) == FALSE) %>% 
+  mutate(divider = ifelse(text == "==============================================================================",1,0)) %>% 
+  rowid_to_column("row.id") 
+}
+
+
+
+# Function to enumerate 
+enumerate <- function(j)  {
+article <- 0
+vec <- 
+  sapply(1:length(j$divider),function(i){
+    class <- j$divider[i]
+    if (class == 0){  
+      j$divider[i] <- article
+    }
+    else{article <<- article + 1}
+    return(article)
+  }
+  )
+return(vec)
+}
+
+
+
+# Function to extract publisher 
+extract_publisher <- function(k){
+  k %>% 
+  rename(article_n = "X[[i]]") %>% 
+  group_by(article_n) %>% 
+  filter (article_n != 0) %>% 
+  filter(str_detect(text, ".*\\d+-\\d+-\\d+")) %>% 
+  slice(1) %>% 
+  separate(text, c("publisher", "date"), sep = ",") %>% 
+  dplyr::select(-c(date, divider))
+}
+
+
+
+# Function to make a clean dataframe 
+make_df_clean <- function(l) {
+  l %>% 
+    rename(article_n = "X[[i]]") %>% 
+    filter(divider != "1") %>% # remove divider
+    group_by(article_n) %>% # for each article group
+    mutate(title = first(text)) %>% # make the first row of the text the title
+    filter (article_n != 0) %>%  # remove the first article, as it's the index
+    mutate(article = str_c(text, collapse = " ")) %>% # paste all rows of an article together
+    slice(1) %>% # keep only one of them
+    dplyr::select(-c(text, divider, row.id)) %>% # remove some irrelevant columns
+    mutate(date = base::as.Date(str_extract(article, "\\d+-\\d+-\\d+")), # extract date 
+           category = str_extract(article,"((\\bwebb\\b)|(\\bprint\\b))"), # extract category
+           article = gsub(".*((Publicerat på webb\\. )|(Publicerat i print\\. ))","", article),
+           article = str_replace(article, "<br>Alla.*", ""), 
+           article= str_replace(article, "Bildtext:.*", "")) 
+}
+
+```
+
+
+Now I run the functions on the files, stored in the data_import folder.
+
+```{r}
+
+# Import each file in a list
+file_paths <- fs::dir_ls("data_import")
+
+file_contents <- file_paths %>% 
+  map(function(path){
+    read_excel(path, col_names = "text")
+  })
+
+
+
+# Run a series of functions on the files to put together articles and extract metadata information
+df <- file_contents %>% # turn into dataframes
+  lapply(make_df)
+
+df_enum <- df %>%   # enumerate
+  lapply(enumerate)
+
+df_enum <- lapply(df_enum, as.data.frame) # convert from numeric vector to dataframe
+
+df_binded <- mapply(cbind, df, df_enum, SIMPLIFY = FALSE) # merge article data with enumeration
+
+df_publishers <- df_binded %>% # creates a list of df with extracted publisher for each article
+ lapply(extract_publisher)
+
+df_clean <- df_binded %>% # cleans the raw articles
+  lapply(make_df_clean)
+
+
+
+# Merge clean and publisher dataframes 
+full_df <- map2(df_clean, df_publishers, left_join, by = c("article_n" = "article_n")) # returns a list of merged dfs
+
+long_full_df <- rbindlist(full_df, idcol="file") # puts them all in one long df, with file name as id variable
+
+
+# Using regex to recode the id variable as municipality name
+long_full_df <- long_full_df %>% 
+  mutate(file = gsub(".*alvd.*", "Älvdalen", file),
+         file = gsub(".*ving.*", "Vingåker", file),
+         file = gsub(".*hal.*", "Hallsberg", file),
+         file = gsub(".*sm.*", "Smedjebacken", file),
+         file = gsub(".*bra.*", "Bräcke", file),
+         file = gsub(".*nord.*", "Nordanstig", file)) %>% 
+  rename(municipality = "file") %>% 
+  filter(date > "2016-01-01") %>% #removing an article with an ambiguous date
+filter(!str_detect(title, "Vinnare täv.*"))  %>% #removing really long articles about lottery winners (>1000 sentences)
+mutate(article1 = str_replace(article, "©.*", "")) #
+
+
+# dalabygden's articles, one of the funding recipients publishers, had empty articles (Retriever issue)
+# thus I extract them here, pasted the title in the article text column, and reimported them after filtering
+# out all empty articles
+dalabygden <- long_full_df %>% 
+  filter(publisher == "Dalabygden") %>% 
+  mutate(article1 = title)
+
+long_full_df <- long_full_df %>%  
+  filter(article1 != "") #remove empty articles
+
+long_full_df <- rbind(long_full_df, dalabygden)
+
+
+# save the dataframe 
+saveRDS(long_full_df, "long_full_df.RData")
+
+```
+
+
+
+# EXTRACT ANNOTATION SAMPLE AND REIMPORT WITH ANNOTATIONS
+
+```{r}
+
+# clean the work environment
+rm(list=ls())
+
+# Load data
+df <- readRDS("long_full_df.RData")
+
+
+# Apply cutoff (and remove articles from the police)
+df <- df %>% 
+  filter(publisher != c("Polisen")) %>% 
+  group_by(municipality, publisher) %>% 
+  filter(n() > 40) %>% 
+  ungroup() %>%  
+  dplyr::select(!article_n) %>% 
+  rowid_to_column("article_n")
+
+#saveRDS(df, "df.RData")
+write_csv(df, "articles_dataframe.csv") # will use later for full dataset prediction
+
+
+
+# ATTENTION: The code below will extract a sample that is actually different from my annotated one.  The reason being that I realised at a later stage that Dalabygden's articles were missing from the corpus due to being "empty". It was after the annotation process that I went back and reincluded them in my corpus. 
+
+# extract training sample
+set.seed(19941020)
+df_training <- df[sample(nrow(df), 1000), ]
+
+# write file for annotation (annotation done in Google Sheets using eleven tick boxes, one for each category, for each article)
+openxlsx::write.xlsx(df_training, file = "train_sample.xlsx")
+ 
+
+# reimport the same file, now annotated
+df_annot <- read_excel("annotation.xlsx")
+
+# extract correct label for each article
+df_annot1 <- df_annot %>%
+  dplyr::select(article_n, Emergencies, Health, Politics, Environment, Economy, Education, `Civic Info`, Sport, Obituaries, Other, Transportation) %>% 
+  group_by(article_n) %>% 
+  summarise(across(where(is.logical), as.numeric)) %>%
+  gather(label, value, -article_n) %>%
+  filter(value == 1) %>%
+  dplyr::select(-value) 
+
+# bring the two files back together
+df_labelled <- left_join(df_annot1, df_annot, by = "article_n") %>% 
+  dplyr::select(-c(row.id, article, Emergencies, Health, Politics, Environment, Economy, Education, `Civic Info`,    Sport, Obituaries, Other, Transportation))
+
+write.csv(df_labelled, "df_labelled.csv")
+
+```
+
+
+
+
+
+# FASTTEXT SUPERVISED CLASSIFICATION
+
+The FastText classification was done using an RStudio image on a server to benefit from stronger computational power. Unfortunately the set.seed function for reproducible results generates a different sample on my pc than it has on the server, thus, at least on my own machine, I cannot reproduce the same exact results on the test set as those described in the paper. Different machines might not encounter my same issue. Thus notice the confusion matrix plot might have slightly different results than those in the paper, and same for the evaluation metrics. The model however is identical, and will predict identically on the full dataset. 
+
+# Data load and pre-processing 
+
+```{r}
+
+# clean the work environment
+rm(list=ls())
+
+# load data
+dat <- read_csv("df_labelled.csv", locale = locale(encoding = "ISO-8859-1"))
+
+# prepare classification labels for fasttext
+dat$label2 <- as.numeric(as.factor(dat$label))
+dat$label3 <- gsub("(.*)", "__label__\\1", dat$label2)
+
+# attach label, as wanted by fasttext, to the article
+all <- paste(dat$label3, dat$article1, sep=" ")
+
+# normalize text
+all <- ft_normalize(all)
+
+# splitting data in train/test 
+set.seed(1234) # this seed generates different samples when run on my pc and the 
+# computer where I ran the model
+samp <- sample(1:1000,800)
+#table(dat$label2[samp])
+#sum(table(dat$label2[samp]))
+
+# grab train articles normalized
+train <- all[samp]
+
+# extract their labels
+train_lab <- gsub("__label__(\\d{1,2}) .*", "\\1", train)
+
+# grab test articles normalized
+test <- all[-samp]
+
+# remove labels
+test_nolab <- gsub("__label__\\d{1,2} (.*)", "\\1", test)
+
+# extract only label values
+test_lab <- gsub("__label__(\\d{1,2}) .*", "\\1", test)
+#table(test_lab)/sum(table(test_lab))
+
+# write a local file containing the train vector 
+writeLines(train, con="CIN.train")
+
+```
+
+
+# Model specifications and train
+
+```{r}
+
+# parameters of the model
+cntrl <- ft_control(word_vec_size = 50L, learning_rate = .5, max_len_ngram = 10L, 
+                    min_count = 1L, nbuckets = 10000000L, epoch = 7000L, nthreads = 4L)
+
+# train the model
+model <- ft_train(file = "CIN.train", method = "supervised", control = cntrl)
+
+# save the model
+ft_save(model, "1stModel.bin")
+
+#model <- ft_load("1stModel.bin")   # <- you can also avoid training the model (takes a while), and load the saved version instead through this line of code
+
+```
+
+
+# Prediction on test set and evaluation
+
+```{r}
+
+# evaluate the model on the test set
+test_pred <- ft_predict(model, newdata=test_nolab, k = 1L)
+print(quantile(test_pred$prob))
+
+# collect truth and prediction values
+truth <-as.integer(test_lab)
+pred <- as.integer(gsub("\\D", "", test_pred$label))
+
+# confusion matrix
+cm <- confusionMatrix(as.factor(pred), reference = as.factor(truth))
+
+# F1 score
+mcm <- mean(cm[["byClass"]][ , "F1"]) 
+
+# precision and recall
+writeLines(test, con="CIN.test")
+ft_test(model, "CIN.test", k = 1L)
+
+# plot confusion matrix
+ggplot(as.data.frame(cm$table), aes(Prediction,sort(Reference,decreasing = F), fill= Freq)) +
+  geom_tile() + geom_text(aes(label=Freq)) +
+  scale_fill_gradient(low="white", high="#009194") +
+  labs(x = "Prediction",y = "Reference") +
+  scale_x_discrete(labels=c("Civic Info","Economy","Education","Emergencies","Environment","Health",
+"Obituaries","Other","Politics","Sport","Transportation")) +
+  scale_y_discrete(labels=c("Civic Info","Economy","Education","Emergencies","Environment","Health",
+                            "Obituaries","Other","Politics","Sport","Transportation"))
+
+
+```
+
+# Predict on entire corpus
+
+```{r}
+
+# reset the working directory
+current_path <- rstudioapi::getActiveDocumentContext()$path 
+setwd(dirname(current_path))
+setwd(print(getwd()))
+getwd()
+
+# load data
+df <- read_csv("articles_dataframe.csv")
+
+# normalize (this sometimes can lead to encoding issues depending on the machine. For example, I had no issue with it using the RStudio Server, but on my local machine it lead to problems at the encoding level, which I assumed would have affected the predictions on the full dataset)
+art_norm <- ft_normalize(df$article1)
+#save(art_norm, file = "art_norm.RData")
+
+# to load the output from the above function, without the encoding issues, use the following line of code
+art_norm <- readRDS("art_norm1.RData")
+
+# predict
+df_pred <- ft_predict(model, newdata=art_norm, k = 1L)
+
+
+# label converter table
+labels <- dat %>% select(label, label2, label3) %>% 
+  distinct(label, .keep_all = TRUE) %>% 
+  rename(id = "label",
+         label = "label3")
+
+#Add to original df
+df_pred <- left_join(df_pred, labels, by = "label") %>%
+  select(id.x, id.y) %>%
+  rename(article_n = "id.x",
+         label = "id.y")
+
+df <- left_join(df, df_pred, by = "article_n")
+write_csv(df, "df_predicted.csv")
+
+```
+
+
+
+
+# Extra annotation (not included in paper)
+To further test my model, I evaluated on 100 new hand-coded articles beyond my test set. The results generated no ugly surprises (e.g. overfitting), making me happy with my model.
+
+```{r}
+
+#¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ ON 100 NEW ARTICLES ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+
+# load data again
+#df <- readRDS("df.RData")
+
+# reimport annotated data in the environment
+#df_annot <- read_excel("annotation.xlsx")
+
+# remove annotated training data from the full df (to extract a non-overlapping new sample)
+#df_no_annot <- df %>% anti_join(df_annot, by = "article_n")
+
+
+# extract sample (I forgot the seed unfortunately, so to see results on my extracted sample you will be able to do so upon reloading the excel file, now annotated)
+
+#df_100_annot <-  df_no_annot[sample(nrow(df_no_annot), 100), ]
+#openxlsx::write.xlsx(df_100_annot, file = "df_100_annot.xlsx")
+
+#df_100_annot1 <- read_excel("df_100_annot(1).xlsx")
+
+#df_100 <- df_100_annot1 %>%
+#  dplyr::select(article_n, Emergencies, Health, Politics, Environment, Economy, Education, `Civic Info`, Sport, Obituaries, Other, Transportation) %>% 
+#  group_by(article_n) %>% 
+#  summarise(across(where(is.logical), as.numeric)) %>%
+#  gather(label, value, -article_n) %>%
+#  filter(value == 1) %>%
+#  dplyr::select(-value) 
+
+#df_100_annot1 <- left_join(df_100, df_100_annot1, by = "article_n") %>% 
+#  dplyr::select(-c(row.id, article, Emergencies, Health, Politics, Environment, Economy, Education, `Civic Info`, Sport, Obituaries, Other, Transportation))
+
+#write.csv(df_100_annot1, "df_100_cmd.csv")
+
+
+# ON 100 new articles
+#cmd_100 <- read_csv("df_100_cmd.csv", locale = locale(encoding = "UTF-8"))
+#cmd_100$label2 <- as.numeric(as.factor(cmd_100$label))
+#cmd_100$label3 <- gsub("(.*)", "__label__\\1", cmd_100$label2)
+#all_100 <- paste(cmd_100$label3, cmd_100$article1, sep=" ")
+#all_100 <- ft_normalize(all_100)
+#cmd_100_no_lab <- gsub("__label__\\d{1,2} (.*)", "\\1", all_100)
+#cmd_100_lab <- gsub("__label__(\\d{1,2}) .*", "\\1", all_100)
+
+#Predict 
+#cmd_100_pred <- ft_predict(model, newdata=cmd_100_no_lab, k = 1L)
+
+#Assess quality
+#truth1 <-as.integer(cmd_100_lab)
+#pred1 <- as.integer(gsub("\\D", "", cmd_100_pred$label))
+
+#cm <- table(factor(pred1, levels=1:11), 
+#      factor(truth1, levels=1:11))
+
+#mcm1 <- mean(cm[["byClass"]][ , "F1"])
+
+# precision and recall
+#writeLines(all_100, con="CIN.100")
+#ft_test(model, "CIN.100", k = 1L)
+
+#conf_mat <- confusion_matrix(targets = truth1,
+#                             predictions = pred1)
+
+#plot_confusion_matrix(conf_mat$`Confusion Matrix`[[1]], add_normalized = FALSE, palette = "Oranges")
+
+```
+
+# Visualising the predictions
+
+```{r}
+
+# clean the work environment
+rm(list=ls())
+
+# data
+df <- read_csv("df_predicted.csv", locale = locale(encoding = "UTF-8"))
+
+
+# CINs by municipality
+df0 <- df %>% 
+  mutate(label = as.factor(label)) %>% 
+  group_by(label, municipality) %>%
+  count() %>% 
+  ungroup() 
+
+df0 <- df0 %>%
+  group_by(municipality) %>% 
+  mutate(tot = sum(n)) %>% 
+  mutate(prop = n/tot)
+
+# Create another dummy variable to identify the group exposed to the treatment (municipality)
+df0$treatment <-
+  ifelse(df0$municipality == "Bräcke" |
+           df0$municipality == "Vingåker" |
+           df0$municipality == "Älvdalen", 1, 0)
+
+
+df0 %>% 
+mutate(treatment = as_factor(treatment)) %>% 
+ggplot(aes(reorder(label, -prop), prop, color = municipality, group = municipality)) + 
+  geom_point(aes(shape = treatment), size = 2) +
+  geom_line() + 
+  scale_color_brewer(palette = "Dark2") + ggtitle("") + 
+  labs(fill = "label") +
+  xlab("label") + ylab("Label share (%)") + 
+  theme_minimal() +
+  theme(axis.text.x= element_text(angle = 45, hjust = 1)) 
+
+
+
+# CINs by publisher
+df00 <- df %>% 
+  mutate(publisher = str_replace_all(publisher, "arkiv.*", ""),
+         publisher = str_replace_all(publisher, " [(]", ""),
+         publisher = str_replace_all(publisher, " Premium", ""),
+         publisher = str_replace_all(publisher, " Plus.*", ""),
+         publisher = str_replace_all(publisher, " - Login", ""),
+         label = as_factor(label)) %>% 
+  group_by(label, publisher, municipality) %>%
+  count() %>% 
+  ungroup() 
+
+df00 <- df00 %>%
+  group_by(publisher, municipality) %>% 
+  mutate(tot = sum(n)) %>% 
+  mutate(prop = n/tot)
+
+ggplot(df00,
+       aes(reorder(label, -prop), prop, fill = label)) + 
+  geom_point() +
+  geom_boxplot(alpha = 0.7) +
+  #geom_bar(stat="identity") + 
+  scale_fill_brewer(palette = "Set3") + ggtitle("") + 
+  labs(fill = "label") +
+  xlab("label") + ylab("Label share (%)") + 
+  theme_minimal() +
+  theme(axis.text.x= element_text(angle = 45, hjust = 1), legend.position = "none") 
+
+
+
+
+
+# label share across municipalities
+df1 <- df %>% 
+  mutate(label = as.factor(label)) %>% 
+  group_by(municipality, label) %>%
+  count() %>% 
+  ungroup() 
+
+df1 <- df1 %>%
+  group_by(municipality) %>%
+  mutate(tot = sum(n)) %>% 
+  mutate(prop = n/tot)
+
+ggplot(df1,
+       aes(municipality, prop, fill = factor(label, levels = c("Civic Info", "Economy", "Education", "Emergencies",   
+  "Environment","Health", "Politics", "Transportation", "Sport", "Obituaries","Other")))) + 
+  geom_bar(stat="identity") + 
+  scale_fill_brewer(palette = "Set3") + ggtitle("") + 
+  labs(fill = "label") +
+  xlab("municipality") + ylab("Label share (%)") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme_minimal()
+
+
+```
+
+
+
+
+# STATISTICAL ANALYSIS 
+
+*I have two targets: estimate the change at the publisher level, and at the municipality level*
+
+PUBLISHER-LEVEL
+Treatment-group: publishers which have themselves received funding 
+Control group: publishers in the same municipalities as the treated publishers which have not received any funding
+
+MUNICIPALITY-LEVEL:
+Treatment group: all publishers in the municipalities where some publishers have received funding
+Control group: all publishers in municipalities in which no publishers have receiving funding
+
+*I have two hypotheses:*
+H1: regarding the quantity of CINs articles -> robustness check done using ALL articles in a second model
+H2: regarding the quantity of articles about Civic Information and Politics
+
+*I have one outlier publisher:*
+Östersunds-Posten only for treated in 2020, I exclude him altogether. 
+
+# USING DID PACKAGE 
+
+1. model one: only CIN
+2. model two: also non-CIN
+3. civic info + politics
+
+
+
+
+# Publisher-level analysis
+
+The data was transformed to adopt a panel structure. This means obtaining a variable that represents the aggregation of individual data points within the selected time periods. I chose to use yearly quarters, and to use the count of articles as my dependent variables, which varies across models.
+
+
+# Data load and prep
+
+```{r}
+
+# clean the work environment
+rm(list=ls())
+
+# data
+df <- read_csv("df_predicted.csv", locale = locale(encoding = "UTF-8"))
+
+
+# data about which municipality a publisher covers (as extracted by Retriever), how many articles they have written (n.x), how many years they have received funding in (NA, 1, 2) and how much money they have gotten, as well as a dummy indicating whether they are funded or not
+publishers_funding <- readRDS("publishers_funding.RData")
+
+
+# Clean publishers names
+df <- df %>% 
+  mutate(publisher = str_replace_all(publisher, "arkiv.*", ""),
+         publisher = str_replace_all(publisher, " [(]", ""),
+         publisher = str_replace_all(publisher, " Premium", ""),
+         publisher = str_replace_all(publisher, " Plus.*", ""),
+         publisher = str_replace_all(publisher, " - Login", ""),
+         publisher = str_replace_all(publisher, "Karlskoga Tidning ", "KT"),
+         label = as_factor(label)) %>% 
+  filter(municipality != "Älvdalen" & municipality != "Smedjebacken") %>% 
+  mutate(cin = ifelse(label == "Other" |
+  label == "Sport" |
+  label == "Obituaries", 0, 1)) %>%  # adding a dummy that identifies whether an article is about a CIN = 1, else = 0
+  dplyr::mutate(month_year = lubridate::floor_date(date, unit = "month","%Y-%m-%d"),
+         publisher = as_factor(publisher),
+         time = lubridate::quarter(month_year, with_year = TRUE)) %>% 
+    filter(publisher != "Östersunds-Posten") # remove ÖP because he has gotten treatment only in 2020
+
+
+# Create a dummy variable to identify the group exposed to the treatment (publishers)
+publishers_funding <- publishers_funding %>%
+  select(publisher, name_short, dummy) %>%
+  rename(municipality = "name_short") 
+
+# find funded publishers
+df <- df %>% 
+  left_join(publishers_funding, by = c("municipality", "publisher")) %>% 
+  rename(publ_dummy = "dummy")
+
+
+# Create another dummy variable to identify the group exposed to the treatment (municipality)
+df$munic_dummy <-
+  ifelse(df$municipality == "Bräcke" |
+  df$municipality == "Vingåker", 1, 0)
+
+
+# Create dummy for treatment start 
+df$date_dummy <- 0 
+df$date_dummy[which(df$date >= "2019-07-01")] <- 1
+
+
+```
+
+
+# model one
+
+```{r}
+
+# Restructuring of the data
+panel_df <- df %>% 
+  filter(cin == 1) %>%
+  group_by(municipality, publisher, time) %>%  # this is where we count the CIN articles (important to include municipality because the same publisher is sometimes found in two municipalities, so we want to count by municipality
+  count() %>% 
+  left_join(publishers_funding, by = c("municipality", "publisher")) %>% 
+  rename(publ_dummy = "dummy") %>% 
+  ungroup() %>%
+  spread(key = time, value = n, fill = 0) %>% # fill the gaps where within a year quarter some publisher published zero articles
+  gather(key = time, value = n, -municipality, -publ_dummy, -publisher) %>% 
+  mutate(time1 = as.numeric(time)) %>% 
+  filter(municipality == "Bräcke" | municipality == "Vingåker")
+
+# Create dummy for treatment start
+panel_df$date_dummy <- 0 
+panel_df$date_dummy[which(panel_df$time1 >= "2019.3")] <- 1
+
+# aggregate data points to get the mean value for each time period
+parallel_df_2 <- aggregate(n ~ time + publ_dummy,
+FUN = mean, data = panel_df)
+
+# plot the parallel trend
+ggplot(parallel_df_2, aes(time, n, color = as.factor(publ_dummy), group = as_factor(publ_dummy))) +
+geom_point() +
+scale_y_log10() +
+geom_line(size = 0.6) +
+theme_minimal() +
+labs(color = "publisher") +
+ylab("mean n of CINs articles") +
+scale_color_manual(labels = c("not funded", "funded"), values = c("#f1a340", "#998ec3")) 
+
+
+# create dummy for treatment start
+panel_df$treat <- 0 
+panel_df$treat[panel_df$publ_dummy == 1] <- 2019.3
+
+
+panel_df <- panel_df %>% 
+  group_by(publisher, municipality) %>% 
+  mutate(id=cur_group_id())
+
+out <- att_gt(yname = "n",
+              gname = "treat",
+              idname = "id",
+              tname = "time1",
+              xformla = ~1,
+              data = panel_df,
+              )
+
+
+# summarize the results
+summary(out)
+
+# plot
+ggdid(out)
+
+
+```
+
+
+# model two
+
+```{r}
+
+# Restructuring of the data
+panel_df_all <- df %>% 
+  filter(municipality == "Bräcke" | municipality == "Vingåker") %>% 
+  group_by(municipality, publisher, time) %>%  # this is where we count the articles (important to include municipality because the same publisher is sometimes found in two municipalities, so we want to count by municipality
+  count() %>% 
+  left_join(publishers_funding, by = c("municipality", "publisher")) %>% 
+  rename(publ_dummy = "dummy") %>% 
+  ungroup() %>% 
+  spread(key = time, value = n, fill = 0) %>%  # fill the gaps where within a year quarter some publisher published zero articles
+  gather(key = time, value = n, -municipality, -publ_dummy, -publisher) %>% 
+  mutate(time1 = as.numeric(time)) 
+
+# Create dummy for treatment start
+panel_df_all$date_dummy <- 0 
+panel_df_all$date_dummy[which(panel_df_all$time1 >= "2019.3")] <- 1
+
+
+# create dummy for treatment start
+panel_df_all$treat <- 0 
+panel_df_all$treat[panel_df_all$publ_dummy == 1] <- 2019.3
+
+
+panel_df_all <- panel_df_all %>% 
+  group_by(publisher, municipality) %>% 
+  mutate(id=cur_group_id())
+
+
+out2 <- att_gt(yname = "n",
+              gname = "treat",
+              idname = "id",
+              tname = "time1",
+              xformla = ~1,
+              data = panel_df_all,
+              )
+
+
+# summarize the results
+summary(out2)
+
+# plot
+ggdid(out2)
+
+```
+
+
+# model three
+
+```{r}
+
+# Restructuring of the data
+panel_df_polcivic <- df %>% 
+   filter(municipality == "Bräcke" | municipality == "Vingåker") %>% 
+  filter(label == "Civic Info" | label == "Politics") %>%
+  group_by(municipality, publisher, time) %>%  # this is where we count the CIN articles (important to include municipality because the same publisher is sometimes found in two municipalities, so we want to count by municipality
+  count() %>% 
+  left_join(publishers_funding, by = c("municipality", "publisher")) %>% 
+  rename(publ_dummy = "dummy") %>% 
+  ungroup() %>%
+  spread(key = time, value = n, fill = 0) %>% 
+  gather(key = time, value = n, -municipality, -publ_dummy, -publisher) %>% 
+  mutate(time1 = as.numeric(time)) 
+
+  
+# Create dummy for treatment start
+panel_df_polcivic$date_dummy <- 0 
+panel_df_polcivic$date_dummy[which(panel_df_polcivic$time1 >= "2019.3")] <- 1
+
+# Create another dummy variable to identify the group exposed to the treatment (for municipality-level)
+panel_df_polcivic$munic_dummy <-
+  ifelse(panel_df_polcivic$municipality == "Bräcke" |
+  panel_df_polcivic$municipality == "Vingåker", 1, 0)
+
+
+# create dummy for treatment start
+panel_df_polcivic$treat <- 0 
+panel_df_polcivic$treat[panel_df_polcivic$publ_dummy == 1] <- 2019.3
+
+
+panel_df_polcivic <- panel_df_polcivic %>% 
+  group_by(publisher, municipality) %>% 
+  mutate(id=cur_group_id())
+
+# aggregate data points to get the mean value for each time period
+parallel_df_5 <- aggregate(n ~ time + publ_dummy,
+FUN = mean, data = panel_df_polcivic)
+
+#plot
+ggplot(parallel_df_5, aes(time, n, color = as.factor(publ_dummy), group = as_factor(publ_dummy))) +
+geom_point() +
+#scale_y_log10() +
+geom_line(size = 0.6) +
+theme_minimal() +
+labs(color = "publisher") +
+ylab("mean n of CINs articles") +
+scale_color_manual(labels = c("not funded", "funded"), values = c("#f1a340", "#998ec3")) 
+
+#run model
+out5 <- att_gt(yname = "n",
+              gname = "treat",
+              idname = "id",
+              tname = "time1",
+              xformla = ~1,
+              data = panel_df_polcivic,
+              )
+
+
+# summarize the results
+summary(out5)
+
+# plot
+ggdid(out5)
+
+```
+
+
+# AGGREGATE ATTs
+
+
+```{r}
+
+agg.simple <- aggte(out, type = "simple")
+summary(agg.simple)
+
+agg.simple2 <- aggte(out2, type = "simple")
+summary(agg.simple2)
+
+agg.simple5 <- aggte(out5, type = "simple")
+summary(agg.simple5)
+
+
+
+```
+
+
+
+
+
+
+# Municipality-level analysis
+
+# Data load and prep
+
+```{r}
+
+# clean the work environment
+rm(list=ls())
+
+
+# data
+df <- read_csv("df_predicted.csv", locale = locale(encoding = "UTF-8"))
+
+# data about which municipality a publisher covers (as extracted by Retriever), how many articles they have written (n.x), how many years they have received funding in (NA, 1, 2) and how much money they have gotten, as well as a dummy indicating whether they are funded or not
+publishers_funding <- readRDS("publishers_funding.RData")
+
+
+# Clean publishers names
+df <- df %>% 
+  mutate(publisher = str_replace_all(publisher, "arkiv.*", ""),
+         publisher = str_replace_all(publisher, " [(]", ""),
+         publisher = str_replace_all(publisher, " Premium", ""),
+         publisher = str_replace_all(publisher, " Plus.*", ""),
+         publisher = str_replace_all(publisher, " - Login", ""),
+         publisher = str_replace_all(publisher, "Karlskoga Tidning ", "KT"),
+         label = as_factor(label)) %>% 
+  filter(municipality != "Älvdalen" & municipality != "Smedjebacken") %>% 
+  mutate(cin = ifelse(label == "Other" |
+  label == "Sport" |
+  label == "Obituaries", 0, 1)) %>%  # adding a dummy that identifies whether an article is about a CIN = 1, else = 0
+  dplyr::mutate(month_year = lubridate::floor_date(date, unit = "month","%Y-%m-%d"),
+         publisher = as_factor(publisher),
+         time = lubridate::quarter(month_year, with_year = TRUE)) %>% 
+    filter(publisher != "Östersunds-Posten") # remove ÖP because he has gotten treatment only in 2020
+
+
+# Create a dummy variable to identify the group exposed to the treatment (publishers)
+publishers_funding <- publishers_funding %>%
+  select(publisher, name_short, dummy) %>%
+  rename(municipality = "name_short") 
+
+# find funded publishers
+df <- df %>% 
+  left_join(publishers_funding, by = c("municipality", "publisher")) %>% 
+  rename(publ_dummy = "dummy")
+
+
+# Create another dummy variable to identify the group exposed to the treatment (municipality)
+df$munic_dummy <-
+  ifelse(df$municipality == "Bräcke" |
+  df$municipality == "Vingåker", 1, 0)
+
+
+# Create dummy for treatment start 
+df$date_dummy <- 0 
+df$date_dummy[which(df$date >= "2019-07-01")] <- 1
+
+
+```
+
+
+# MUNICIPALITY LEVEL ANALYSIS
+# USING DID PACKAGE + normal LM
+
+
+1. model one: only CIN
+2. model two: also non-CIN
+3. only civic information
+4. only politics
+5. civic info + politics
+
+
+#model one
+
+```{r}
+
+# Restructuring of the data
+panel_df <- df %>% 
+  filter(cin == 1) %>%
+  group_by(municipality, publisher, time) %>%  # this is where we count the CIN articles (important to include municipality because the same publisher is sometimes found in two municipalities, so we want to count by municipality
+  count() %>% 
+  left_join(publishers_funding, by = c("municipality", "publisher")) %>% 
+  rename(publ_dummy = "dummy") %>% 
+  ungroup() %>%
+  spread(key = time, value = n, fill = 0) %>% # fill the gaps where within a year quarter some publisher published zero articles
+  gather(key = time, value = n, -municipality, -publ_dummy, -publisher) %>% 
+  mutate(time1 = as.numeric(time)) 
+
+# Create dummy for treatment start
+panel_df$date_dummy <- 0 
+panel_df$date_dummy[which(panel_df$time1 >= "2019.3")] <- 1
+
+# Create another dummy variable to identify the group exposed to the treatment (municipality)
+panel_df$munic_dummy <-
+  ifelse(panel_df$municipality == "Bräcke" |
+  panel_df$municipality == "Vingåker", 1, 0)
+
+# aggregate data points to get the mean value for each time period
+parallel_df_2 <- aggregate(n ~ time + munic_dummy,
+FUN = mean, data = panel_df)
+
+# plot the parallel trend
+ggplot(parallel_df_2, aes(time, n, color = as.factor(munic_dummy), group = as_factor(munic_dummy))) +
+geom_point() +
+geom_line(size = 0.6) +
+theme_minimal() +
+labs(color = "municipality") +
+ylab("mean n of CINs articles") +
+scale_color_manual(labels = c("not funded", "funded"), values = c("#f1a340", "#998ec3")) 
+
+
+# create dummy for treatment start
+panel_df$treat <- 0 
+panel_df$treat[panel_df$munic_dummy == 1] <- 2019.3
+
+
+panel_df <- panel_df %>% 
+  group_by(publisher, municipality) %>% 
+  mutate(id=cur_group_id())
+
+
+out <- att_gt(yname = "n",
+              gname = "treat",
+              idname = "id",
+              tname = "time1",
+              xformla = ~1,
+              data = panel_df,
+              )
+
+
+# summarize the results
+summary(out)
+
+
+# plot
+ggdid(out)
+
+
+
+
+
+```
+
+
+# model two
+
+```{r}
+
+# Restructuring of the data
+panel_df_all <- df %>% 
+  group_by(municipality, publisher, time) %>%  # this is where we count the articles (important to include municipality because the same publisher is sometimes found in two municipalities, so we want to count by municipality
+  count() %>% 
+  left_join(publishers_funding, by = c("municipality", "publisher")) %>% 
+  rename(publ_dummy = "dummy") %>% 
+  ungroup() %>% 
+  spread(key = time, value = n, fill = 0) %>%  # fill the gaps where within a year quarter some publisher published zero articles
+  gather(key = time, value = n, -municipality, -publ_dummy, -publisher) %>% 
+  mutate(time1 = as.numeric(time)) 
+
+# Create dummy for treatment start
+panel_df_all$date_dummy <- 0 
+panel_df_all$date_dummy[which(panel_df_all$time1 >= "2019.3")] <- 1
+
+# Create another dummy variable to identify the group exposed to the treatment (municipality)
+panel_df_all$munic_dummy <-
+  ifelse(panel_df_all$municipality == "Bräcke" |
+  panel_df_all$municipality == "Vingåker", 1, 0)
+
+# create dummy for treatment start
+panel_df_all$treat <- 0 
+panel_df_all$treat[panel_df_all$munic_dummy == 1] <- 2019.3
+
+
+panel_df_all <- panel_df_all %>% 
+  group_by(publisher, municipality) %>% 
+  mutate(id=cur_group_id())
+
+out2 <- att_gt(yname = "n",
+              gname = "treat",
+              idname = "id",
+              tname = "time1",
+              xformla = ~1,
+              data = panel_df_all,
+              )
+
+
+
+# summarize the results
+summary(out2)
+
+# plot
+ggdid(out2)
+
+```
+
+
+# model three
+
+```{r}
+
+# Restructuring of the data
+panel_df_polcivic <- df %>% 
+  filter(label == "Civic Info" | label == "Politics") %>%
+  group_by(municipality, publisher, time) %>%  # this is where we count the CIN articles (important to include municipality because the same publisher is sometimes found in two municipalities, so we want to count by municipality
+  count() %>% 
+  left_join(publishers_funding, by = c("municipality", "publisher")) %>% 
+  rename(publ_dummy = "dummy") %>% 
+  ungroup() %>%
+  spread(key = time, value = n, fill = 0) %>% 
+  gather(key = time, value = n, -municipality, -publ_dummy, -publisher) %>% 
+  mutate(time1 = as.numeric(time)) 
+
+  
+# Create dummy for treatment start
+panel_df_polcivic$date_dummy <- 0 
+panel_df_polcivic$date_dummy[which(panel_df_polcivic$time1 >= "2019.3")] <- 1
+
+# Create another dummy variable to identify the group exposed to the treatment (for municipality-level)
+panel_df_polcivic$munic_dummy <-
+  ifelse(panel_df_polcivic$municipality == "Bräcke" |
+  panel_df_polcivic$municipality == "Vingåker", 1, 0)
+
+
+# create dummy for treatment start
+panel_df_polcivic$treat <- 0 
+panel_df_polcivic$treat[panel_df_polcivic$munic_dummy == 1] <- 2019.3
+
+
+panel_df_polcivic <- panel_df_polcivic %>% 
+  group_by(publisher, municipality) %>% 
+  mutate(id=cur_group_id())
+
+# aggregate data points to get the mean value for each time period
+parallel_df_5 <- aggregate(n ~ time + publ_dummy,
+FUN = mean, data = panel_df_polcivic)
+
+#plot
+ggplot(parallel_df_5, aes(time, n, color = as.factor(publ_dummy), group = as_factor(publ_dummy))) +
+geom_point() +
+#scale_y_log10() +
+geom_line(size = 0.6) +
+theme_minimal() +
+labs(color = "publisher") +
+ylab("mean n of CINs articles") +
+scale_color_manual(labels = c("not funded", "funded"), values = c("#f1a340", "#998ec3")) 
+
+
+out5 <- att_gt(yname = "n",
+              gname = "treat",
+              idname = "id",
+              tname = "time1",
+              xformla = ~1,
+              data = panel_df_polcivic,
+              )
+
+
+# summarize the results
+summary(out5)
+
+# plot
+ggdid(out5)
+
+```
+
+
+# AGGREGATE ATTs
+
+
+```{r}
+
+agg.simple <- aggte(out, type = "simple")
+summary(agg.simple)
+
+agg.simple2 <- aggte(out2, type = "simple")
+summary(agg.simple2)
+
+agg.simple5 <- aggte(out5, type = "simple")
+summary(agg.simple5)
+
+```
+
+
+
+
+# ADDITIONAL MODELS - removing Göteborg Posten because he is missing in the third model at the municipality-level analysis. Rerunning model one and two without him, to see robustness of results
+
+
+```{r}
+
+############################# MODEL ONE #########################################
+
+# Restructuring of the data
+panel_df_no_gp <- panel_df %>% filter((publisher != "Göteborgs-Posten") | (municipality != "Hallsberg"))
+
+out <- att_gt(yname = "n",
+              gname = "treat",
+              idname = "id",
+              tname = "time1",
+              xformla = ~1,
+              data = panel_df_no_gp,
+              )
+
+
+# summarize the results
+summary(out)
+
+
+# plot
+ggdid(out)
+
+
+
+########################## MODEL TWO ############################################
+
+# Restructuring of the data
+panel_df_all_no_gp <- panel_df_all %>% filter((publisher != "Göteborgs-Posten") | (municipality != "Hallsberg"))
+
+out2 <- att_gt(yname = "n",
+              gname = "treat",
+              idname = "id",
+              tname = "time1",
+              xformla = ~1,
+              data = panel_df_all_no_gp,
+              )
+
+
+# summarize the results
+summary(out2)
+
+
+# plot
+ggdid(out2)
+
+
+
+################## AGGREGATED ATTS ##############################################
+
+
+agg.simple <- aggte(out, type = "simple")
+summary(agg.simple)
+
+agg.simple2 <- aggte(out2, type = "simple")
+summary(agg.simple2)
+
+```
+
+
+
+
+
+
+
+# THE END!
+
+
+# Additional SML models that were attempted but unreported in the paper, can be found in the .Rmd script "unused_SML_models.Rmd"
+
+
+
+
+
+
+
